@@ -1,0 +1,20 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# ASFLMB-40.000MHZ-LC-T
+#
+DEF ASFLMB-40.000MHZ-LC-T U 0 40 Y Y 1 F N
+F0 "U" 0 150 50 H V C CNN
+F1 "ASFLMB-40.000MHZ-LC-T" 0 -150 50 H V C CNN
+F2 "" -200 -200 50 H I C CNN
+F3 "https://abracon.com/Oscillators/ASFLMB.pdf" -200 -200 50 H I C CNN
+DRAW
+S -400 100 400 -100 0 1 0 f
+X Standby# 1 -600 50 200 R 50 50 1 1 I
+X GND 2 -600 -50 200 R 50 50 1 1 W
+X Output 3 600 50 200 L 50 50 1 1 O
+X VDD 4 600 -50 200 L 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,0 +1,519 @@
+EESchema Schematic File Version 4
+LIBS:power-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 5D428107
+P 5000 4800
+F 0 "#PWR?" H 5000 4550 50  0001 C CNN
+F 1 "GND" H 5005 4627 50  0000 C CNN
+F 2 "" H 5000 4800 50  0001 C CNN
+F 3 "" H 5000 4800 50  0001 C CNN
+	1    5000 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 4450 5000 4800
+Text GLabel 3850 4200 0    50   Input ~ 0
+D+
+Text GLabel 3850 4000 0    50   Input ~ 0
+D-
+Wire Wire Line
+	3950 4050 3950 4000
+Wire Wire Line
+	3950 4000 3850 4000
+Wire Wire Line
+	3950 4150 3950 4200
+Wire Wire Line
+	3950 4200 3850 4200
+Text HLabel 3500 1450 0    50   Input ~ 0
+on_3v3
+Wire Wire Line
+	3900 1500 3900 1550
+Wire Wire Line
+	3900 1850 3900 2000
+$Comp
+L Device:C C?
+U 0 1 5D451473
+P 4350 1700
+AR Path="/5CD05F2F/5D451473" Ref="C?"  Part="0" 
+AR Path="/5D3DE78E/5D451473" Ref="C?"  Part="0" 
+F 0 "C?" H 4465 1746 50  0000 L CNN
+F 1 "0.1uF" H 4465 1655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4388 1550 50  0001 C CNN
+F 3 "" H 4350 1700 50  0001 C CNN
+	0    4350 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 1500 4350 1550
+Wire Wire Line
+	4350 1850 4350 2000
+Wire Wire Line
+	4900 2050 4900 1500
+Wire Wire Line
+	4900 1500 4350 1500
+Connection ~ 4350 1500
+Wire Wire Line
+	4350 1500 3900 1500
+Wire Wire Line
+	3500 1450 3900 1450
+Wire Wire Line
+	3900 1450 3900 1500
+Connection ~ 3900 1500
+Wire Wire Line
+	4350 2000 4100 2000
+$Comp
+L power:GND #PWR?
+U 1 1 5D454107
+P 4100 2050
+F 0 "#PWR?" H 4100 1800 50  0001 C CNN
+F 1 "GND" H 4105 1877 50  0000 C CNN
+F 2 "" H 4100 2050 50  0001 C CNN
+F 3 "" H 4100 2050 50  0001 C CNN
+	1    4100 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2050 4100 2000
+Connection ~ 4100 2000
+Wire Wire Line
+	4100 2000 3900 2000
+$Comp
+L Device:C C?
+U 0 1 5D44FAD3
+P 3900 1700
+AR Path="/5CD05F2F/5D44FAD3" Ref="C?"  Part="0" 
+AR Path="/5D3DE78E/5D44FAD3" Ref="C?"  Part="0" 
+F 0 "C?" H 4015 1746 50  0000 L CNN
+F 1 "0.1uF" H 4015 1655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3938 1550 50  0001 C CNN
+F 3 "" H 3900 1700 50  0001 C CNN
+	0    3900 1700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5100 2050
+NoConn ~ 5700 3550
+NoConn ~ 5700 3650
+NoConn ~ 5700 3750
+NoConn ~ 5700 3850
+$Comp
+L MCU_Module:Omega2+ U?
+U 1 1 5D3DE9E1
+P 5000 3250
+F 0 "U?" H 4750 2100 50  0000 C CNN
+F 1 "Omega2+" H 5300 2100 50  0000 C CNN
+F 2 "Module:Onion_Omega2+" H 5000 1750 50  0001 C CNN
+F 3 "https://docs.onion.io/omega2-docs/omega2p.html" H 1800 2100 50  0001 C CNN
+	1    5000 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4050 4300 4050
+Wire Wire Line
+	3950 4150 4300 4150
+Wire Wire Line
+	5700 2950 6200 2950
+Wire Wire Line
+	5700 3050 6200 3050
+Wire Bus Line
+	7100 3000 7250 3000
+Text HLabel 7250 3000 2    50   BiDi ~ 0
+bus_TxRX_FPGA
+Text Label 5750 2950 0    50   ~ 0
+RX_FPGA
+Text Label 5750 3050 0    50   ~ 0
+TX_FPGA
+Wire Wire Line
+	5700 3250 6200 3250
+Wire Wire Line
+	5700 3350 6200 3350
+Wire Bus Line
+	7100 3700 7250 3700
+Text HLabel 7250 3700 2    50   BiDi ~ 0
+bus_USART_TX_RX
+Text Label 5750 3350 0    50   ~ 0
+USART_TX
+Text Label 5800 3250 0    50   ~ 0
+USART_RX
+Entry Wire Line
+	7100 3050 7200 3150
+Entry Wire Line
+	7100 3050 7200 3150
+Entry Wire Line
+	7100 3050 7200 3150
+Entry Wire Line
+	7100 3150 7200 3250
+Entry Wire Line
+	7100 3800 7200 3900
+Entry Wire Line
+	7100 3900 7200 4000
+Wire Wire Line
+	7200 3150 7750 3150
+Wire Wire Line
+	7200 3250 7750 3250
+Wire Wire Line
+	7200 3900 7750 3900
+Wire Wire Line
+	7200 4000 7750 4000
+Text Label 7250 3150 0    50   ~ 0
+RX_FPGA
+Text Label 7250 3250 0    50   ~ 0
+TX_FPGA
+Text Label 7250 3900 0    50   ~ 0
+USART_RX
+Text Label 7250 4000 0    50   ~ 0
+USART_TX
+Wire Bus Line
+	2250 5250 2600 5250
+Entry Wire Line
+	2600 5350 2700 5450
+Entry Wire Line
+	2600 5550 2700 5650
+Entry Wire Line
+	2600 5750 2700 5850
+Entry Wire Line
+	2600 5950 2700 6050
+Entry Wire Line
+	2600 6150 2700 6250
+Entry Wire Line
+	2600 6350 2700 6450
+Wire Wire Line
+	2700 5450 3400 5450
+Wire Wire Line
+	2700 5650 3400 5650
+Wire Wire Line
+	2700 5850 3400 5850
+Wire Wire Line
+	2700 6050 3400 6050
+Wire Wire Line
+	2700 6250 3400 6250
+Wire Wire Line
+	2700 6450 3400 6450
+Wire Bus Line
+	6200 4700 6550 4700
+Entry Wire Line
+	6550 4800 6650 4900
+Entry Wire Line
+	6550 5000 6650 5100
+Wire Wire Line
+	6650 4900 7350 4900
+Wire Wire Line
+	6650 5100 7350 5100
+Wire Bus Line
+	4300 5800 4650 5800
+Entry Wire Line
+	4650 5900 4750 6000
+Entry Wire Line
+	4650 6100 4750 6200
+Entry Wire Line
+	4650 6300 4750 6400
+Entry Wire Line
+	4650 6500 4750 6600
+Entry Wire Line
+	4650 6700 4750 6800
+Wire Wire Line
+	4750 6000 5450 6000
+Wire Wire Line
+	4750 6200 5450 6200
+Wire Wire Line
+	4750 6400 5450 6400
+Wire Wire Line
+	4750 6600 5450 6600
+Wire Wire Line
+	4750 6800 5450 6800
+Text Label 2750 5450 0    50   ~ 0
+JTAG0
+Text Label 2750 5650 0    50   ~ 0
+JTAG1
+Text Label 2750 5850 0    50   ~ 0
+JTAG2
+Text Label 2750 6050 0    50   ~ 0
+JTAG3
+Text Label 2750 6250 0    50   ~ 0
+JTAG4
+Text Label 2750 6450 0    50   ~ 0
+JTAG5
+Text HLabel 2250 5250 0    50   BiDi ~ 0
+JTAG[5...0]
+Text Label 3100 5450 0    50   ~ 0
+TMS
+Text Label 3100 5650 0    50   ~ 0
+TCK
+Text Label 3100 5850 0    50   ~ 0
+TDI
+Text Label 3100 6050 0    50   ~ 0
+TDO
+Text Label 3100 6250 0    50   ~ 0
+TRST
+Text Label 3100 6450 0    50   ~ 0
+NRST
+Wire Wire Line
+	4300 2350 3800 2350
+Wire Wire Line
+	4300 3550 3850 3550
+Wire Wire Line
+	4300 3650 3850 3650
+Wire Wire Line
+	4300 2450 3800 2450
+Wire Wire Line
+	4300 2550 3800 2550
+Wire Wire Line
+	4300 2650 3800 2650
+Text Label 3900 2350 0    50   ~ 0
+TMS
+Text Label 3950 3550 0    50   ~ 0
+TCK
+Text Label 3950 3650 0    50   ~ 0
+TDI
+Text Label 3900 2450 0    50   ~ 0
+TDO
+Text Label 3900 2550 0    50   ~ 0
+TRST
+Text Label 3900 2650 0    50   ~ 0
+NRST
+Wire Wire Line
+	5700 4050 6200 4050
+Wire Wire Line
+	5700 4150 6200 4150
+Text Label 5850 4050 0    50   ~ 0
+I2C_SCL
+Text Label 5850 4150 0    50   ~ 0
+I2C_SDA
+Wire Wire Line
+	5700 2750 6200 2750
+Text Label 5750 2750 0    50   ~ 0
+RST_BTN
+Text Label 6650 4900 0    50   ~ 0
+I2C_00
+Text Label 6650 5100 0    50   ~ 0
+I2C_01
+Text Label 7050 4900 0    50   ~ 0
+I2C_SCL
+Text Label 7050 5100 0    50   ~ 0
+I2C_SDA
+Text HLabel 6200 4700 0    50   BiDi ~ 0
+I2C_0[1..0]
+Text Label 4800 6000 0    50   ~ 0
+om_SPI0
+Text Label 4800 6200 0    50   ~ 0
+om_SPI1
+Text Label 4800 6400 0    50   ~ 0
+om_SPI2
+Text Label 4800 6600 0    50   ~ 0
+om_SPI3
+Text Label 4800 6800 0    50   ~ 0
+om_SPI4
+Text Label 5250 6000 0    50   ~ 0
+MISO
+Text Label 5250 6200 0    50   ~ 0
+MOSI
+Text Label 5200 6400 0    50   ~ 0
+SPI_CLK
+Text Label 5200 6600 0    50   ~ 0
+SPI_CS
+Text Label 5300 6800 0    50   ~ 0
+RST
+Text HLabel 4300 5800 0    50   BiDi ~ 0
+om_SPI[4...0]
+$Comp
+L BAT2032:R R?
+U 1 1 5CD91C3B
+P 3850 3050
+F 0 "R?" V 3800 3250 50  0000 C CNN
+F 1 "100" V 3850 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3780 3050 50  0001 C CNN
+F 3 "~" H 3850 3050 50  0001 C CNN
+	1    3850 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L BAT2032:R R?
+U 1 1 5CD95E75
+P 3850 3150
+F 0 "R?" V 3800 3350 50  0000 C CNN
+F 1 "100" V 3850 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3780 3150 50  0001 C CNN
+F 3 "~" H 3850 3150 50  0001 C CNN
+	1    3850 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L BAT2032:R R?
+U 1 1 5CD970C9
+P 3850 3250
+F 0 "R?" V 3800 3450 50  0000 C CNN
+F 1 "100" V 3850 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3780 3250 50  0001 C CNN
+F 3 "~" H 3850 3250 50  0001 C CNN
+	1    3850 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L BAT2032:R R?
+U 1 1 5CD983F0
+P 3850 3350
+F 0 "R?" V 3800 3550 50  0000 C CNN
+F 1 "100" V 3850 3350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3780 3350 50  0001 C CNN
+F 3 "~" H 3850 3350 50  0001 C CNN
+	1    3850 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 3050 4000 3050
+Wire Wire Line
+	4300 3150 4000 3150
+Wire Wire Line
+	4300 3250 4000 3250
+Wire Wire Line
+	4300 3350 4000 3350
+Wire Wire Line
+	3700 3050 3300 3050
+Wire Wire Line
+	3700 3150 3300 3150
+Wire Wire Line
+	3700 3250 3300 3250
+Wire Wire Line
+	3700 3350 3300 3350
+Text Label 3400 3050 0    50   ~ 0
+MISO
+Text Label 3400 3150 0    50   ~ 0
+MOSI
+Text Label 3350 3250 0    50   ~ 0
+SPI_CLK
+Text Label 3350 3350 0    50   ~ 0
+SPI_CS
+$Comp
+L BAT2032:R R?
+U 1 1 5CD3D226
+P 3850 3750
+F 0 "R?" V 3800 3950 50  0000 C CNN
+F 1 "100" V 3850 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3780 3750 50  0001 C CNN
+F 3 "~" H 3850 3750 50  0001 C CNN
+	1    3850 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 3750 4000 3750
+Wire Wire Line
+	3700 3750 3300 3750
+Text Label 3350 3750 0    50   ~ 0
+RST
+Text HLabel 4300 2850 0    50   Output ~ 0
+BOOT0
+$Comp
+L power:GND #PWR?
+U 1 1 5CD47976
+P 6650 2700
+F 0 "#PWR?" H 6650 2450 50  0001 C CNN
+F 1 "GND" V 6655 2572 50  0000 R CNN
+F 2 "" H 6650 2700 50  0001 C CNN
+F 3 "" H 6650 2700 50  0001 C CNN
+	1    6650 2700
+	1    0    0    -1  
+$EndComp
+Text HLabel 5600 1500 0    50   Input ~ 0
+on_3v3
+NoConn ~ 4300 2750
+NoConn ~ 4300 3850
+Text Label 7450 1500 0    50   ~ 0
+RST_BTN
+Connection ~ 7300 1500
+Wire Wire Line
+	7700 1500 7300 1500
+Connection ~ 6650 1500
+Wire Wire Line
+	7300 1500 6650 1500
+Wire Wire Line
+	6650 1600 6600 1600
+Connection ~ 6650 1600
+Wire Wire Line
+	6650 1500 6650 1600
+Wire Wire Line
+	6300 1500 6650 1500
+Wire Wire Line
+	6700 1600 6650 1600
+Wire Wire Line
+	7300 2050 7300 1800
+$Comp
+L power:GND #PWR?
+U 1 1 5CD5D462
+P 7300 2050
+F 0 "#PWR?" H 7300 1800 50  0001 C CNN
+F 1 "GND" V 7305 1922 50  0000 R CNN
+F 2 "" H 7300 2050 50  0001 C CNN
+F 3 "" H 7300 2050 50  0001 C CNN
+	1    7300 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 0 1 5CD5AB36
+P 7300 1650
+AR Path="/5CD05F2F/5CD5AB36" Ref="C?"  Part="0" 
+AR Path="/5D3DE78E/5CD5AB36" Ref="C?"  Part="0" 
+F 0 "C?" H 7415 1696 50  0000 L CNN
+F 1 "0.1uF" H 7415 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7338 1500 50  0001 C CNN
+F 3 "" H 7300 1650 50  0001 C CNN
+	0    7300 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L BAT2032:R R?
+U 1 1 5CD54029
+P 6150 1500
+F 0 "R?" V 6100 1700 50  0000 C CNN
+F 1 "10K" V 6150 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6080 1500 50  0001 C CNN
+F 3 "~" H 6150 1500 50  0001 C CNN
+	1    6150 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 1500 6000 1500
+Wire Wire Line
+	6650 2700 6650 2450
+Wire Wire Line
+	6650 2450 6550 2450
+Connection ~ 6650 2450
+Wire Wire Line
+	6750 2450 6650 2450
+$Comp
+L FSM1LPTR:FSM1LPTR U?
+U 1 1 5D472323
+P 6700 2000
+F 0 "U?" H 6725 2307 60  0000 C CNN
+F 1 "FSM1LPTR" H 6725 2201 60  0000 C CNN
+F 2 "SWITCH_FSM1LPA" H 6700 2150 60  0001 C CNN
+F 3 "" H 6300 2000 60  0000 C CNN
+F 4 "450-1756-1-ND" H 6700 2000 50  0001 C CNN "digikey"
+	1    6700 2000
+	0    1    1    0   
+$EndComp
+Wire Bus Line
+	6550 4700 6550 5000
+Wire Bus Line
+	7100 3700 7100 3900
+Wire Bus Line
+	7100 3000 7100 3200
+Wire Bus Line
+	4650 5800 4650 6700
+Wire Bus Line
+	2600 5250 2600 6350
+$EndSCHEMATC

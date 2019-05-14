@@ -1,0 +1,789 @@
+EESchema Schematic File Version 4
+LIBS:power-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	8000 2000 8000 2050
+Connection ~ 8000 2000
+Wire Wire Line
+	8000 1950 8000 2000
+Wire Wire Line
+	7750 2000 8000 2000
+Wire Wire Line
+	7750 1550 8000 1550
+Connection ~ 7750 1550
+Wire Wire Line
+	7750 1700 7750 1550
+Wire Wire Line
+	7650 1550 7750 1550
+$Comp
+L Device:C C?
+U 1 1 5CD4A83C
+P 7750 1850
+F 0 "C?" H 7750 1950 50  0000 L CNN
+F 1 "0.1uf" H 7800 1750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7788 1700 50  0001 C CNN
+F 3 "~" H 7750 1850 50  0001 C CNN
+	1    7750 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 1250 7650 1550
+Wire Wire Line
+	7650 1550 7450 1550
+Connection ~ 7650 1550
+$Comp
+L power:+5VD #PWR?
+U 1 1 5CD4A84B
+P 7650 1250
+F 0 "#PWR?" H 7650 1100 50  0001 C CNN
+F 1 "+5VD" H 7650 1400 50  0000 C CNN
+F 2 "" H 7650 1250 50  0001 C CNN
+F 3 "" H 7650 1250 50  0001 C CNN
+	1    7650 1250
+	1    0    0    -1  
+$EndComp
+Connection ~ 9950 1550
+Wire Wire Line
+	10150 1550 9950 1550
+Text HLabel 10150 1550 2    89   Input ~ 0
+vcc_STM32
+Connection ~ 9850 1550
+Wire Wire Line
+	9950 1550 9850 1550
+Wire Wire Line
+	9950 1300 9950 1550
+Text GLabel 9950 1300 2    89   Input ~ 0
+vcc_STM32
+Wire Wire Line
+	7550 1700 7550 1850
+Connection ~ 7550 1700
+Wire Wire Line
+	7450 1700 7550 1700
+Wire Wire Line
+	7550 1600 7550 1700
+Wire Wire Line
+	7550 1600 7450 1600
+$Comp
+L power:GND #PWR?
+U 1 1 5CD4A85D
+P 7550 1850
+F 0 "#PWR?" H 7550 1600 50  0001 C CNN
+F 1 "GND" H 7555 1677 50  0000 C CNN
+F 2 "" H 7550 1850 50  0001 C CNN
+F 3 "" H 7550 1850 50  0001 C CNN
+	1    7550 1850
+	1    0    0    -1  
+$EndComp
+Connection ~ 8000 1550
+Wire Wire Line
+	8000 1650 8000 1550
+Wire Wire Line
+	7450 1550 7450 1500
+Wire Wire Line
+	8200 1550 8000 1550
+Wire Wire Line
+	9850 1550 9600 1550
+Wire Wire Line
+	9850 1650 9850 1550
+Wire Wire Line
+	9850 2050 9850 1950
+$Comp
+L power:GND #PWR?
+U 1 1 5CD4A86B
+P 8900 2050
+F 0 "#PWR?" H 8900 1800 50  0001 C CNN
+F 1 "GND" H 8905 1877 50  0000 C CNN
+F 2 "" H 8900 2050 50  0001 C CNN
+F 3 "" H 8900 2050 50  0001 C CNN
+	1    8900 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CD4A871
+P 9850 2050
+F 0 "#PWR?" H 9850 1800 50  0001 C CNN
+F 1 "GND" H 9855 1877 50  0000 C CNN
+F 2 "" H 9850 2050 50  0001 C CNN
+F 3 "" H 9850 2050 50  0001 C CNN
+	1    9850 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CD4A877
+P 8000 2050
+F 0 "#PWR?" H 8000 1800 50  0001 C CNN
+F 1 "GND" H 8005 1877 50  0000 C CNN
+F 2 "" H 8000 2050 50  0001 C CNN
+F 3 "" H 8000 2050 50  0001 C CNN
+	1    8000 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5CD4A87D
+P 9850 1800
+F 0 "C?" H 9968 1846 50  0000 L CNN
+F 1 "33uf" H 9968 1755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9888 1650 50  0001 C CNN
+F 3 "~" H 9850 1800 50  0001 C CNN
+	1    9850 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5CD4A883
+P 8000 1800
+F 0 "C?" H 8118 1846 50  0000 L CNN
+F 1 "33uf" H 8118 1755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8038 1650 50  0001 C CNN
+F 3 "~" H 8000 1800 50  0001 C CNN
+	1    8000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Barrel_Jack_Switch J?
+U 1 1 5CD4A889
+P 7150 1600
+F 0 "J?" H 7207 1917 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 7207 1826 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 7200 1560 50  0001 C CNN
+F 3 "~" H 7200 1560 50  0001 C CNN
+F 4 "CP-002A-ND" H 7150 1600 50  0001 C CNN "digikey"
+	1    7150 1600
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	6950 1000 10300 1000
+Wire Notes Line
+	9300 1000 9300 1050
+Wire Notes Line
+	6950 2850 6950 1000
+Wire Notes Line
+	10300 2900 6950 2900
+Wire Notes Line
+	10300 1000 10300 2850
+Wire Notes Line
+	1550 2900 4600 2900
+Wire Notes Line
+	4600 2900 4600 950 
+Wire Notes Line
+	1550 850  1550 2900
+$Comp
+L power:GND #PWR?
+U 1 1 5CD68541
+P 2600 2550
+F 0 "#PWR?" H 2600 2300 50  0001 C CNN
+F 1 "GND" H 2605 2377 50  0000 C CNN
+F 2 "" H 2600 2550 50  0001 C CNN
+F 3 "" H 2600 2550 50  0001 C CNN
+	1    2600 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2250 2500 2450
+Wire Wire Line
+	2500 2450 2600 2450
+Wire Wire Line
+	2600 2450 2600 2250
+Wire Wire Line
+	2600 2550 2600 2450
+Connection ~ 2600 2450
+$Comp
+L Device:C C?
+U 1 1 5CD68552
+P 1950 1950
+F 0 "C?" H 1950 2050 50  0000 L CNN
+F 1 "33u" H 1950 1850 50  0000 L CNN
+F 2 "" H 1988 1800 50  0001 C CNN
+F 3 "~" H 1950 1950 50  0001 C CNN
+	1    1950 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 1800 3050 1850
+Wire Wire Line
+	3050 1850 2900 1850
+Wire Wire Line
+	3100 2000 3100 1950
+Wire Wire Line
+	3100 1950 2900 1950
+Text GLabel 4300 1800 2    50   Input ~ 0
+D+
+Text GLabel 4300 2000 2    50   Input ~ 0
+D-
+$Comp
+L Device:L L?
+U 1 1 5CD68562
+P 2300 1250
+F 0 "L?" V 2119 1250 50  0000 C CNN
+F 1 "L" V 2210 1250 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2300 1250 50  0001 C CNN
+F 3 "~" H 2300 1250 50  0001 C CNN
+	1    2300 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 1250 2550 1250
+Wire Wire Line
+	2900 1250 2900 1650
+Wire Wire Line
+	2150 1250 1850 1250
+Wire Wire Line
+	2250 1800 2250 1350
+Wire Wire Line
+	2550 1350 2550 1250
+Connection ~ 2550 1250
+Wire Wire Line
+	2550 1250 2900 1250
+Wire Wire Line
+	1950 1800 1950 1350
+Connection ~ 2500 2450
+Wire Wire Line
+	1950 2100 1950 2450
+Connection ~ 2250 1350
+Wire Wire Line
+	2250 1350 2550 1350
+Wire Wire Line
+	1650 1350 1950 1350
+Wire Wire Line
+	1650 2450 1950 2450
+Connection ~ 1950 1350
+Wire Wire Line
+	1950 1350 2250 1350
+Connection ~ 1950 2450
+$Comp
+L Device:D_Zener D?
+U 1 1 5CD6857D
+P 1650 1850
+F 0 "D?" V 1604 1929 50  0000 L CNN
+F 1 "D_Zener" V 1500 1850 50  0000 L CNN
+F 2 "" H 1650 1850 50  0001 C CNN
+F 3 "~" H 1650 1850 50  0001 C CNN
+	1    1650 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 1700 1650 1350
+Wire Wire Line
+	1650 2000 1650 2450
+Wire Notes Line
+	4600 950  1550 950 
+$Comp
+L power:+5VD #PWR?
+U 1 1 5CD68587
+P 1850 1150
+F 0 "#PWR?" H 1850 1000 50  0001 C CNN
+F 1 "+5VD" H 1850 1300 50  0000 C CNN
+F 2 "" H 1850 1150 50  0001 C CNN
+F 3 "" H 1850 1150 50  0001 C CNN
+	1    1850 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1250 1850 1150
+Text Notes 2400 900  0    89   ~ 0
+USB  ONION SUPPLY
+Wire Notes Line
+	4750 2900 4750 4950
+Wire Notes Line
+	4750 4950 1300 4950
+Wire Notes Line
+	1300 4950 1300 2900
+Wire Notes Line
+	1300 3250 4750 3250
+$Comp
+L Device:CP C?
+U 1 1 5CD6859F
+P 1650 4200
+F 0 "C?" H 1768 4246 50  0000 L CNN
+F 1 "4.7uf" H 1768 4155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1688 4050 50  0001 C CNN
+F 3 "~" H 1650 4200 50  0001 C CNN
+F 4 "" H 1650 4200 50  0001 C CNN "digikey"
+	1    1650 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CD685A6
+P 3350 2750
+F 0 "#PWR?" H 3350 2500 50  0001 C CNN
+F 1 "GND" H 3355 2577 50  0000 C CNN
+F 2 "" H 3350 2750 50  0001 C CNN
+F 3 "" H 3350 2750 50  0001 C CNN
+	1    3350 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CD685B2
+P 1650 4450
+F 0 "#PWR?" H 1650 4200 50  0001 C CNN
+F 1 "GND" H 1655 4277 50  0000 C CNN
+F 2 "" H 1650 4450 50  0001 C CNN
+F 3 "" H 1650 4450 50  0001 C CNN
+	1    1650 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CD685B8
+P 3750 4450
+F 0 "#PWR?" H 3750 4200 50  0001 C CNN
+F 1 "GND" H 3755 4277 50  0000 C CNN
+F 2 "" H 3750 4450 50  0001 C CNN
+F 3 "" H 3750 4450 50  0001 C CNN
+	1    3750 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VD #PWR?
+U 1 1 5CD685BE
+P 1450 3750
+F 0 "#PWR?" H 1450 3600 50  0001 C CNN
+F 1 "+5VD" H 1450 3900 50  0000 C CNN
+F 2 "" H 1450 3750 50  0001 C CNN
+F 3 "" H 1450 3750 50  0001 C CNN
+	1    1450 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CD685C5
+P 3750 3750
+F 0 "#PWR?" H 3750 3600 50  0001 C CNN
+F 1 "+3V3" H 3765 3923 50  0000 C CNN
+F 2 "" H 3750 3750 50  0001 C CNN
+F 3 "" H 3750 3750 50  0001 C CNN
+	1    3750 3750
+	1    0    0    -1  
+$EndComp
+Text GLabel 4150 3900 2    89   Input ~ 0
+vcc_FPGA
+Wire Wire Line
+	1950 3900 1650 3900
+Wire Wire Line
+	1450 3900 1450 3750
+Wire Wire Line
+	1650 4050 1650 3900
+Connection ~ 1650 3900
+Wire Wire Line
+	1650 3900 1450 3900
+Wire Wire Line
+	3750 3750 3750 3900
+Connection ~ 3750 3900
+Wire Wire Line
+	3750 3900 4150 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5CD685D7
+P 2650 4500
+F 0 "#PWR?" H 2650 4250 50  0001 C CNN
+F 1 "GND" H 2655 4327 50  0000 C CNN
+F 2 "" H 2650 4500 50  0001 C CNN
+F 3 "" H 2650 4500 50  0001 C CNN
+	1    2650 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3900 3750 3900
+Wire Wire Line
+	3750 3900 3750 4050
+Wire Wire Line
+	2650 4500 2650 4400
+Wire Wire Line
+	1650 4450 1650 4350
+Wire Wire Line
+	3750 4350 3750 4450
+Text Notes 2300 3150 0    89   ~ 0
+CONVERTIDOR 5V  at 3V3
+Wire Notes Line
+	4850 5500 4850 7600
+Wire Notes Line
+	4850 7600 1350 7600
+Wire Notes Line
+	1350 7600 1350 5500
+Wire Notes Line
+	1250 5500 4750 5500
+$Comp
+L Device:CP C?
+U 1 1 5CD685F3
+P 1900 6500
+F 0 "C?" H 2018 6546 50  0000 L CNN
+F 1 "4.7uf" H 2018 6455 50  0000 L CNN
+F 2 "" H 1938 6350 50  0001 C CNN
+F 3 "~" H 1900 6500 50  0001 C CNN
+	1    1900 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 0 0 5CD685F9
+P 3800 6500
+F 0 "C?" H 3918 6546 50  0000 L CNN
+F 1 "4.7uf" H 3918 6455 50  0000 L CNN
+F 2 "" H 3838 6350 50  0001 C CNN
+F 3 "~" H 3800 6500 50  0001 C CNN
+	0    3800 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CD685FF
+P 2850 6800
+F 0 "#PWR?" H 2850 6550 50  0001 C CNN
+F 1 "GND" H 2855 6627 50  0000 C CNN
+F 2 "" H 2850 6800 50  0001 C CNN
+F 3 "" H 2850 6800 50  0001 C CNN
+	1    2850 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CD68605
+P 3800 6750
+F 0 "#PWR?" H 3800 6500 50  0001 C CNN
+F 1 "GND" H 3805 6577 50  0000 C CNN
+F 2 "" H 3800 6750 50  0001 C CNN
+F 3 "" H 3800 6750 50  0001 C CNN
+	1    3800 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CD6860B
+P 1900 6750
+F 0 "#PWR?" H 1900 6500 50  0001 C CNN
+F 1 "GND" H 1905 6577 50  0000 C CNN
+F 2 "" H 1900 6750 50  0001 C CNN
+F 3 "" H 1900 6750 50  0001 C CNN
+	1    1900 6750
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 5900 0    89   Input ~ 0
+vcc_FPGA
+Wire Wire Line
+	2150 6200 1900 6200
+Wire Wire Line
+	1800 6200 1800 5900
+Wire Wire Line
+	1900 6350 1900 6200
+Connection ~ 1900 6200
+Wire Wire Line
+	1900 6200 1800 6200
+Wire Wire Line
+	1900 6650 1900 6750
+Wire Wire Line
+	3800 6650 3800 6750
+Wire Wire Line
+	2850 6800 2850 6700
+$Comp
+L power:+1V5 #PWR?
+U 1 1 5CD6861A
+P 4000 6150
+F 0 "#PWR?" H 4000 6000 50  0001 C CNN
+F 1 "+1V5" H 4015 6323 50  0000 C CNN
+F 2 "" H 4000 6150 50  0001 C CNN
+F 3 "" H 4000 6150 50  0001 C CNN
+	1    4000 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 6200 3800 6200
+Wire Wire Line
+	4000 6200 4000 6150
+Wire Wire Line
+	3800 6350 3800 6200
+Connection ~ 3800 6200
+Wire Wire Line
+	3800 6200 4000 6200
+Text GLabel 4300 6200 2    89   Input ~ 0
+vcc_core_FPGA
+Wire Wire Line
+	4300 6200 4200 6200
+Connection ~ 4000 6200
+Text HLabel 4250 6400 2    89   Input ~ 0
+vcc_core_FPGA
+Wire Wire Line
+	4250 6400 4200 6400
+Wire Wire Line
+	4200 6400 4200 6200
+Connection ~ 4200 6200
+Wire Wire Line
+	4200 6200 4000 6200
+$Comp
+L Connector:USB_A J?
+U 1 1 5CD6862D
+P 2600 1850
+F 0 "J?" H 2657 2317 50  0000 C CNN
+F 1 "USB_A" H 2657 2226 50  0000 C CNN
+F 2 "Connector_USB:USB_A_CNCTech_1001-011-01101_Horizontal" H 2750 1800 50  0001 C CNN
+F 3 " ~http://suddendocs.samtec.com/prints/usb-a-s-x-x-sm2-x-xx-mkt.pdf" H 2750 1800 50  0001 C CNN
+	1    2600 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power_Protection:SP0502BAHT D?
+U 1 1 5CD986F5
+P 3350 2400
+F 0 "D?" H 3555 2446 50  0000 L CNN
+F 1 "SP0502BAHT" H 3555 2355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3575 2350 50  0001 L CNN
+F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 3475 2525 50  0001 C CNN
+	1    3350 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 2600 3350 2750
+Wire Wire Line
+	3250 1800 3250 2200
+Wire Wire Line
+	3050 1800 3250 1800
+Wire Wire Line
+	3450 2000 3450 2200
+Wire Wire Line
+	3100 2000 3450 2000
+$Comp
+L BAT2032:L L?
+U 1 1 5CDB4EC6
+P 4150 1800
+F 0 "L?" V 4250 1850 50  0000 C CNN
+F 1 "L" V 4250 1750 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4150 1800 50  0001 C CNN
+F 3 "~" H 4150 1800 50  0001 C CNN
+	1    4150 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L BAT2032:L L?
+U 1 1 5CDB6B70
+P 4150 2000
+F 0 "L?" V 4050 1950 50  0000 C CNN
+F 1 "L" V 4050 2050 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4150 2000 50  0001 C CNN
+F 3 "~" H 4150 2000 50  0001 C CNN
+	1    4150 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4000 1800 3250 1800
+Connection ~ 3250 1800
+Wire Wire Line
+	4000 2000 3450 2000
+Connection ~ 3450 2000
+$Comp
+L pcb_embedded_systems-cache:ZLDO1117G33TA U?
+U 1 1 5CDB7BFB
+P 2650 3900
+F 0 "U?" H 2650 4599 60  0000 C CNN
+F 1 "ZLDO1117G33TA" H 2650 4493 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" H 2650 4387 60  0000 C CNN
+F 3 "ZLDO1117G33DICT-ND" H 2650 4281 60  0000 C CNN
+F 4 "https://www.diodes.com/assets/Datasheets/ZLDO1117.pdf" H 2650 3900 50  0001 C CNN "digikey"
+	1    2650 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L pcb_embedded_systems-cache:ZLDO1117G33TA U?
+U 1 1 5CE0B1BC
+P 2850 6200
+F 0 "U?" H 2850 6899 60  0000 C CNN
+F 1 "ZLDO1117G33TA" H 2850 6793 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" H 2850 6687 60  0000 C CNN
+F 3 "ZLDO1117G33DICT-ND" H 2850 6581 60  0000 C CNN
+F 4 "https://www.diodes.com/assets/Datasheets/ZLDO1117.pdf" H 2850 6200 50  0001 C CNN "digikey"
+	1    2850 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L pcb_embedded_systems-cache:ZLDO1117G33TA U?
+U 1 1 5CE35DA7
+P 8900 1550
+F 0 "U?" H 8900 2249 60  0000 C CNN
+F 1 "ZLDO1117G33TA" H 8900 2143 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" H 8900 2037 60  0000 C CNN
+F 3 "ZLDO1117G33DICT-ND" H 8900 1931 60  0000 C CNN
+F 4 "https://www.diodes.com/assets/Datasheets/ZLDO1117.pdf" H 8900 1550 50  0001 C CNN "digikey"
+	1    8900 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5CEEAEC1
+P 3750 4200
+F 0 "C?" H 3868 4246 50  0000 L CNN
+F 1 "4.7uf" H 3868 4155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3788 4050 50  0001 C CNN
+F 3 "~" H 3750 4200 50  0001 C CNN
+F 4 "" H 3750 4200 50  0001 C CNN "digikey"
+	1    3750 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CEF8E31
+P 2250 1950
+AR Path="/5CD05F2F/5CEF8E31" Ref="C?"  Part="1" 
+AR Path="/5CD17BDC/5CEF8E31" Ref="C?"  Part="1" 
+F 0 "C?" H 2150 2050 50  0000 L CNN
+F 1 "0.1uF" H 2150 1850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2288 1800 50  0001 C CNN
+F 3 "~" H 2250 1950 50  0001 C CNN
+	1    2250 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2450 2250 2450
+Wire Wire Line
+	2250 2100 2250 2450
+Connection ~ 2250 2450
+Wire Wire Line
+	2250 2450 2500 2450
+Wire Wire Line
+	5950 1200 5950 1500
+$Comp
+L power:+5VD #PWR?
+U 1 1 5CF388B5
+P 5950 1200
+F 0 "#PWR?" H 5950 1050 50  0001 C CNN
+F 1 "+5VD" H 5950 1350 50  0000 C CNN
+F 2 "" H 5950 1200 50  0001 C CNN
+F 3 "" H 5950 1200 50  0001 C CNN
+	1    5950 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L BAT2032:LED D?
+U 1 1 5CF3B213
+P 5950 1650
+F 0 "D?" V 5989 1533 50  0000 R CNN
+F 1 "LED" V 5898 1533 50  0000 R CNN
+F 2 "" H 5950 1650 50  0001 C CNN
+F 3 "~" H 5950 1650 50  0001 C CNN
+	1    5950 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L BAT2032:R R?
+U 1 1 5CF3F4E5
+P 5950 2050
+F 0 "R?" H 6020 2096 50  0000 L CNN
+F 1 "1.2k" H 6020 2005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5880 2050 50  0001 C CNN
+F 3 "~" H 5950 2050 50  0001 C CNN
+	1    5950 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CF3FE34
+P 5950 2350
+F 0 "#PWR?" H 5950 2100 50  0001 C CNN
+F 1 "GND" H 5955 2177 50  0000 C CNN
+F 2 "" H 5950 2350 50  0001 C CNN
+F 3 "" H 5950 2350 50  0001 C CNN
+	1    5950 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1800 5950 1900
+Wire Wire Line
+	5950 2200 5950 2350
+Wire Wire Line
+	5950 3000 5950 3300
+$Comp
+L BAT2032:LED D?
+U 1 1 5D5F584F
+P 5950 3450
+F 0 "D?" V 5989 3333 50  0000 R CNN
+F 1 "LED" V 5898 3333 50  0000 R CNN
+F 2 "" H 5950 3450 50  0001 C CNN
+F 3 "~" H 5950 3450 50  0001 C CNN
+	1    5950 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L BAT2032:R R?
+U 1 1 5D5F5855
+P 5950 3850
+F 0 "R?" H 6020 3896 50  0000 L CNN
+F 1 "1.2k" H 6020 3805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5880 3850 50  0001 C CNN
+F 3 "~" H 5950 3850 50  0001 C CNN
+	1    5950 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D5F585B
+P 5950 4150
+F 0 "#PWR?" H 5950 3900 50  0001 C CNN
+F 1 "GND" H 5955 3977 50  0000 C CNN
+F 2 "" H 5950 4150 50  0001 C CNN
+F 3 "" H 5950 4150 50  0001 C CNN
+	1    5950 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3600 5950 3700
+Wire Wire Line
+	5950 4000 5950 4150
+Text GLabel 5950 3000 0    89   Input ~ 0
+vcc_FPGA
+Wire Wire Line
+	7600 3100 7600 3400
+$Comp
+L BAT2032:LED D?
+U 1 1 5D60A5BF
+P 7600 3550
+F 0 "D?" V 7639 3433 50  0000 R CNN
+F 1 "LED" V 7548 3433 50  0000 R CNN
+F 2 "" H 7600 3550 50  0001 C CNN
+F 3 "~" H 7600 3550 50  0001 C CNN
+	1    7600 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L BAT2032:R R?
+U 1 1 5D60A5C5
+P 7600 3950
+F 0 "R?" H 7670 3996 50  0000 L CNN
+F 1 "1.2k" H 7670 3905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7530 3950 50  0001 C CNN
+F 3 "~" H 7600 3950 50  0001 C CNN
+	1    7600 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D60A5CB
+P 7600 4250
+F 0 "#PWR?" H 7600 4000 50  0001 C CNN
+F 1 "GND" H 7605 4077 50  0000 C CNN
+F 2 "" H 7600 4250 50  0001 C CNN
+F 3 "" H 7600 4250 50  0001 C CNN
+	1    7600 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 3700 7600 3800
+Wire Wire Line
+	7600 4100 7600 4250
+Text GLabel 7600 3100 0    89   Input ~ 0
+vcc_STM32
+$EndSCHEMATC
