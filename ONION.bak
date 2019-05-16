@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -47,7 +47,7 @@ Wire Wire Line
 	3900 1850 3900 2000
 $Comp
 L Device:C C?
-U 0 1 5D451473
+U 1 1 5D451473
 P 4350 1700
 AR Path="/5CD05F2F/5D451473" Ref="C?"  Part="0" 
 AR Path="/5D3DE78E/5D451473" Ref="C?"  Part="0" 
@@ -55,7 +55,7 @@ F 0 "C?" H 4465 1746 50  0000 L CNN
 F 1 "0.1uF" H 4465 1655 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4388 1550 50  0001 C CNN
 F 3 "" H 4350 1700 50  0001 C CNN
-	0    4350 1700
+	1    4350 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -94,7 +94,7 @@ Wire Wire Line
 	4100 2000 3900 2000
 $Comp
 L Device:C C?
-U 0 1 5D44FAD3
+U 1 1 5D44FAD3
 P 3900 1700
 AR Path="/5CD05F2F/5D44FAD3" Ref="C?"  Part="0" 
 AR Path="/5D3DE78E/5D44FAD3" Ref="C?"  Part="0" 
@@ -102,7 +102,7 @@ F 0 "C?" H 4015 1746 50  0000 L CNN
 F 1 "0.1uF" H 4015 1655 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3938 1550 50  0001 C CNN
 F 3 "" H 3900 1700 50  0001 C CNN
-	0    3900 1700
+	1    3900 1700
 	1    0    0    -1  
 $EndComp
 NoConn ~ 5100 2050
@@ -178,32 +178,6 @@ USART_RX
 Text Label 7250 4000 0    50   ~ 0
 USART_TX
 Wire Bus Line
-	2250 5250 2600 5250
-Entry Wire Line
-	2600 5350 2700 5450
-Entry Wire Line
-	2600 5550 2700 5650
-Entry Wire Line
-	2600 5750 2700 5850
-Entry Wire Line
-	2600 5950 2700 6050
-Entry Wire Line
-	2600 6150 2700 6250
-Entry Wire Line
-	2600 6350 2700 6450
-Wire Wire Line
-	2700 5450 3400 5450
-Wire Wire Line
-	2700 5650 3400 5650
-Wire Wire Line
-	2700 5850 3400 5850
-Wire Wire Line
-	2700 6050 3400 6050
-Wire Wire Line
-	2700 6250 3400 6250
-Wire Wire Line
-	2700 6450 3400 6450
-Wire Bus Line
 	6200 4700 6550 4700
 Entry Wire Line
 	6550 4800 6650 4900
@@ -235,32 +209,6 @@ Wire Wire Line
 	4750 6600 5450 6600
 Wire Wire Line
 	4750 6800 5450 6800
-Text Label 2750 5450 0    50   ~ 0
-JTAG0
-Text Label 2750 5650 0    50   ~ 0
-JTAG1
-Text Label 2750 5850 0    50   ~ 0
-JTAG2
-Text Label 2750 6050 0    50   ~ 0
-JTAG3
-Text Label 2750 6250 0    50   ~ 0
-JTAG4
-Text Label 2750 6450 0    50   ~ 0
-JTAG5
-Text HLabel 2250 5250 0    50   BiDi ~ 0
-JTAG[5...0]
-Text Label 3100 5450 0    50   ~ 0
-TMS
-Text Label 3100 5650 0    50   ~ 0
-TCK
-Text Label 3100 5850 0    50   ~ 0
-TDI
-Text Label 3100 6050 0    50   ~ 0
-TDO
-Text Label 3100 6250 0    50   ~ 0
-TRST
-Text Label 3100 6450 0    50   ~ 0
-NRST
 Wire Wire Line
 	4300 2350 3800 2350
 Wire Wire Line
@@ -327,8 +275,6 @@ Text Label 5200 6600 0    50   ~ 0
 SPI_CS
 Text Label 5300 6800 0    50   ~ 0
 RST
-Text HLabel 4300 5800 0    50   BiDi ~ 0
-om_SPI[4...0]
 $Comp
 L BAT2032:R R?
 U 1 1 5CD91C3B
@@ -463,7 +409,7 @@ F 3 "" H 7300 2050 50  0001 C CNN
 $EndComp
 $Comp
 L Device:C C?
-U 0 1 5CD5AB36
+U 1 1 5CD5AB36
 P 7300 1650
 AR Path="/5CD05F2F/5CD5AB36" Ref="C?"  Part="0" 
 AR Path="/5D3DE78E/5CD5AB36" Ref="C?"  Part="0" 
@@ -471,7 +417,7 @@ F 0 "C?" H 7415 1696 50  0000 L CNN
 F 1 "0.1uF" H 7415 1605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7338 1500 50  0001 C CNN
 F 3 "" H 7300 1650 50  0001 C CNN
-	0    7300 1650
+	1    7300 1650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -506,6 +452,72 @@ F 4 "450-1756-1-ND" H 6700 2000 50  0001 C CNN "digikey"
 	1    6700 2000
 	0    1    1    0   
 $EndComp
+Text HLabel 4300 5800 0    50   BiDi ~ 0
+om_SPI[4...0]
+Text Label 2050 6300 0    50   ~ 0
+NRST
+Text Label 2050 6100 0    50   ~ 0
+TRST
+Text Label 2050 5900 0    50   ~ 0
+TDO
+Text Label 2050 5700 0    50   ~ 0
+TDI
+Text Label 2050 5500 0    50   ~ 0
+TCK
+Text Label 2050 5300 0    50   ~ 0
+TMS
+Text HLabel 1200 5100 0    50   BiDi ~ 0
+JTAG[5...0]
+Text Label 1700 6300 0    50   ~ 0
+JTAG5
+Text Label 1700 6100 0    50   ~ 0
+JTAG4
+Text Label 1700 5900 0    50   ~ 0
+JTAG3
+Text Label 1700 5700 0    50   ~ 0
+JTAG2
+Text Label 1700 5500 0    50   ~ 0
+JTAG1
+Text Label 1700 5300 0    50   ~ 0
+JTAG0
+Wire Wire Line
+	1650 6300 2350 6300
+Wire Wire Line
+	1650 6100 2350 6100
+Wire Wire Line
+	1650 5900 2350 5900
+Wire Wire Line
+	1650 5700 2350 5700
+Wire Wire Line
+	1650 5500 2350 5500
+Wire Wire Line
+	1650 5300 2350 5300
+Entry Wire Line
+	1550 6200 1650 6300
+Entry Wire Line
+	1550 6000 1650 6100
+Entry Wire Line
+	1550 5800 1650 5900
+Entry Wire Line
+	1550 5600 1650 5700
+Entry Wire Line
+	1550 5400 1650 5500
+Entry Wire Line
+	1550 5200 1650 5300
+Wire Bus Line
+	1200 5100 1550 5100
+Text HLabel 3800 2450 0    50   Output ~ 0
+JTDO
+Text HLabel 3800 2350 0    50   Output ~ 0
+JTMS
+Text HLabel 3800 2550 0    50   Output ~ 0
+JTRST
+Text HLabel 3800 2650 0    50   Output ~ 0
+JNRST
+Text HLabel 3850 3550 0    50   Output ~ 0
+JTCK
+Text HLabel 3850 3650 0    50   Input ~ 0
+JTDO_OMEGA
 Wire Bus Line
 	6550 4700 6550 5000
 Wire Bus Line
@@ -515,5 +527,5 @@ Wire Bus Line
 Wire Bus Line
 	4650 5800 4650 6700
 Wire Bus Line
-	2600 5250 2600 6350
+	1550 5100 1550 6200
 $EndSCHEMATC
