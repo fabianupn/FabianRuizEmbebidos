@@ -2131,31 +2131,64 @@ $EndComp
 $Comp
 L BAT2032:R R?
 U 0 0 5D6D6AF1
-P 1100 4500
-F 0 "R?" H 1170 4546 50  0000 L CNN
-F 1 "1.8k" V 1100 4400 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1030 4500 50  0001 C CNN
-F 3 "~" H 1100 4500 50  0001 C CNN
-	0    1100 4500
-	0    1    1    0   
+P 900 4750
+F 0 "R?" H 970 4796 50  0000 L CNN
+F 1 "1.8k" V 900 4650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 830 4750 50  0001 C CNN
+F 3 "~" H 900 4750 50  0001 C CNN
+	0    900  4750
+	1    0    0    -1  
 $EndComp
 $Comp
 L hackrf-one-rescue:VCC #PWR?
 U 1 1 5D6A40F6
-P 950 4500
-F 0 "#PWR?" H 950 4350 50  0001 C CNN
-F 1 "VCC" H 968 4673 50  0000 C CNN
-F 2 "" H 950 4500 50  0001 C CNN
-F 3 "" H 950 4500 50  0001 C CNN
-	1    950  4500
-	0    -1   -1   0   
+P 900 4900
+F 0 "#PWR?" H 900 4750 50  0001 C CNN
+F 1 "VCC" H 918 5073 50  0000 C CNN
+F 2 "" H 900 4900 50  0001 C CNN
+F 3 "" H 900 4900 50  0001 C CNN
+	1    900  4900
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	1400 4700 1400 4750
 Wire Wire Line
 	1400 4700 2000 4700
 Wire Wire Line
-	2000 4500 1250 4500
-Wire Wire Line
 	1200 4900 1200 5050
+Wire Bus Line
+	5400 6150 5750 6150
+Entry Wire Line
+	5750 6250 5850 6350
+Entry Wire Line
+	5750 6450 5850 6550
+Wire Wire Line
+	5850 6350 6550 6350
+Wire Wire Line
+	5850 6550 6550 6550
+Text Label 5850 6350 0    50   ~ 0
+I2C_00
+Text Label 5850 6550 0    50   ~ 0
+I2C_01
+Text Label 6250 6350 0    50   ~ 0
+I2C_SCL
+Text Label 6250 6550 0    50   ~ 0
+I2C_SDA
+Text HLabel 5400 6150 0    50   BiDi ~ 0
+I2C_0[1..0]
+Text Label 1600 4600 0    50   ~ 0
+I2C_SCL
+Text Label 1600 4700 0    50   ~ 0
+I2C_SDA
+Text GLabel 750  4500 0    50   Input ~ 0
+INTR
+Wire Wire Line
+	750  4500 900  4500
+Wire Wire Line
+	900  4600 900  4500
+Wire Bus Line
+	5750 6150 5750 6450
+Connection ~ 900  4500
+Wire Wire Line
+	900  4500 2000 4500
 $EndSCHEMATC
