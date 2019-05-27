@@ -157,7 +157,7 @@ P 2250 2550
 AR Path="/5CD05F2F/5CDD70DF" Ref="C?"  Part="1" 
 AR Path="/5CF5B080/5CDD70DF" Ref="C51"  Part="1" 
 F 0 "C51" H 2365 2596 50  0000 L CNN
-F 1 "4.7uF" H 2365 2505 50  0000 L CNN
+F 1 "0.1uF" H 2365 2505 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2288 2400 50  0001 C CNN
 F 3 "~" H 2250 2550 50  0001 C CNN
 	1    2250 2550
@@ -170,7 +170,7 @@ P 1350 2550
 AR Path="/5CD05F2F/5CDD70E5" Ref="C?"  Part="1" 
 AR Path="/5CF5B080/5CDD70E5" Ref="C45"  Part="1" 
 F 0 "C45" H 1465 2596 50  0000 L CNN
-F 1 "1uF" H 1465 2505 50  0000 L CNN
+F 1 "0.1uF" H 1465 2505 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1388 2400 50  0001 C CNN
 F 3 "~" H 1350 2550 50  0001 C CNN
 	1    1350 2550
@@ -397,12 +397,12 @@ $EndComp
 $Comp
 L power:GND #PWR0149
 U 1 1 5CDF86F4
-P 3150 3600
-F 0 "#PWR0149" H 3150 3350 50  0001 C CNN
-F 1 "GND" H 3155 3427 50  0000 C CNN
-F 2 "" H 3150 3600 50  0001 C CNN
-F 3 "" H 3150 3600 50  0001 C CNN
-	1    3150 3600
+P 3150 3550
+F 0 "#PWR0149" H 3150 3300 50  0001 C CNN
+F 1 "GND" H 3155 3377 50  0000 C CNN
+F 2 "" H 3150 3550 50  0001 C CNN
+F 3 "" H 3150 3550 50  0001 C CNN
+	1    3150 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -578,8 +578,6 @@ Wire Wire Line
 	2550 3000 3150 3000
 Wire Wire Line
 	3150 3000 3150 3250
-Wire Wire Line
-	3150 3250 3150 3300
 $Comp
 L Device:C C?
 U 1 1 5CE46B17
@@ -591,18 +589,6 @@ F 1 "0.1uF" H 1465 4355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1388 4250 50  0001 C CNN
 F 3 "" H 1350 4400 50  0001 C CNN
 	1    1350 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L pcb_edu-cache:lx9_XC6SLX9-TQ144 U10
-U 1 1 5CE650EB
-P 11150 7150
-F 0 "U10" H 11050 9500 60  0000 C CNN
-F 1 "lx9_XC6SLX9-TQ144" H 12300 3950 60  0000 C CNN
-F 2 "Package_QFP:LQFP-144_20x20mm_P0.5mm" H 11150 7150 50  0001 C CNN
-F 3 "https://www.xilinx.com/support/documentation/data_sheets/ds162.pdf" H 11150 7150 50  0001 C CNN
-F 4 "122-1745-ND" H 11150 7150 50  0001 C CNN "digiker"
-	1    11150 7150
 	1    0    0    -1  
 $EndComp
 Text GLabel 2250 3900 0    89   Input ~ 0
@@ -760,7 +746,7 @@ $EndComp
 Wire Wire Line
 	17300 3650 17300 4050
 $Comp
-L pcb_edu-cache:Oscillator_ASE-xxxMHz X1
+L power-rescue:Oscillator_ASE-xxxMHz-pcb_edu-cache X1
 U 1 1 5CEDDE3C
 P 18150 3550
 F 0 "X1" H 18250 3800 50  0000 L CNN
@@ -1071,41 +1057,6 @@ Text Label 8950 9550 0    50   ~ 0
 FSW_1
 Text Label 8950 9650 0    50   ~ 0
 FSW_2
-Wire Wire Line
-	11750 10550 11650 10550
-Connection ~ 10650 10550
-Wire Wire Line
-	10650 10550 10550 10550
-Connection ~ 10750 10550
-Wire Wire Line
-	10750 10550 10650 10550
-Connection ~ 10850 10550
-Wire Wire Line
-	10850 10550 10750 10550
-Connection ~ 10950 10550
-Wire Wire Line
-	10950 10550 10850 10550
-Connection ~ 11050 10550
-Wire Wire Line
-	11050 10550 10950 10550
-Connection ~ 11150 10550
-Wire Wire Line
-	11150 10550 11100 10550
-Connection ~ 11250 10550
-Wire Wire Line
-	11250 10550 11150 10550
-Connection ~ 11350 10550
-Wire Wire Line
-	11350 10550 11250 10550
-Connection ~ 11450 10550
-Wire Wire Line
-	11450 10550 11350 10550
-Connection ~ 11550 10550
-Wire Wire Line
-	11550 10550 11450 10550
-Connection ~ 11650 10550
-Wire Wire Line
-	11650 10550 11550 10550
 $Comp
 L power:GND #PWR0155
 U 1 1 5D24C2F3
@@ -1120,8 +1071,6 @@ $EndComp
 Wire Wire Line
 	11100 10750 11100 10550
 Connection ~ 11100 10550
-Wire Wire Line
-	11100 10550 11050 10550
 Wire Notes Line
 	15300 6100 15300 11300
 Wire Notes Line
@@ -1133,391 +1082,61 @@ Wire Notes Line
 Text Notes 3850 12050 0    129  ~ 0
 connector GPIO
 Wire Wire Line
-	2400 13050 2900 13050
+	2750 13400 2350 13400
 Wire Wire Line
-	2400 13150 2900 13150
-$Comp
-L power:GND #PWR0156
-U 1 1 5D3019F4
-P 2400 13050
-F 0 "#PWR0156" H 2400 12800 50  0001 C CNN
-F 1 "GND" V 2405 12922 50  0000 R CNN
-F 2 "" H 2400 13050 50  0001 C CNN
-F 3 "" H 2400 13050 50  0001 C CNN
-	1    2400 13050
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5D310439
-P 2900 13150
-AR Path="/5CD17BDC/5D310439" Ref="#PWR?"  Part="1" 
-AR Path="/5CF5B080/5D310439" Ref="#PWR0157"  Part="1" 
-F 0 "#PWR0157" H 2900 13000 50  0001 C CNN
-F 1 "+3V3" V 2900 13350 50  0000 C CNN
-F 2 "" H 2900 13150 50  0001 C CNN
-F 3 "" H 2900 13150 50  0001 C CNN
-	1    2900 13150
-	0    1    1    0   
-$EndComp
-$Comp
-L BAT2032:R R?
-U 1 1 5D343CD4
-P 3250 12750
-AR Path="/5D3DE78E/5D343CD4" Ref="R?"  Part="1" 
-AR Path="/5CF5B080/5D343CD4" Ref="R20"  Part="1" 
-F 0 "R20" V 3200 12550 50  0000 C CNN
-F 1 "200" V 3250 12750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3180 12750 50  0001 C CNN
-F 3 "~" H 3250 12750 50  0001 C CNN
-	1    3250 12750
-	0    1    1    0   
-$EndComp
-$Comp
-L BAT2032:R R?
-U 1 1 5D3500AD
-P 3250 12850
-AR Path="/5D3DE78E/5D3500AD" Ref="R?"  Part="1" 
-AR Path="/5CF5B080/5D3500AD" Ref="R21"  Part="1" 
-F 0 "R21" V 3200 12650 50  0000 C CNN
-F 1 "200" V 3250 12850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3180 12850 50  0001 C CNN
-F 3 "~" H 3250 12850 50  0001 C CNN
-	1    3250 12850
-	0    1    1    0   
-$EndComp
-$Comp
-L BAT2032:R R?
-U 1 1 5D36860B
-P 3250 12950
-AR Path="/5D3DE78E/5D36860B" Ref="R?"  Part="1" 
-AR Path="/5CF5B080/5D36860B" Ref="R22"  Part="1" 
-F 0 "R22" V 3200 12750 50  0000 C CNN
-F 1 "200" V 3250 12950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3180 12950 50  0001 C CNN
-F 3 "~" H 3250 12950 50  0001 C CNN
-	1    3250 12950
-	0    1    1    0   
-$EndComp
+	2750 13600 2350 13600
 Wire Wire Line
-	3100 12750 2900 12750
-$Comp
-L BAT2032:R R?
-U 1 1 5D3B6AAA
-P 3250 12650
-AR Path="/5D3DE78E/5D3B6AAA" Ref="R?"  Part="1" 
-AR Path="/5CF5B080/5D3B6AAA" Ref="R19"  Part="1" 
-F 0 "R19" V 3200 12450 50  0000 C CNN
-F 1 "200" V 3250 12650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3180 12650 50  0001 C CNN
-F 3 "~" H 3250 12650 50  0001 C CNN
-	1    3250 12650
-	0    1    1    0   
-$EndComp
+	2750 13100 2350 13100
 Wire Wire Line
-	3100 12650 2900 12650
+	2750 13300 2350 13300
 Wire Wire Line
-	3100 12850 2900 12850
+	2750 13500 2350 13500
 Wire Wire Line
-	3100 12950 2900 12950
-Wire Wire Line
-	3400 12650 3800 12650
-Wire Wire Line
-	3400 12750 3800 12750
-Wire Wire Line
-	3400 12850 3800 12850
-Wire Wire Line
-	3400 12950 3800 12950
-$Comp
-L BAT2032:R R?
-U 1 1 5D42FE68
-P 2050 12850
-AR Path="/5D3DE78E/5D42FE68" Ref="R?"  Part="1" 
-AR Path="/5CF5B080/5D42FE68" Ref="R17"  Part="1" 
-F 0 "R17" V 2100 12650 50  0000 C CNN
-F 1 "200" V 2050 12850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1980 12850 50  0001 C CNN
-F 3 "~" H 2050 12850 50  0001 C CNN
-	1    2050 12850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L BAT2032:R R?
-U 1 1 5D42FE6E
-P 2050 12750
-AR Path="/5D3DE78E/5D42FE6E" Ref="R?"  Part="1" 
-AR Path="/5CF5B080/5D42FE6E" Ref="R16"  Part="1" 
-F 0 "R16" V 2100 12550 50  0000 C CNN
-F 1 "200" V 2050 12750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1980 12750 50  0001 C CNN
-F 3 "~" H 2050 12750 50  0001 C CNN
-	1    2050 12750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L BAT2032:R R?
-U 1 1 5D42FE74
-P 2050 12650
-AR Path="/5D3DE78E/5D42FE74" Ref="R?"  Part="1" 
-AR Path="/5CF5B080/5D42FE74" Ref="R15"  Part="1" 
-F 0 "R15" V 2100 12450 50  0000 C CNN
-F 1 "200" V 2050 12650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1980 12650 50  0001 C CNN
-F 3 "~" H 2050 12650 50  0001 C CNN
-	1    2050 12650
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2200 12850 2400 12850
-$Comp
-L BAT2032:R R?
-U 1 1 5D42FE7B
-P 2050 12950
-AR Path="/5D3DE78E/5D42FE7B" Ref="R?"  Part="1" 
-AR Path="/5CF5B080/5D42FE7B" Ref="R18"  Part="1" 
-F 0 "R18" V 2100 12750 50  0000 C CNN
-F 1 "200" V 2050 12950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1980 12950 50  0001 C CNN
-F 3 "~" H 2050 12950 50  0001 C CNN
-	1    2050 12950
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2200 12950 2400 12950
-Wire Wire Line
-	2200 12750 2400 12750
-Wire Wire Line
-	2200 12650 2400 12650
-Wire Wire Line
-	1900 12650 1500 12650
-Wire Wire Line
-	1900 12750 1500 12750
-Wire Wire Line
-	1900 12850 1500 12850
-Wire Wire Line
-	1900 12950 1500 12950
-Text Label 1550 12650 0    50   ~ 0
+	2750 13700 2350 13700
+Text Label 2350 13100 0    50   ~ 0
 FGPIO0
-Text Label 1550 12750 0    50   ~ 0
+Text Label 2350 13300 0    50   ~ 0
 FGPIO2
-Text Label 1550 12850 0    50   ~ 0
+Text Label 2350 13500 0    50   ~ 0
 FGPIO4
-Text Label 1550 12950 0    50   ~ 0
+Text Label 2350 13700 0    50   ~ 0
 FGPIO6
-Text Label 3550 12650 0    50   ~ 0
-FGPIO1
-Text Label 3550 12750 0    50   ~ 0
+Text Label 2600 13400 2    50   ~ 0
 FGPIO3
-Text Label 3550 12850 0    50   ~ 0
+Text Label 2600 13600 2    50   ~ 0
 FGPIO5
-Text Label 3550 12950 0    50   ~ 0
-FGPIO7
-$Comp
-L Connector_Generic:Conn_02x06_Counter_Clockwise J6
-U 1 1 5D4A440D
-P 5900 12900
-F 0 "J6" H 5950 13317 50  0000 C CNN
-F 1 "Conn_02x06" H 5950 13226 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 5900 12900 50  0001 C CNN
-F 3 "~" H 5900 12900 50  0001 C CNN
-	1    5900 12900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5700 13100 6200 13100
+	3250 13200 3650 13200
 Wire Wire Line
-	5700 13200 6200 13200
-$Comp
-L power:GND #PWR0158
-U 1 1 5D4A4415
-P 5700 13100
-F 0 "#PWR0158" H 5700 12850 50  0001 C CNN
-F 1 "GND" V 5705 12972 50  0000 R CNN
-F 2 "" H 5700 13100 50  0001 C CNN
-F 3 "" H 5700 13100 50  0001 C CNN
-	1    5700 13100
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5D4A441B
-P 6200 13200
-AR Path="/5CD17BDC/5D4A441B" Ref="#PWR?"  Part="1" 
-AR Path="/5CF5B080/5D4A441B" Ref="#PWR0159"  Part="1" 
-F 0 "#PWR0159" H 6200 13050 50  0001 C CNN
-F 1 "+3V3" V 6200 13400 50  0000 C CNN
-F 2 "" H 6200 13200 50  0001 C CNN
-F 3 "" H 6200 13200 50  0001 C CNN
-	1    6200 13200
-	0    1    1    0   
-$EndComp
-Connection ~ 6200 13200
-Connection ~ 5700 13100
-$Comp
-L BAT2032:R R?
-U 1 1 5D4A4423
-P 6550 12800
-AR Path="/5D3DE78E/5D4A4423" Ref="R?"  Part="1" 
-AR Path="/5CF5B080/5D4A4423" Ref="R28"  Part="1" 
-F 0 "R28" V 6500 12600 50  0000 C CNN
-F 1 "200" V 6550 12800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6480 12800 50  0001 C CNN
-F 3 "~" H 6550 12800 50  0001 C CNN
-	1    6550 12800
-	0    1    1    0   
-$EndComp
-$Comp
-L BAT2032:R R?
-U 1 1 5D4A4429
-P 6550 12900
-AR Path="/5D3DE78E/5D4A4429" Ref="R?"  Part="1" 
-AR Path="/5CF5B080/5D4A4429" Ref="R29"  Part="1" 
-F 0 "R29" V 6500 12700 50  0000 C CNN
-F 1 "200" V 6550 12900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6480 12900 50  0001 C CNN
-F 3 "~" H 6550 12900 50  0001 C CNN
-	1    6550 12900
-	0    1    1    0   
-$EndComp
-$Comp
-L BAT2032:R R?
-U 1 1 5D4A442F
-P 6550 13000
-AR Path="/5D3DE78E/5D4A442F" Ref="R?"  Part="1" 
-AR Path="/5CF5B080/5D4A442F" Ref="R30"  Part="1" 
-F 0 "R30" V 6500 12800 50  0000 C CNN
-F 1 "200" V 6550 13000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6480 13000 50  0001 C CNN
-F 3 "~" H 6550 13000 50  0001 C CNN
-	1    6550 13000
-	0    1    1    0   
-$EndComp
+	3250 13400 3650 13400
 Wire Wire Line
-	6400 12800 6200 12800
-$Comp
-L BAT2032:R R?
-U 1 1 5D4A4436
-P 6550 12700
-AR Path="/5D3DE78E/5D4A4436" Ref="R?"  Part="1" 
-AR Path="/5CF5B080/5D4A4436" Ref="R27"  Part="1" 
-F 0 "R27" V 6500 12500 50  0000 C CNN
-F 1 "200" V 6550 12700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6480 12700 50  0001 C CNN
-F 3 "~" H 6550 12700 50  0001 C CNN
-	1    6550 12700
-	0    1    1    0   
-$EndComp
+	3250 13600 3650 13600
 Wire Wire Line
-	6400 12700 6200 12700
+	3250 13800 3650 13800
 Wire Wire Line
-	6400 12900 6200 12900
+	3650 13100 3250 13100
 Wire Wire Line
-	6400 13000 6200 13000
+	3650 13300 3250 13300
 Wire Wire Line
-	6700 12700 7100 12700
+	3650 13500 3250 13500
 Wire Wire Line
-	6700 12800 7100 12800
-Wire Wire Line
-	6700 12900 7100 12900
-Wire Wire Line
-	6700 13000 7100 13000
-$Comp
-L BAT2032:R R?
-U 1 1 5D4A4443
-P 5350 12900
-AR Path="/5D3DE78E/5D4A4443" Ref="R?"  Part="1" 
-AR Path="/5CF5B080/5D4A4443" Ref="R25"  Part="1" 
-F 0 "R25" V 5400 12700 50  0000 C CNN
-F 1 "200" V 5350 12900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5280 12900 50  0001 C CNN
-F 3 "~" H 5350 12900 50  0001 C CNN
-	1    5350 12900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L BAT2032:R R?
-U 1 1 5D4A4449
-P 5350 12800
-AR Path="/5D3DE78E/5D4A4449" Ref="R?"  Part="1" 
-AR Path="/5CF5B080/5D4A4449" Ref="R24"  Part="1" 
-F 0 "R24" V 5400 12600 50  0000 C CNN
-F 1 "200" V 5350 12800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5280 12800 50  0001 C CNN
-F 3 "~" H 5350 12800 50  0001 C CNN
-	1    5350 12800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L BAT2032:R R?
-U 1 1 5D4A444F
-P 5350 12700
-AR Path="/5D3DE78E/5D4A444F" Ref="R?"  Part="1" 
-AR Path="/5CF5B080/5D4A444F" Ref="R23"  Part="1" 
-F 0 "R23" V 5400 12500 50  0000 C CNN
-F 1 "200" V 5350 12700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5280 12700 50  0001 C CNN
-F 3 "~" H 5350 12700 50  0001 C CNN
-	1    5350 12700
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5500 12900 5700 12900
-$Comp
-L BAT2032:R R?
-U 1 1 5D4A4456
-P 5350 13000
-AR Path="/5D3DE78E/5D4A4456" Ref="R?"  Part="1" 
-AR Path="/5CF5B080/5D4A4456" Ref="R26"  Part="1" 
-F 0 "R26" V 5400 12800 50  0000 C CNN
-F 1 "200" V 5350 13000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5280 13000 50  0001 C CNN
-F 3 "~" H 5350 13000 50  0001 C CNN
-	1    5350 13000
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5500 13000 5700 13000
-Wire Wire Line
-	5500 12800 5700 12800
-Wire Wire Line
-	5500 12700 5700 12700
-Wire Wire Line
-	5200 12700 4800 12700
-Wire Wire Line
-	5200 12800 4800 12800
-Wire Wire Line
-	5200 12900 4800 12900
-Wire Wire Line
-	5200 13000 4800 13000
-Text Label 4850 12700 0    50   ~ 0
+	3650 13700 3250 13700
+Text Label 3350 13100 0    50   ~ 0
 FGPIO8
-Text Label 4850 12800 0    50   ~ 0
+Text Label 3350 13300 0    50   ~ 0
 FGPIO10
-Text Label 4850 12900 0    50   ~ 0
+Text Label 3350 13500 0    50   ~ 0
 FGPIO12
-Text Label 4850 13000 0    50   ~ 0
+Text Label 3350 13700 0    50   ~ 0
 FGPIO14
-Text Label 6850 12700 0    50   ~ 0
+Text Label 3350 13200 0    50   ~ 0
 FGPIO9
-Text Label 6850 12800 0    50   ~ 0
+Text Label 3350 13400 0    50   ~ 0
 FGPIO11
-Text Label 6850 12900 0    50   ~ 0
+Text Label 3350 13600 0    50   ~ 0
 FGPIO13
-Text Label 6850 13000 0    50   ~ 0
+Text Label 3350 13800 0    50   ~ 0
 FGPIO15
-$Comp
-L Connector_Generic:Conn_02x06_Odd_Even J5
-U 1 1 5D52B390
-P 2600 12850
-F 0 "J5" H 2650 13267 50  0000 C CNN
-F 1 "Conn_02x06_Odd_Even" H 2650 13176 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 2600 12850 50  0001 C CNN
-F 3 "~" H 2600 12850 50  0001 C CNN
-	1    2600 12850
-	1    0    0    -1  
-$EndComp
-Connection ~ 2900 13150
-Connection ~ 2400 13050
 Wire Notes Line
 	1300 12150 7750 12150
 Wire Notes Line
@@ -1546,8 +1165,6 @@ Text Label 10150 12350 0    50   ~ 0
 I2C_SCL
 Text Label 10150 12550 0    50   ~ 0
 I2C_SDA
-Text HLabel 9300 12150 0    50   BiDi ~ 0
-I2C_0[1..0]
 Wire Wire Line
 	12950 5150 13450 5150
 Wire Wire Line
@@ -1644,14 +1261,10 @@ Wire Wire Line
 	13450 7550 12950 7550
 Wire Wire Line
 	13450 7850 12950 7850
-Wire Wire Line
-	13450 7950 12950 7950
 Text Label 13050 7550 0    50   ~ 0
 MEN_CE
 Text Label 13050 7850 0    50   ~ 0
 MEN_OE
-Text Label 13050 7950 0    50   ~ 0
-MEN_WE
 Wire Wire Line
 	12950 7650 13450 7650
 Wire Wire Line
@@ -1660,52 +1273,14 @@ Text Label 13050 7650 0    50   ~ 0
 FMC_BLO
 Text Label 13050 7750 0    50   ~ 0
 FMC_BL1
-Wire Bus Line
-	14350 7500 14450 7500
-Entry Wire Line
-	14450 7550 14550 7650
-Entry Wire Line
-	14450 7650 14550 7750
-Entry Wire Line
-	14450 7750 14550 7850
-Entry Wire Line
-	14450 7850 14550 7950
-Entry Wire Line
-	14450 7950 14550 8050
 Text Label 13050 8250 0    50   ~ 0
 FMC_NWE
 Text Label 13050 8150 0    50   ~ 0
 FMC_NOE
-Text Label 13050 8050 0    50   ~ 0
-FMC_CLK
-Wire Wire Line
-	12950 8050 13450 8050
 Wire Wire Line
 	12950 8150 13450 8150
 Wire Wire Line
 	12950 8250 13450 8250
-Wire Wire Line
-	15050 7650 14550 7650
-Text Label 14650 7650 0    50   ~ 0
-MEN_WE
-Text Label 14650 7850 0    50   ~ 0
-FMC_NOE
-Text Label 14650 7750 0    50   ~ 0
-FMC_CLK
-Wire Wire Line
-	14550 7750 15050 7750
-Wire Wire Line
-	14550 7850 15050 7850
-Wire Wire Line
-	14550 7950 15050 7950
-Wire Wire Line
-	14550 8050 15050 8050
-Text Label 14650 7950 0    50   ~ 0
-FMC_BLO
-Text Label 14650 8050 0    50   ~ 0
-FMC_BL1
-Text HLabel 14350 7500 0    50   Input ~ 0
-FMC_CONTROL
 Text GLabel 14800 1950 0    89   Input ~ 0
 vcc_core_FPGA
 Wire Wire Line
@@ -1809,7 +1384,7 @@ U 1 1 5D387941
 P 14350 3550
 F 0 "D10" V 14389 3433 50  0000 R CNN
 F 1 "LED" V 14298 3433 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 14350 3550 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 14350 3550 50  0001 C CNN
 F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-222/LTST-C191KFKT.pdf" H 14350 3550 50  0001 C CNN
 F 4 "160-1445-1-ND  Naranja" V 14350 3550 50  0001 C CNN "digikey"
 	1    14350 3550
@@ -2008,8 +1583,6 @@ Text Label 12000 13850 0    50   ~ 0
 FMC_D15
 Text Label 12000 13750 0    50   ~ 0
 FMC_D14
-Text HLabel 11550 12200 0    50   BiDi ~ 0
-FMC_D[15...0]
 Wire Bus Line
 	13300 12150 13600 12150
 Entry Wire Line
@@ -2060,8 +1633,6 @@ Text Label 13750 12900 0    50   ~ 0
 FMC_A6
 Text Label 13750 13000 0    50   ~ 0
 FMC_A7
-Text HLabel 13300 12150 0    50   BiDi ~ 0
-FMC_A[7...0]
 Wire Wire Line
 	12950 5450 13350 5450
 Wire Wire Line
@@ -2118,14 +1689,16 @@ Text Label 13000 6850 0    50   ~ 0
 FMC_D15
 Text Label 13000 6750 0    50   ~ 0
 FMC_D14
-Text Label 13000 8450 0    50   ~ 0
+Text Label 8900 8150 0    50   ~ 0
 FMC_D3
-Text Label 13000 8350 0    50   ~ 0
+Text Label 8900 8050 0    50   ~ 0
 FMC_D2
 Wire Wire Line
-	12950 8450 13350 8450
+	8850 8150 9250 8150
 Wire Wire Line
-	12950 8350 13350 8350
+	8850 8050 9250 8050
+Wire Wire Line
+	8850 4850 9250 4850
 Wire Wire Line
 	8850 4950 9250 4950
 Wire Wire Line
@@ -2137,22 +1710,20 @@ Wire Wire Line
 Wire Wire Line
 	8850 5350 9250 5350
 Wire Wire Line
-	8850 5450 9250 5450
-Wire Wire Line
 	8850 7750 9250 7750
 Wire Wire Line
 	8850 7850 9250 7850
-Text Label 8900 4950 0    50   ~ 0
+Text Label 8900 4850 0    50   ~ 0
 FMC_A0
-Text Label 8900 5050 0    50   ~ 0
+Text Label 8900 4950 0    50   ~ 0
 FMC_A1
-Text Label 8900 5150 0    50   ~ 0
+Text Label 8900 5050 0    50   ~ 0
 FMC_A2
-Text Label 8900 5250 0    50   ~ 0
+Text Label 8900 5150 0    50   ~ 0
 FMC_A3
-Text Label 8900 5350 0    50   ~ 0
+Text Label 8900 5250 0    50   ~ 0
 FMC_A4
-Text Label 8900 5450 0    50   ~ 0
+Text Label 8900 5350 0    50   ~ 0
 FMC_A5
 Text Label 8900 7750 0    50   ~ 0
 FMC_A6
@@ -2166,7 +1737,7 @@ AR Path="/5CD17BDC/5DA7B6B1" Ref="D?"  Part="1"
 AR Path="/5CF5B080/5DA7B6B1" Ref="D6"  Part="1" 
 F 0 "D6" H 9150 9200 50  0000 R CNN
 F 1 "LED" H 9000 9200 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 8800 9150 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8800 9150 50  0001 C CNN
 F 3 "http://optoelectronics.liteon.com/upload/download/DS-22-99-0151/LTST-C190KRKT.pdf" H 8800 9150 50  0001 C CNN
 F 4 "160-1436-1-ND     rojo" V 8800 9150 50  0001 C CNN "digikey"
 	1    8800 9150
@@ -2213,7 +1784,7 @@ AR Path="/5CD17BDC/5E0AAA86" Ref="D?"  Part="1"
 AR Path="/5CF5B080/5E0AAA86" Ref="D7"  Part="1" 
 F 0 "D7" H 9150 9300 50  0000 R CNN
 F 1 "LED" H 9000 9300 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 8800 9250 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8800 9250 50  0001 C CNN
 F 3 "http://optoelectronics.liteon.com/upload/download/DS-22-99-0151/LTST-C190KRKT.pdf" H 8800 9250 50  0001 C CNN
 F 4 "160-1436-1-ND     rojo" V 8800 9250 50  0001 C CNN "digikey"
 	1    8800 9250
@@ -2260,7 +1831,7 @@ AR Path="/5CD17BDC/5E0DF18E" Ref="D?"  Part="1"
 AR Path="/5CF5B080/5E0DF18E" Ref="D8"  Part="1" 
 F 0 "D8" H 9150 9400 50  0000 R CNN
 F 1 "LED" H 9000 9400 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 8800 9350 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8800 9350 50  0001 C CNN
 F 3 "http://optoelectronics.liteon.com/upload/download/DS-22-99-0151/LTST-C190KRKT.pdf" H 8800 9350 50  0001 C CNN
 F 4 "160-1436-1-ND     rojo" V 8800 9350 50  0001 C CNN "digikey"
 	1    8800 9350
@@ -2307,7 +1878,7 @@ AR Path="/5CD17BDC/5E11477F" Ref="D?"  Part="1"
 AR Path="/5CF5B080/5E11477F" Ref="D9"  Part="1" 
 F 0 "D9" H 9150 9500 50  0000 R CNN
 F 1 "LED" H 9000 9500 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 8800 9450 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8800 9450 50  0001 C CNN
 F 3 "http://optoelectronics.liteon.com/upload/download/DS-22-99-0151/LTST-C190KRKT.pdf" H 8800 9450 50  0001 C CNN
 F 4 "160-1436-1-ND     rojo" V 8800 9450 50  0001 C CNN "digikey"
 	1    8800 9450
@@ -2346,12 +1917,6 @@ Wire Wire Line
 	8650 9450 8550 9450
 Wire Wire Line
 	8250 9450 8100 9450
-Entry Wire Line
-	14450 8050 14550 8150
-Wire Wire Line
-	14550 8150 15050 8150
-Text Label 14650 8150 0    50   ~ 0
-FMC_N_DOUT
 Text Label 8700 7550 0    50   ~ 0
 FMC_N_DOUT
 Wire Wire Line
@@ -2360,25 +1925,25 @@ Wire Wire Line
 	12950 6050 13600 6050
 Text Label 13200 6050 0    50   ~ 0
 CLK80MHz
-Text GLabel 9250 6450 0    50   Input ~ 0
-adDD9
 Text GLabel 9250 6350 0    50   Input ~ 0
-adDD8
+adDD9
 Text GLabel 9250 6250 0    50   Input ~ 0
-adDD7
+adDD8
 Text GLabel 9250 6150 0    50   Input ~ 0
-adDD6
+adDD7
 Text GLabel 9250 6050 0    50   Input ~ 0
-adDD5
+adDD6
 Text GLabel 9250 5950 0    50   Input ~ 0
-adDD4
+adDD5
 Text GLabel 9250 5850 0    50   Input ~ 0
-adDD3
+adDD4
 Text GLabel 9250 5750 0    50   Input ~ 0
-adDD2
+adDD3
 Text GLabel 9250 5650 0    50   Input ~ 0
-adDD1
+adDD2
 Text GLabel 9250 5550 0    50   Input ~ 0
+adDD1
+Text GLabel 9250 5450 0    50   Input ~ 0
 adDD0
 Text GLabel 9250 7350 0    50   Input ~ 0
 adDA7
@@ -2459,31 +2024,278 @@ FGPIO12
 Text Label 13000 7250 0    50   ~ 0
 FGPIO14
 Wire Wire Line
-	9250 8150 8850 8150
+	9250 9850 8850 9850
 Wire Wire Line
-	9250 8050 8850 8050
+	9250 9750 8850 9750
 Wire Wire Line
 	9250 7950 8850 7950
 Wire Wire Line
 	9250 7650 8850 7650
-Text Label 9100 8150 2    50   ~ 0
+Text Label 9200 9850 2    50   ~ 0
 FGPIO9
-Text Label 9100 8050 2    50   ~ 0
+Text Label 9200 9750 2    50   ~ 0
 FGPIO11
 Text Label 9100 7950 2    50   ~ 0
 FGPIO13
 Text Label 9050 7650 2    50   ~ 0
 FGPIO15
 NoConn ~ 12950 7350
-NoConn ~ 9250 9750
-NoConn ~ 9250 9850
-NoConn ~ 9250 6550
 NoConn ~ 9250 4650
-NoConn ~ 9250 4850
+Wire Bus Line
+	14300 8350 14400 8350
+Entry Wire Line
+	14400 8400 14500 8500
+Entry Wire Line
+	14400 8500 14500 8600
+Entry Wire Line
+	14400 8600 14500 8700
+Entry Wire Line
+	14400 8700 14500 8800
+Entry Wire Line
+	14400 8800 14500 8900
+Wire Wire Line
+	15000 8500 14500 8500
+Text Label 14600 8500 0    50   ~ 0
+FMC_NWE
+Text Label 14600 8700 0    50   ~ 0
+FMC_NOE
+Text Label 14600 8600 0    50   ~ 0
+FMC_CLK
+Wire Wire Line
+	14500 8600 15000 8600
+Wire Wire Line
+	14500 8700 15000 8700
+Wire Wire Line
+	14500 8800 15000 8800
+Wire Wire Line
+	14500 8900 15000 8900
+Text Label 14600 8800 0    50   ~ 0
+FMC_BLO
+Text Label 14600 8900 0    50   ~ 0
+FMC_BL1
+Entry Wire Line
+	14400 8900 14500 9000
+Wire Wire Line
+	14500 9000 15000 9000
+Text Label 14600 9000 0    50   ~ 0
+FMC_N_DOUT
+Entry Wire Line
+	14400 9000 14500 9100
+Entry Wire Line
+	14400 9100 14500 9200
+Wire Wire Line
+	14500 9100 15000 9100
+Text Label 14600 9100 0    50   ~ 0
+FMC_NWAIT
+Wire Wire Line
+	14500 9200 15000 9200
+Text Label 14600 9200 0    50   ~ 0
+FMC_NE1
+Text GLabel 14300 8350 0    50   Input ~ 0
+FMC_[0..7]
+Wire Wire Line
+	12950 8350 13450 8350
+Text Label 13050 8350 0    50   ~ 0
+FMC_NWAIT
+Wire Wire Line
+	12950 8450 13450 8450
+Text Label 13050 8450 0    50   ~ 0
+FMC_NE1
+Connection ~ 11350 10550
+Wire Wire Line
+	11350 10550 11250 10550
+Connection ~ 11250 10550
+Wire Wire Line
+	11250 10550 11150 10550
+Wire Wire Line
+	11150 10550 11100 10550
+Connection ~ 11150 10550
+Wire Wire Line
+	11100 10550 11050 10550
+Connection ~ 11050 10550
+Wire Wire Line
+	11050 10550 10950 10550
+Connection ~ 10950 10550
+Wire Wire Line
+	10950 10550 10850 10550
+Connection ~ 10850 10550
+Wire Wire Line
+	10850 10550 10750 10550
+Connection ~ 10750 10550
+Wire Wire Line
+	11750 10550 11650 10550
+Connection ~ 11650 10550
+Wire Wire Line
+	10750 10550 10650 10550
+Wire Wire Line
+	10650 10550 10550 10550
+Connection ~ 10650 10550
+Wire Wire Line
+	11650 10550 11550 10550
+Connection ~ 11550 10550
+Wire Wire Line
+	11550 10550 11450 10550
+Wire Wire Line
+	11450 10550 11350 10550
+Connection ~ 11450 10550
+$Comp
+L power-rescue:lx9_XC6SLX9-TQ144-pcb_edu-cache U10
+U 1 1 5CE650EB
+P 11150 7150
+F 0 "U10" H 11050 9500 60  0000 C CNN
+F 1 "lx9_XC6SLX9-TQ144" H 12300 3950 60  0000 C CNN
+F 2 "Package_QFP:LQFP-144_20x20mm_P0.5mm" H 11150 7150 50  0001 C CNN
+F 3 "https://www.xilinx.com/support/documentation/data_sheets/ds162.pdf" H 11150 7150 50  0001 C CNN
+F 4 "122-1745-ND" H 11150 7150 50  0001 C CNN "digiker"
+	1    11150 7150
+	1    0    0    -1  
+$EndComp
+Text Label 13050 7950 0    50   ~ 0
+FMC_NWE
+Wire Wire Line
+	13450 7950 12950 7950
+Wire Wire Line
+	12950 8050 13450 8050
+Text Label 13050 8050 0    50   ~ 0
+FMC_CLK
+Text GLabel 13300 12150 0    50   Input ~ 0
+FMC_A[0..7]
+Text GLabel 11550 12200 0    50   Input ~ 0
+FMC_D[0..15]
+Text GLabel 9300 12150 0    50   Input ~ 0
+I2C_0[0..1]
+Text Label 16400 14700 0    50   ~ 0
+NRST
+Text Label 16400 14500 0    50   ~ 0
+TRST
+Text Label 16400 14300 0    50   ~ 0
+TDO
+Text Label 16400 14100 0    50   ~ 0
+TDI
+Text Label 16400 13900 0    50   ~ 0
+TCK
+Text Label 16400 13700 0    50   ~ 0
+TMS
+Text Label 16050 14700 0    50   ~ 0
+JTAG5
+Text Label 16050 14500 0    50   ~ 0
+JTAG4
+Text Label 16050 14300 0    50   ~ 0
+JTAG3
+Text Label 16050 14100 0    50   ~ 0
+JTAG2
+Text Label 16050 13900 0    50   ~ 0
+JTAG1
+Text Label 16050 13700 0    50   ~ 0
+JTAG0
+Wire Wire Line
+	16000 14700 16700 14700
+Wire Wire Line
+	16000 14500 16700 14500
+Wire Wire Line
+	16000 14300 16700 14300
+Wire Wire Line
+	16000 14100 16700 14100
+Wire Wire Line
+	16000 13900 16700 13900
+Wire Wire Line
+	16000 13700 16700 13700
+Entry Wire Line
+	15900 14600 16000 14700
+Entry Wire Line
+	15900 14400 16000 14500
+Entry Wire Line
+	15900 14200 16000 14300
+Entry Wire Line
+	15900 14000 16000 14100
+Entry Wire Line
+	15900 13800 16000 13900
+Entry Wire Line
+	15900 13600 16000 13700
+Wire Bus Line
+	15550 13500 15900 13500
+Text GLabel 15550 13500 0    50   Input ~ 0
+JTAG[0..5]
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J?
+U 1 1 5F2FB635
+P 2950 13500
+AR Path="/5CD05F2F/5F2FB635" Ref="J?"  Part="0" 
+AR Path="/5CF5B080/5F2FB635" Ref="J6"  Part="1" 
+F 0 "J6" H 3000 14117 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 3000 14026 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 2950 13500 50  0001 C CNN
+F 3 "~" H 2950 13500 50  0001 C CNN
+F 4 "S6106-ND" H 2950 13500 50  0001 C CNN "digikey"
+	1    2950 13500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 14000 2750 14000
+Text Label 2600 13200 2    50   ~ 0
+FGPIO1
+Wire Wire Line
+	2750 13200 2350 13200
+Wire Wire Line
+	2750 13800 2350 13800
+Text Label 2350 13800 0    50   ~ 0
+FGPIO7
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F89850B
+P 2600 13900
+AR Path="/5CD17BDC/5F89850B" Ref="#PWR?"  Part="1" 
+AR Path="/5CF5B080/5F89850B" Ref="#PWR0228"  Part="1" 
+F 0 "#PWR0228" H 2600 13750 50  0001 C CNN
+F 1 "+3V3" V 2600 14100 50  0000 C CNN
+F 2 "" H 2600 13900 50  0001 C CNN
+F 3 "" H 2600 13900 50  0001 C CNN
+	1    2600 13900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0229
+U 1 1 5F8F6CEA
+P 2750 14050
+F 0 "#PWR0229" H 2750 13800 50  0001 C CNN
+F 1 "GND" V 2755 13922 50  0000 R CNN
+F 2 "" H 2750 14050 50  0001 C CNN
+F 3 "" H 2750 14050 50  0001 C CNN
+	1    2750 14050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 14050 2750 14000
+Connection ~ 2750 14000
+Wire Wire Line
+	2600 13900 2750 13900
+$Comp
+L power:+5V #PWR0230
+U 1 1 5F97EB1C
+P 3350 13900
+F 0 "#PWR0230" H 3350 13750 50  0001 C CNN
+F 1 "+5V" V 3365 14028 50  0000 L CNN
+F 2 "" H 3350 13900 50  0001 C CNN
+F 3 "" H 3350 13900 50  0001 C CNN
+	1    3350 13900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 13900 3250 13900
+Text GLabel 9150 6450 0    50   Input ~ 0
+GCK1
+Text GLabel 9150 6550 0    50   Input ~ 0
+GCK0
+Wire Wire Line
+	9250 6450 9150 6450
+Wire Wire Line
+	9250 6550 9150 6550
 Wire Bus Line
 	9650 12150 9650 12450
 Wire Bus Line
-	14450 7500 14450 8250
+	15900 13500 15900 14600
+Wire Bus Line
+	14400 8350 14400 9100
 Wire Bus Line
 	13600 12150 13600 12900
 Wire Bus Line

@@ -573,107 +573,6 @@ Wire Wire Line
 Connection ~ 12300 1600
 Wire Wire Line
 	12000 1600 12300 1600
-$Comp
-L Connector:Conn_01x16_Male J4
-U 1 1 5D29DA59
-P 20150 3950
-F 0 "J4" H 20258 4831 50  0000 C CNN
-F 1 "Conn_01x16_Male" H 20258 4740 50  0000 C CNN
-F 2 "" H 20150 3950 50  0001 C CNN
-F 3 "~" H 20150 3950 50  0001 C CNN
-	1    20150 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0130
-U 1 1 5D2A2876
-P 20550 3250
-F 0 "#PWR0130" H 20550 3000 50  0001 C CNN
-F 1 "GND" H 20555 3077 50  0000 C CNN
-F 2 "" H 20550 3250 50  0001 C CNN
-F 3 "" H 20550 3250 50  0001 C CNN
-	1    20550 3250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0131
-U 1 1 5D2A2D45
-P 20600 4750
-F 0 "#PWR0131" H 20600 4500 50  0001 C CNN
-F 1 "GND" V 20605 4622 50  0000 R CNN
-F 2 "" H 20600 4750 50  0001 C CNN
-F 3 "" H 20600 4750 50  0001 C CNN
-	1    20600 4750
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	20350 3250 20550 3250
-Wire Wire Line
-	20350 4750 20600 4750
-Text GLabel 20950 3300 2    50   Input ~ 0
-vcc_STM32
-Wire Wire Line
-	20350 3350 20900 3350
-Wire Wire Line
-	20900 3350 20900 3300
-Wire Wire Line
-	20900 3300 20950 3300
-Text GLabel 21000 4600 2    50   Input ~ 0
-vcc_STM32
-Wire Wire Line
-	20350 4650 20950 4650
-Wire Wire Line
-	20950 4650 20950 4600
-Wire Wire Line
-	20950 4600 21000 4600
-Wire Wire Line
-	20350 3450 20650 3450
-Wire Wire Line
-	20350 3550 20650 3550
-Wire Wire Line
-	20350 3650 20650 3650
-Wire Wire Line
-	20350 3750 20650 3750
-Wire Wire Line
-	20350 3850 20650 3850
-Wire Wire Line
-	20350 3950 20650 3950
-Wire Wire Line
-	20350 4050 20650 4050
-Wire Wire Line
-	20350 4150 20650 4150
-Wire Wire Line
-	20350 4250 20650 4250
-Wire Wire Line
-	20350 4350 20650 4350
-Wire Wire Line
-	20350 4450 20650 4450
-Wire Wire Line
-	20350 4550 20650 4550
-Text Label 20650 3450 0    50   ~ 0
-PF0
-Text Label 20650 3550 0    50   ~ 0
-PF1
-Text Label 20650 3650 0    50   ~ 0
-PF2
-Text Label 20650 3750 0    50   ~ 0
-PF3
-Text Label 20650 3850 0    50   ~ 0
-PF4
-Text Label 20650 3950 0    50   ~ 0
-PF5
-Text Label 20650 4050 0    50   ~ 0
-PF6
-Text Label 20650 4150 0    50   ~ 0
-PF7
-Text Label 20650 4250 0    50   ~ 0
-PF8
-Text Label 20650 4350 0    50   ~ 0
-PF9
-Text Label 20650 4450 0    50   ~ 0
-PF10
-Text Label 20650 4550 0    50   ~ 0
-PF11
 Wire Wire Line
 	10750 10650 10850 10650
 Wire Wire Line
@@ -973,15 +872,13 @@ Wire Wire Line
 	7450 3750 7300 3750
 Text Label 7300 3750 0    50   ~ 0
 NRST
-NoConn ~ 7450 8550
-NoConn ~ 7450 8650
 $Comp
 L Device:R R6
 U 1 1 5DB12E17
 P 6850 5350
 F 0 "R6" V 6643 5350 50  0000 C CNN
 F 1 "R" V 6734 5350 50  0000 C CNN
-F 2 "" V 6780 5350 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6780 5350 50  0001 C CNN
 F 3 "~" H 6850 5350 50  0001 C CNN
 	1    6850 5350
 	0    1    1    0   
@@ -1033,82 +930,10 @@ Text Label 16650 5000 0    50   ~ 0
 STM_TMS
 Wire Wire Line
 	16350 5700 17000 5700
-Wire Bus Line
-	2800 13150 3150 13150
-Entry Wire Line
-	3150 13250 3250 13350
-Entry Wire Line
-	3150 13450 3250 13550
-Entry Wire Line
-	3150 13650 3250 13750
-Entry Wire Line
-	3150 13850 3250 13950
-Entry Wire Line
-	3150 14050 3250 14150
-Entry Wire Line
-	3150 14250 3250 14350
-Wire Wire Line
-	3250 13350 3950 13350
-Wire Wire Line
-	3250 13550 3950 13550
-Wire Wire Line
-	3250 13750 3950 13750
-Wire Wire Line
-	3250 13950 3950 13950
-Wire Wire Line
-	3250 14150 3950 14150
-Wire Wire Line
-	3250 14350 3950 14350
-Text Label 3300 13350 0    50   ~ 0
-JTAG0
-Text Label 3300 13550 0    50   ~ 0
-JTAG1
-Text Label 3300 13750 0    50   ~ 0
-JTAG2
-Text Label 3300 13950 0    50   ~ 0
-JTAG3
-Text Label 3300 14150 0    50   ~ 0
-JTAG4
-Text Label 3300 14350 0    50   ~ 0
-JTAG5
-Text HLabel 2800 13150 0    50   BiDi ~ 0
-JTAG[5...0]
-Text Label 3650 13350 0    50   ~ 0
-TMS
-Text Label 3650 13550 0    50   ~ 0
-TCK
-Text Label 3650 13750 0    50   ~ 0
-TDI
-Text Label 3650 13950 0    50   ~ 0
-TDO
-Text Label 3650 14150 0    50   ~ 0
-TRST
-Text Label 3650 14350 0    50   ~ 0
-NRST
 Wire Wire Line
 	16350 6200 17000 6200
 Wire Wire Line
 	16350 6300 17000 6300
-Wire Bus Line
-	5050 12650 5400 12650
-Entry Wire Line
-	5400 12750 5500 12850
-Entry Wire Line
-	5400 12950 5500 13050
-Wire Wire Line
-	5500 12850 6200 12850
-Wire Wire Line
-	5500 13050 6200 13050
-Text Label 5500 12850 0    50   ~ 0
-I2C_00
-Text Label 5500 13050 0    50   ~ 0
-I2C_01
-Text Label 5900 12850 0    50   ~ 0
-I2C_SCL
-Text Label 5900 13050 0    50   ~ 0
-I2C_SDA
-Text HLabel 5050 12650 0    50   BiDi ~ 0
-I2C_0[1..0]
 Text Label 16550 6300 0    50   ~ 0
 I2C_SDA
 Text Label 16550 6200 0    50   ~ 0
@@ -1121,6 +946,7 @@ F 0 "U6" H 17250 13350 50  0000 C CNN
 F 1 "LSM9DS1" H 17600 12600 50  0000 C CNN
 F 2 "Package_LGA:LGA-24L_3x3.5mm_P0.43mm" H 18750 14100 50  0001 C CNN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2a/d6/25/eb/48/46/DM00103319.pdf/files/DM00103319.pdf/jcr:content/translations/en.DM00103319.pdf" H 17250 13450 50  0001 C CNN
+F 4 "497-14946-1-ND" H 17250 13350 50  0001 C CNN "digikey"
 	1    17250 13350
 	1    0    0    -1  
 $EndComp
@@ -1366,101 +1192,19 @@ Wire Wire Line
 Text Label 16500 3700 0    50   ~ 0
 XCVR_EN
 Text Label 16500 3800 0    50   ~ 0
-RSSI
-Text Label 16450 3900 0    50   ~ 0
-TX_ENABLE
-Text Label 16450 4000 0    50   ~ 0
-RX_ENABLE
+SPI1_RSSI
 Wire Wire Line
-	16350 4500 16900 4500
-Text Label 16550 4500 0    50   ~ 0
-CS_AD
-Wire Wire Line
-	7450 13450 8000 13450
-Wire Wire Line
-	7450 13550 8000 13550
-Text Label 7650 13450 0    50   ~ 0
-SPI1_MISO
-Text Label 7650 13550 0    50   ~ 0
-SPI1_MOSI
-Wire Wire Line
-	7450 13650 8000 13650
-Text Label 7650 13650 0    50   ~ 0
-CS_AD
-Wire Bus Line
-	7350 13350 7300 13350
-Text HLabel 7300 13350 0    50   BiDi ~ 0
-PROC_MAX5864
-Entry Wire Line
-	7350 13350 7450 13450
-Entry Wire Line
-	7350 13450 7450 13550
-Entry Wire Line
-	7350 13550 7450 13650
-Wire Wire Line
-	5700 14400 6250 14400
-Text Label 5900 14400 0    50   ~ 0
-SPI1_NSS
-Wire Wire Line
-	5700 14500 6250 14500
-Wire Wire Line
-	5700 14600 6250 14600
-Wire Wire Line
-	5700 14700 6250 14700
-Text Label 5900 14500 0    50   ~ 0
-SPI1_SCK
-Text Label 5900 14600 0    50   ~ 0
-SPI1_MISO
-Text Label 5900 14700 0    50   ~ 0
-SPI1_MOSI
-Wire Wire Line
-	5700 14100 6250 14100
-Wire Wire Line
-	5700 14200 6250 14200
-Wire Wire Line
-	5700 14300 6250 14300
-Wire Wire Line
-	5700 14000 6250 14000
-Text Label 5850 14000 0    50   ~ 0
-XCVR_EN
-Text Label 5850 14100 0    50   ~ 0
-RSSI
-Text Label 5800 14200 0    50   ~ 0
-TX_ENABLE
-Text Label 5800 14300 0    50   ~ 0
-RX_ENABLE
-Wire Bus Line
-	5400 13850 5600 13850
-Entry Wire Line
-	5600 13900 5700 14000
-Entry Wire Line
-	5600 14000 5700 14100
-Entry Wire Line
-	5600 14100 5700 14200
-Entry Wire Line
-	5600 14200 5700 14300
-Entry Wire Line
-	5600 14300 5700 14400
-Entry Wire Line
-	5600 14400 5700 14500
-Entry Wire Line
-	5600 14500 5700 14600
-Entry Wire Line
-	5600 14600 5700 14700
-Text HLabel 5400 13850 0    50   BiDi ~ 0
-PROC_MAX2837[7.0]
+	16350 7500 16900 7500
+Text Label 16550 7500 0    50   ~ 0
+SPI1_CS_AD
 Wire Wire Line
 	16350 5400 17050 5400
 Text GLabel 17050 5400 2    50   Input ~ 0
-AQUI_ENABLE
+rf_ANTSEL
 Wire Wire Line
 	16350 8600 17650 8600
 Wire Wire Line
 	16350 8500 17650 8500
-Wire Wire Line
-	16350 8300 17300 8300
-Text Label 17300 8300 2    50   ~ 0
-P_FPGA_1
 Wire Wire Line
 	7450 6850 6500 6850
 Text Label 6500 6850 0    50   ~ 0
@@ -1651,7 +1395,7 @@ Entry Wire Line
 Wire Wire Line
 	10200 13200 9700 13200
 Text Label 9800 13200 0    50   ~ 0
-MEN_WE
+FMC_NWE
 Text Label 9800 13400 0    50   ~ 0
 FMC_NOE
 Text Label 9800 13300 0    50   ~ 0
@@ -1668,8 +1412,6 @@ Text Label 9800 13500 0    50   ~ 0
 FMC_BLO
 Text Label 9800 13600 0    50   ~ 0
 FMC_BL1
-Text HLabel 9500 13050 0    50   Input ~ 0
-FMC_CONTROL
 Text Label 16450 9200 0    50   ~ 0
 FMC_NOE
 Text Label 16450 9100 0    50   ~ 0
@@ -1687,7 +1429,7 @@ FMC_BLO
 Text Label 7050 8950 0    50   ~ 0
 FMC_BL1
 Text Label 16450 9300 0    50   ~ 0
-MEN_WE
+FMC_NWE
 Wire Wire Line
 	16850 9300 16350 9300
 Text HLabel 17000 5200 2    50   Input ~ 0
@@ -1704,158 +1446,6 @@ Text HLabel 17000 5700 2    50   Output ~ 0
 JTDI_FPGA
 Text Label 16650 5700 0    50   ~ 0
 STM_TDO
-Wire Bus Line
-	2350 9000 2650 9000
-Entry Wire Line
-	2650 9050 2750 9150
-Entry Wire Line
-	2650 9150 2750 9250
-Entry Wire Line
-	2650 9250 2750 9350
-Entry Wire Line
-	2650 9350 2750 9450
-Entry Wire Line
-	2650 9450 2750 9550
-Entry Wire Line
-	2650 9550 2750 9650
-Entry Wire Line
-	2650 9650 2750 9750
-Entry Wire Line
-	2650 9750 2750 9850
-Entry Wire Line
-	2650 9850 2750 9950
-Entry Wire Line
-	2650 9950 2750 10050
-Entry Wire Line
-	2650 10050 2750 10150
-Entry Wire Line
-	2650 10150 2750 10250
-Entry Wire Line
-	2650 10250 2750 10350
-Entry Wire Line
-	2650 10350 2750 10450
-Entry Wire Line
-	2650 10450 2750 10550
-Entry Wire Line
-	2650 10550 2750 10650
-Wire Wire Line
-	2750 9150 3150 9150
-Wire Wire Line
-	2750 9250 3150 9250
-Wire Wire Line
-	2750 9350 3150 9350
-Wire Wire Line
-	2750 9450 3150 9450
-Wire Wire Line
-	2750 9550 3150 9550
-Wire Wire Line
-	2750 9650 3150 9650
-Wire Wire Line
-	2750 9750 3150 9750
-Wire Wire Line
-	2750 9850 3150 9850
-Wire Wire Line
-	2750 9950 3150 9950
-Wire Wire Line
-	2750 10050 3150 10050
-Wire Wire Line
-	2750 10150 3150 10150
-Wire Wire Line
-	2750 10250 3150 10250
-Wire Wire Line
-	2750 10350 3150 10350
-Wire Wire Line
-	2750 10450 3150 10450
-Wire Wire Line
-	2750 10550 3150 10550
-Wire Wire Line
-	2750 10650 3150 10650
-Text Label 2800 9150 0    50   ~ 0
-FMC_D0
-Text Label 2800 9250 0    50   ~ 0
-FMC_D1
-Text Label 2800 9350 0    50   ~ 0
-FMC_D2
-Text Label 2800 9450 0    50   ~ 0
-FMC_D3
-Text Label 2800 9550 0    50   ~ 0
-FMC_D4
-Text Label 2800 9650 0    50   ~ 0
-FMC_D5
-Text Label 2800 9750 0    50   ~ 0
-FMC_D6
-Text Label 2800 9850 0    50   ~ 0
-FMC_D7
-Text Label 2800 9950 0    50   ~ 0
-FMC_D8
-Text Label 2800 10050 0    50   ~ 0
-FMC_D9
-Text Label 2800 10150 0    50   ~ 0
-FMC_D10
-Text Label 2800 10250 0    50   ~ 0
-FMC_D11
-Text Label 2800 10350 0    50   ~ 0
-FMC_D12
-Text Label 2800 10450 0    50   ~ 0
-FMC_D13
-Text Label 2800 10650 0    50   ~ 0
-FMC_D15
-Text Label 2800 10550 0    50   ~ 0
-FMC_D14
-Text HLabel 2350 9000 0    50   BiDi ~ 0
-FMC_D[15...0]
-Wire Bus Line
-	4100 8950 4400 8950
-Entry Wire Line
-	4400 9000 4500 9100
-Entry Wire Line
-	4400 9100 4500 9200
-Entry Wire Line
-	4400 9200 4500 9300
-Entry Wire Line
-	4400 9300 4500 9400
-Entry Wire Line
-	4400 9400 4500 9500
-Entry Wire Line
-	4400 9500 4500 9600
-Entry Wire Line
-	4400 9600 4500 9700
-Entry Wire Line
-	4400 9700 4500 9800
-Wire Wire Line
-	4500 9100 4900 9100
-Wire Wire Line
-	4500 9200 4900 9200
-Wire Wire Line
-	4500 9300 4900 9300
-Wire Wire Line
-	4500 9400 4900 9400
-Wire Wire Line
-	4500 9500 4900 9500
-Wire Wire Line
-	4500 9600 4900 9600
-Wire Wire Line
-	4500 9700 4900 9700
-Wire Wire Line
-	4500 9800 4900 9800
-Text Label 4550 9100 0    50   ~ 0
-FMC_A0
-Text Label 4550 9200 0    50   ~ 0
-FMC_A1
-Text Label 4550 9300 0    50   ~ 0
-FMC_A2
-Text Label 4550 9400 0    50   ~ 0
-FMC_A3
-Text Label 4550 9500 0    50   ~ 0
-FMC_A4
-Text Label 4550 9600 0    50   ~ 0
-FMC_A5
-Text Label 4550 9700 0    50   ~ 0
-FMC_A6
-Text Label 4550 9800 0    50   ~ 0
-FMC_A7
-Text HLabel 4100 8950 0    50   BiDi ~ 0
-FMC_A[7...0]
 Wire Wire Line
 	16350 10200 16750 10200
 Wire Wire Line
@@ -2020,26 +1610,683 @@ Wire Wire Line
 Connection ~ 7050 3850
 Wire Wire Line
 	7050 3850 7050 4050
-Text HLabel 16900 4500 2    50   Input ~ 0
-adCS
-Text HLabel 17600 4150 2    50   Input ~ 0
-adCSK
-Text HLabel 16900 4400 2    50   Input ~ 0
-adMOSI
-Text HLabel 17600 4300 2    50   Input ~ 0
-adCLK
+Text Notes 16900 7550 0    50   ~ 0
+REVISAR ESTAS DOS CONEC
+Wire Wire Line
+	6000 14300 6550 14300
+Text Label 6200 14300 0    50   ~ 0
+SPI1_CS_RF
+Wire Wire Line
+	6000 14400 6550 14400
+Wire Wire Line
+	6000 14500 6550 14500
+Wire Wire Line
+	6000 14600 6550 14600
+Text Label 6200 14400 0    50   ~ 0
+SPI1_SCK
+Text Label 6200 14500 0    50   ~ 0
+SPI1_MISO
+Text Label 6200 14600 0    50   ~ 0
+SPI1_MOSI
+Wire Wire Line
+	6000 14200 6550 14200
+Text Label 6150 14200 0    50   ~ 0
+SPI1_RSSI
 Wire Bus Line
-	5400 12650 5400 12950
+	5700 13950 5900 13950
+Entry Wire Line
+	5900 14100 6000 14200
+Entry Wire Line
+	5900 14200 6000 14300
+Entry Wire Line
+	5900 14300 6000 14400
+Entry Wire Line
+	5900 14400 6000 14500
+Entry Wire Line
+	5900 14500 6000 14600
+Wire Wire Line
+	6000 14700 6550 14700
+Text Label 6200 14700 0    50   ~ 0
+SPI1_CS_AD
+Entry Wire Line
+	5900 14600 6000 14700
+Text GLabel 5700 13950 0    50   Input ~ 0
+SPI1[1..6]
+Text GLabel 16900 3700 2    50   Input ~ 0
+!VAA_ENABLE
+Text GLabel 16900 3800 2    50   Input ~ 0
+rf_RSSI
+Text GLabel 16900 3900 2    50   Input ~ 0
+rf_RXHP
+Text GLabel 16900 4000 2    50   Input ~ 0
+rf_RXTX
+Text GLabel 16500 5600 2    50   Input ~ 0
+rf_LD
+Text GLabel 16500 5500 2    50   Input ~ 0
+rf_!SHDN
+Wire Wire Line
+	16350 5600 16500 5600
+Wire Wire Line
+	16350 5500 16500 5500
+Entry Wire Line
+	9600 13700 9700 13800
+Entry Wire Line
+	9600 13800 9700 13900
+Wire Wire Line
+	16350 9400 16850 9400
+Text Label 16450 9400 0    50   ~ 0
+FMC_NWAIT
+Wire Wire Line
+	16350 9500 16850 9500
+Text Label 16450 9500 0    50   ~ 0
+FMC_NE1
+Wire Wire Line
+	9700 13800 10200 13800
+Text Label 9800 13800 0    50   ~ 0
+FMC_NWAIT
+Wire Wire Line
+	9700 13900 10200 13900
+Text Label 9800 13900 0    50   ~ 0
+FMC_NE1
+Text GLabel 9500 13050 0    50   Input ~ 0
+FMC_[0..7]
 Wire Bus Line
-	7350 13350 7350 13650
+	5850 12250 6200 12250
+Entry Wire Line
+	6200 12350 6300 12450
+Entry Wire Line
+	6200 12550 6300 12650
+Wire Wire Line
+	6300 12450 7000 12450
+Wire Wire Line
+	6300 12650 7000 12650
+Text Label 6300 12450 0    50   ~ 0
+I2C_00
+Text Label 6300 12650 0    50   ~ 0
+I2C_01
+Text Label 6700 12450 0    50   ~ 0
+I2C_SCL
+Text Label 6700 12650 0    50   ~ 0
+I2C_SDA
 Wire Bus Line
-	3150 13150 3150 14250
+	3800 9450 4100 9450
+Entry Wire Line
+	4100 9500 4200 9600
+Entry Wire Line
+	4100 9600 4200 9700
+Entry Wire Line
+	4100 9700 4200 9800
+Entry Wire Line
+	4100 9800 4200 9900
+Entry Wire Line
+	4100 9900 4200 10000
+Entry Wire Line
+	4100 10000 4200 10100
+Entry Wire Line
+	4100 10100 4200 10200
+Entry Wire Line
+	4100 10200 4200 10300
+Entry Wire Line
+	4100 10300 4200 10400
+Entry Wire Line
+	4100 10400 4200 10500
+Entry Wire Line
+	4100 10500 4200 10600
+Entry Wire Line
+	4100 10600 4200 10700
+Entry Wire Line
+	4100 10700 4200 10800
+Entry Wire Line
+	4100 10800 4200 10900
+Entry Wire Line
+	4100 10900 4200 11000
+Entry Wire Line
+	4100 11000 4200 11100
+Wire Wire Line
+	4200 9600 4600 9600
+Wire Wire Line
+	4200 9700 4600 9700
+Wire Wire Line
+	4200 9800 4600 9800
+Wire Wire Line
+	4200 9900 4600 9900
+Wire Wire Line
+	4200 10000 4600 10000
+Wire Wire Line
+	4200 10100 4600 10100
+Wire Wire Line
+	4200 10200 4600 10200
+Wire Wire Line
+	4200 10300 4600 10300
+Wire Wire Line
+	4200 10400 4600 10400
+Wire Wire Line
+	4200 10500 4600 10500
+Wire Wire Line
+	4200 10600 4600 10600
+Wire Wire Line
+	4200 10700 4600 10700
+Wire Wire Line
+	4200 10800 4600 10800
+Wire Wire Line
+	4200 10900 4600 10900
+Wire Wire Line
+	4200 11000 4600 11000
+Wire Wire Line
+	4200 11100 4600 11100
+Text Label 4250 9600 0    50   ~ 0
+FMC_D0
+Text Label 4250 9700 0    50   ~ 0
+FMC_D1
+Text Label 4250 9800 0    50   ~ 0
+FMC_D2
+Text Label 4250 9900 0    50   ~ 0
+FMC_D3
+Text Label 4250 10000 0    50   ~ 0
+FMC_D4
+Text Label 4250 10100 0    50   ~ 0
+FMC_D5
+Text Label 4250 10200 0    50   ~ 0
+FMC_D6
+Text Label 4250 10300 0    50   ~ 0
+FMC_D7
+Text Label 4250 10400 0    50   ~ 0
+FMC_D8
+Text Label 4250 10500 0    50   ~ 0
+FMC_D9
+Text Label 4250 10600 0    50   ~ 0
+FMC_D10
+Text Label 4250 10700 0    50   ~ 0
+FMC_D11
+Text Label 4250 10800 0    50   ~ 0
+FMC_D12
+Text Label 4250 10900 0    50   ~ 0
+FMC_D13
+Text Label 4250 11100 0    50   ~ 0
+FMC_D15
+Text Label 4250 11000 0    50   ~ 0
+FMC_D14
+Wire Bus Line
+	5550 9400 5850 9400
+Entry Wire Line
+	5850 9450 5950 9550
+Entry Wire Line
+	5850 9550 5950 9650
+Entry Wire Line
+	5850 9650 5950 9750
+Entry Wire Line
+	5850 9750 5950 9850
+Entry Wire Line
+	5850 9850 5950 9950
+Entry Wire Line
+	5850 9950 5950 10050
+Entry Wire Line
+	5850 10050 5950 10150
+Entry Wire Line
+	5850 10150 5950 10250
+Wire Wire Line
+	5950 9550 6350 9550
+Wire Wire Line
+	5950 9650 6350 9650
+Wire Wire Line
+	5950 9750 6350 9750
+Wire Wire Line
+	5950 9850 6350 9850
+Wire Wire Line
+	5950 9950 6350 9950
+Wire Wire Line
+	5950 10050 6350 10050
+Wire Wire Line
+	5950 10150 6350 10150
+Wire Wire Line
+	5950 10250 6350 10250
+Text Label 6000 9550 0    50   ~ 0
+FMC_A0
+Text Label 6000 9650 0    50   ~ 0
+FMC_A1
+Text Label 6000 9750 0    50   ~ 0
+FMC_A2
+Text Label 6000 9850 0    50   ~ 0
+FMC_A3
+Text Label 6000 9950 0    50   ~ 0
+FMC_A4
+Text Label 6000 10050 0    50   ~ 0
+FMC_A5
+Text Label 6000 10150 0    50   ~ 0
+FMC_A6
+Text Label 6000 10250 0    50   ~ 0
+FMC_A7
+Text GLabel 5550 9400 0    50   Input ~ 0
+FMC_A[0..7]
+Text GLabel 3800 9450 0    50   Input ~ 0
+FMC_D[0..15]
+Text GLabel 5850 12250 0    50   Input ~ 0
+I2C_0[0..1]
+Text Label 3750 13650 0    50   ~ 0
+NRST
+Text Label 3750 13450 0    50   ~ 0
+TRST
+Text Label 3750 13250 0    50   ~ 0
+TDO
+Text Label 3750 13050 0    50   ~ 0
+TDI
+Text Label 3750 12850 0    50   ~ 0
+TCK
+Text Label 3750 12650 0    50   ~ 0
+TMS
+Text Label 3400 13650 0    50   ~ 0
+JTAG5
+Text Label 3400 13450 0    50   ~ 0
+JTAG4
+Text Label 3400 13250 0    50   ~ 0
+JTAG3
+Text Label 3400 13050 0    50   ~ 0
+JTAG2
+Text Label 3400 12850 0    50   ~ 0
+JTAG1
+Text Label 3400 12650 0    50   ~ 0
+JTAG0
+Wire Wire Line
+	3350 13650 4050 13650
+Wire Wire Line
+	3350 13450 4050 13450
+Wire Wire Line
+	3350 13250 4050 13250
+Wire Wire Line
+	3350 13050 4050 13050
+Wire Wire Line
+	3350 12850 4050 12850
+Wire Wire Line
+	3350 12650 4050 12650
+Entry Wire Line
+	3250 13550 3350 13650
+Entry Wire Line
+	3250 13350 3350 13450
+Entry Wire Line
+	3250 13150 3350 13250
+Entry Wire Line
+	3250 12950 3350 13050
+Entry Wire Line
+	3250 12750 3350 12850
+Entry Wire Line
+	3250 12550 3350 12650
+Wire Bus Line
+	2900 12450 3250 12450
+Text GLabel 2900 12450 0    50   Input ~ 0
+JTAG[0..5]
+Text HLabel 7300 3350 1    50   Input ~ 0
+JNRST
+Wire Wire Line
+	7300 3750 7300 3350
+Wire Bus Line
+	11200 12350 11350 12350
+Entry Wire Line
+	11200 12450 11300 12550
+Entry Wire Line
+	11200 12550 11300 12650
+Wire Wire Line
+	11300 12550 11850 12550
+Wire Wire Line
+	11300 12650 11850 12650
+Text Label 11350 12550 0    50   ~ 0
+USART_RX
+Text Label 11350 12650 0    50   ~ 0
+USART_TX
+Text GLabel 11350 12350 2    50   Output ~ 0
+USART_[0..1]
+Text GLabel 16950 4700 2    50   Output ~ 0
+USART_RX
+Text GLabel 16950 4600 2    50   Input ~ 0
+USART_TX
+NoConn ~ 16350 4500
+NoConn ~ 16350 4800
+NoConn ~ 16350 4900
+Wire Wire Line
+	16350 6400 17000 6400
+Text Label 16500 6400 0    50   ~ 0
+GPIO_00
+Wire Wire Line
+	16350 6500 17000 6500
+Text Label 16500 6500 0    50   ~ 0
+GPIO_01
+Wire Wire Line
+	16350 6600 17000 6600
+Text Label 16500 6600 0    50   ~ 0
+GPIO_02
+Wire Wire Line
+	16350 6700 17000 6700
+Text Label 16500 6700 0    50   ~ 0
+GPIO_03
+Wire Wire Line
+	16350 6800 17000 6800
+Text Label 16500 6800 0    50   ~ 0
+GPIO_04
+Wire Wire Line
+	16350 6900 17000 6900
+Text Label 16500 6900 0    50   ~ 0
+GPIO_05
+Wire Wire Line
+	18900 4400 19550 4400
+Text Label 19050 4400 0    50   ~ 0
+GPIO_00
+Wire Wire Line
+	18900 4500 19550 4500
+Text Label 19050 4500 0    50   ~ 0
+GPIO_01
+Wire Wire Line
+	18900 4600 19550 4600
+Text Label 19050 4600 0    50   ~ 0
+GPIO_02
+Wire Wire Line
+	18900 4700 19550 4700
+Text Label 19050 4700 0    50   ~ 0
+GPIO_03
+Wire Wire Line
+	18900 4800 19550 4800
+Text Label 19050 4800 0    50   ~ 0
+GPIO_04
+Wire Wire Line
+	18900 4900 19550 4900
+Text Label 19050 4900 0    50   ~ 0
+GPIO_05
+Wire Wire Line
+	16350 7100 17000 7100
+Text Label 16500 7100 0    50   ~ 0
+GPIO_06
+Wire Wire Line
+	16350 7200 17000 7200
+Text Label 16500 7200 0    50   ~ 0
+GPIO_07
+Wire Wire Line
+	16350 7300 17000 7300
+Text Label 16500 7300 0    50   ~ 0
+GPIO_08
+Wire Wire Line
+	16350 7400 17000 7400
+Text Label 16500 7400 0    50   ~ 0
+GPIO_09
+Wire Wire Line
+	6800 7750 7450 7750
+Text Label 6950 7750 0    50   ~ 0
+GPIO_10
+Wire Wire Line
+	6800 7850 7450 7850
+Text Label 6950 7850 0    50   ~ 0
+GPIO_11
+Wire Wire Line
+	6800 7950 7450 7950
+Text Label 6950 7950 0    50   ~ 0
+GPIO_12
+Wire Wire Line
+	6800 8050 7450 8050
+Text Label 6950 8050 0    50   ~ 0
+GPIO_13
+Wire Wire Line
+	6800 8150 7450 8150
+Text Label 6950 8150 0    50   ~ 0
+GPIO_14
+Wire Wire Line
+	6800 8250 7450 8250
+Text Label 6950 8250 0    50   ~ 0
+GPIO_15
+Wire Wire Line
+	20050 4600 20700 4600
+Text Label 20200 4600 0    50   ~ 0
+GPIO_10
+Wire Wire Line
+	20050 4700 20700 4700
+Text Label 20200 4700 0    50   ~ 0
+GPIO_11
+Wire Wire Line
+	20050 4800 20700 4800
+Text Label 20200 4800 0    50   ~ 0
+GPIO_12
+Wire Wire Line
+	20050 4900 20700 4900
+Text Label 20200 4900 0    50   ~ 0
+GPIO_13
+Wire Wire Line
+	20050 5000 20700 5000
+Text Label 20200 5000 0    50   ~ 0
+GPIO_14
+Wire Wire Line
+	20050 5100 20700 5100
+Text Label 20200 5100 0    50   ~ 0
+GPIO_15
+Wire Wire Line
+	20050 4400 20700 4400
+Text Label 20200 4400 0    50   ~ 0
+GPIO_08
+Wire Wire Line
+	20050 4500 20700 4500
+Text Label 20200 4500 0    50   ~ 0
+GPIO_09
+Wire Wire Line
+	18900 5000 19550 5000
+Text Label 19050 5000 0    50   ~ 0
+GPIO_06
+Wire Wire Line
+	18900 5100 19550 5100
+Text Label 19050 5100 0    50   ~ 0
+GPIO_07
+NoConn ~ 16350 5900
+NoConn ~ 16350 6000
+NoConn ~ 16350 6100
+NoConn ~ 16350 7600
+NoConn ~ 16350 7700
+NoConn ~ 16350 7800
+NoConn ~ 16350 7900
+NoConn ~ 16350 8000
+NoConn ~ 16350 8100
+NoConn ~ 16350 8200
+NoConn ~ 16350 8300
+NoConn ~ 16350 8400
+NoConn ~ 16350 9000
+NoConn ~ 16350 9900
+NoConn ~ 16350 10000
+NoConn ~ 16350 10100
+NoConn ~ 7450 9250
+NoConn ~ 7450 9150
+NoConn ~ 7450 9050
+NoConn ~ 7450 6950
+NoConn ~ 7450 6250
+NoConn ~ 7450 6150
+Wire Wire Line
+	7450 9350 7050 9350
+Wire Wire Line
+	7450 9450 7050 9450
+Text Label 7150 9350 0    50   ~ 0
+LED1
+Text Label 7150 9450 0    50   ~ 0
+LED2
+NoConn ~ 7450 5650
+NoConn ~ 7450 5750
+NoConn ~ 7450 5850
+NoConn ~ 7450 5950
+Wire Wire Line
+	4700 6600 4700 6900
+$Comp
+L BAT2032:LED D?
+U 1 1 5EEFFBBA
+P 4700 7050
+AR Path="/5CD17BDC/5EEFFBBA" Ref="D?"  Part="1" 
+AR Path="/5D3DE78E/5EEFFBBA" Ref="D?"  Part="1" 
+AR Path="/5CD05F2F/5EEFFBBA" Ref="D12"  Part="1" 
+F 0 "D12" V 4739 6933 50  0000 R CNN
+F 1 "LED" V 4648 6933 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4700 7050 50  0001 C CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS-22-99-0151/LTST-C190KRKT.pdf" H 4700 7050 50  0001 C CNN
+F 4 "160-2032-1-ND     BLUE" V 4700 7050 50  0001 C CNN "digikey"
+	1    4700 7050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L BAT2032:R R?
+U 1 1 5EEFFBC1
+P 4700 7450
+AR Path="/5CD17BDC/5EEFFBC1" Ref="R?"  Part="1" 
+AR Path="/5D3DE78E/5EEFFBC1" Ref="R?"  Part="1" 
+AR Path="/5CD05F2F/5EEFFBC1" Ref="R15"  Part="1" 
+F 0 "R15" H 4770 7496 50  0000 L CNN
+F 1 "600" H 4770 7405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4630 7450 50  0001 C CNN
+F 3 "~" H 4700 7450 50  0001 C CNN
+F 4 "" H 4700 7450 50  0001 C CNN "Digikey"
+	1    4700 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EEFFBC7
+P 4700 7750
+AR Path="/5CD17BDC/5EEFFBC7" Ref="#PWR?"  Part="1" 
+AR Path="/5D3DE78E/5EEFFBC7" Ref="#PWR?"  Part="1" 
+AR Path="/5CD05F2F/5EEFFBC7" Ref="#PWR0130"  Part="1" 
+F 0 "#PWR0130" H 4700 7500 50  0001 C CNN
+F 1 "GND" H 4705 7577 50  0000 C CNN
+F 2 "" H 4700 7750 50  0001 C CNN
+F 3 "" H 4700 7750 50  0001 C CNN
+	1    4700 7750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 7200 4700 7300
+Wire Wire Line
+	4700 7600 4700 7750
+Text Label 4700 6600 0    50   ~ 0
+LED1
+Text Notes 4500 6950 0    50   ~ 0
+BLUE
+Wire Wire Line
+	5300 6600 5300 6900
+$Comp
+L BAT2032:LED D?
+U 1 1 5EF323FF
+P 5300 7050
+AR Path="/5CD17BDC/5EF323FF" Ref="D?"  Part="1" 
+AR Path="/5D3DE78E/5EF323FF" Ref="D?"  Part="1" 
+AR Path="/5CD05F2F/5EF323FF" Ref="D13"  Part="1" 
+F 0 "D13" V 5339 6933 50  0000 R CNN
+F 1 "LED" V 5248 6933 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5300 7050 50  0001 C CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS-22-99-0151/LTST-C190KRKT.pdf" H 5300 7050 50  0001 C CNN
+F 4 "846-1176-1-ND  Verde" V 5300 7050 50  0001 C CNN "digikey"
+	1    5300 7050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L BAT2032:R R?
+U 1 1 5EF32406
+P 5300 7450
+AR Path="/5CD17BDC/5EF32406" Ref="R?"  Part="1" 
+AR Path="/5D3DE78E/5EF32406" Ref="R?"  Part="1" 
+AR Path="/5CD05F2F/5EF32406" Ref="R16"  Part="1" 
+F 0 "R16" H 5370 7496 50  0000 L CNN
+F 1 "600" H 5370 7405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5230 7450 50  0001 C CNN
+F 3 "~" H 5300 7450 50  0001 C CNN
+F 4 "" H 5300 7450 50  0001 C CNN "Digikey"
+	1    5300 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EF3240C
+P 5300 7750
+AR Path="/5CD17BDC/5EF3240C" Ref="#PWR?"  Part="1" 
+AR Path="/5D3DE78E/5EF3240C" Ref="#PWR?"  Part="1" 
+AR Path="/5CD05F2F/5EF3240C" Ref="#PWR0131"  Part="1" 
+F 0 "#PWR0131" H 5300 7500 50  0001 C CNN
+F 1 "GND" H 5305 7577 50  0000 C CNN
+F 2 "" H 5300 7750 50  0001 C CNN
+F 3 "" H 5300 7750 50  0001 C CNN
+	1    5300 7750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 7200 5300 7300
+Wire Wire Line
+	5300 7600 5300 7750
+Text Label 5300 6600 0    50   ~ 0
+LED2
+Text Notes 5050 6950 0    50   ~ 0
+GREEN
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J4
+U 1 1 5F000F2B
+P 19750 4700
+F 0 "J4" H 19800 5317 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 19800 5226 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 19750 4700 50  0001 C CNN
+F 3 "~" H 19750 4700 50  0001 C CNN
+F 4 "S6106-ND" H 19750 4700 50  0001 C CNN "digikey"
+	1    19750 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20050 5200 19550 5200
+$Comp
+L power:GND #PWR0156
+U 1 1 5F145408
+P 20100 5400
+F 0 "#PWR0156" H 20100 5150 50  0001 C CNN
+F 1 "GND" H 20105 5227 50  0000 C CNN
+F 2 "" H 20100 5400 50  0001 C CNN
+F 3 "" H 20100 5400 50  0001 C CNN
+	1    20100 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20100 5400 20100 5200
+Wire Wire Line
+	20100 5200 20050 5200
+Connection ~ 20050 5200
+Text GLabel 20250 4000 2    50   Input ~ 0
+vcc_STM32
+Wire Wire Line
+	20250 4300 20050 4300
+Wire Wire Line
+	20250 4000 20250 4300
+$Comp
+L power:+5V #PWR0157
+U 1 1 5F219AEF
+P 19300 4200
+F 0 "#PWR0157" H 19300 4050 50  0001 C CNN
+F 1 "+5V" H 19315 4373 50  0000 C CNN
+F 2 "" H 19300 4200 50  0001 C CNN
+F 3 "" H 19300 4200 50  0001 C CNN
+	1    19300 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19550 4300 19300 4300
+Wire Wire Line
+	19300 4300 19300 4200
+Text GLabel 7300 8550 0    50   Input ~ 0
+MCU_CLK
+Text GLabel 7300 8650 0    50   Input ~ 0
+GPIO_CLK
+Wire Wire Line
+	7450 8550 7300 8550
+Wire Wire Line
+	7450 8650 7300 8650
+Text GLabel 7300 5450 0    50   Input ~ 0
+GPIO_INTR
+Wire Wire Line
+	7450 5450 7300 5450
+NoConn ~ 7450 5550
+Wire Bus Line
+	11200 12350 11200 12550
+Wire Bus Line
+	6200 12250 6200 12550
+Wire Bus Line
+	5900 13950 5900 14650
+Wire Bus Line
+	3250 12450 3250 13550
+Wire Bus Line
+	5850 9400 5850 10150
 Wire Bus Line
 	9600 13050 9600 13800
 Wire Bus Line
-	4400 8950 4400 9700
-Wire Bus Line
-	5600 13850 5600 14750
-Wire Bus Line
-	2650 9000 2650 10550
+	4100 9450 4100 11000
 $EndSCHEMATC

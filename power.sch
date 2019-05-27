@@ -155,4 +155,48 @@ Text HLabel 7700 4050 2    50   BiDi ~ 0
 FMC_A[7...0]
 Wire Bus Line
 	6900 4050 7700 4050
+$Comp
+L Mechanical:MountingHole H?
+U 0 0 5D41C458
+P 2000 7400
+F 0 "H?" H 2100 7446 50  0000 L CNN
+F 1 "MountingHole" H 2100 7355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad" H 2000 7400 50  0001 C CNN
+F 3 "~" H 2000 7400 50  0001 C CNN
+	0    2000 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 0 0 5D41F16D
+P 2800 7400
+F 0 "H?" H 2900 7446 50  0000 L CNN
+F 1 "MountingHole" H 2900 7355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad" H 2800 7400 50  0001 C CNN
+F 3 "~" H 2800 7400 50  0001 C CNN
+	0    2800 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 0 0 5D41F6A8
+P 3600 7400
+F 0 "H?" H 3700 7446 50  0000 L CNN
+F 1 "MountingHole" H 3700 7355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad" H 3600 7400 50  0001 C CNN
+F 3 "~" H 3600 7400 50  0001 C CNN
+	0    3600 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 0 0 5D41FACE
+P 4400 7400
+F 0 "H?" H 4500 7446 50  0000 L CNN
+F 1 "MountingHole" H 4500 7355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad" H 4400 7400 50  0001 C CNN
+F 3 "~" H 4400 7400 50  0001 C CNN
+	0    4400 7400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
