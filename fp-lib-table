@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name library)(type KiCad)(uri ${KIPRJMOD}/library)(options "")(descr ""))
+  (lib (name PJ-002A)(type Legacy)(uri ${KIPRJMOD}/library/PJ-002A.mod)(options "")(descr ""))
 )
