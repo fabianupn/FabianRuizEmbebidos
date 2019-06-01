@@ -676,47 +676,23 @@ Wire Notes Line
 Wire Notes Line
 	7700 13150 1200 13150
 Wire Wire Line
-	12950 5150 13450 5150
-Wire Wire Line
-	12950 5250 13450 5250
+	12950 5650 13450 5650
 Wire Wire Line
 	12950 5350 13450 5350
 Wire Wire Line
-	13450 5650 12950 5650
-Wire Wire Line
-	13450 5750 12950 5750
-Wire Wire Line
-	13450 5850 12950 5850
-Text Label 13050 5150 0    50   ~ 0
-MEN_D2
-Text Label 13050 5250 0    50   ~ 0
-MEN_D3
-Text Label 13050 5350 0    50   ~ 0
-MEN_D4
-Text Label 13350 5650 2    50   ~ 0
+	12950 5250 13450 5250
+Text Label 13050 5650 0    50   ~ 0
 MEN_D5
-Text Label 13350 5750 2    50   ~ 0
+Text Label 13050 5350 0    50   ~ 0
 MEN_D6
-Text Label 13350 5850 2    50   ~ 0
+Text Label 13050 5250 0    50   ~ 0
 MEN_D7
-Text Label 13050 5050 0    50   ~ 0
-MEN_D1
 Text Label 13350 10050 2    50   ~ 0
 MEN_D0
 Wire Wire Line
-	12950 5050 13450 5050
-Wire Wire Line
 	13450 10050 12950 10050
 Wire Wire Line
-	13450 8550 12950 8550
-Wire Wire Line
-	13450 8650 12950 8650
-Wire Wire Line
-	13450 8750 12950 8750
-Wire Wire Line
-	13450 8850 12950 8850
-Wire Wire Line
-	13450 8950 12950 8950
+	12950 8550 13450 8550
 Wire Wire Line
 	13450 9050 12950 9050
 Wire Wire Line
@@ -737,17 +713,9 @@ Wire Wire Line
 	13450 9850 12950 9850
 Wire Wire Line
 	13450 9950 12950 9950
-Text Label 13050 8550 0    50   ~ 0
-NEM_A0
-Text Label 13050 8650 0    50   ~ 0
-MEN_A1
-Text Label 13050 8750 0    50   ~ 0
-MEN_A2
-Text Label 13050 8850 0    50   ~ 0
-MEN_A3
 Text Label 13050 9050 0    50   ~ 0
 MEN_A5
-Text Label 13050 8950 0    50   ~ 0
+Text Label 13350 8550 2    50   ~ 0
 MEN_A4
 Text Label 13050 9150 0    50   ~ 0
 MEN_A6
@@ -992,13 +960,13 @@ Wire Wire Line
 Wire Wire Line
 	12950 5550 13350 5550
 Wire Wire Line
-	8850 8250 9250 8250
+	9250 8250 8850 8250
 Wire Wire Line
-	8850 8350 9250 8350
+	9250 8350 8850 8350
 Wire Wire Line
-	8850 8450 9250 8450
+	9250 8450 8850 8450
 Wire Wire Line
-	8850 8550 9250 8550
+	9250 8550 8850 8550
 Wire Wire Line
 	8850 8650 9250 8650
 Wire Wire Line
@@ -1019,13 +987,13 @@ Text Label 13000 5450 0    50   ~ 0
 FMC_D0
 Text Label 13000 5550 0    50   ~ 0
 FMC_D1
-Text Label 8900 8250 0    50   ~ 0
+Text Label 9200 8250 2    50   ~ 0
 FMC_D4
-Text Label 8900 8350 0    50   ~ 0
+Text Label 9200 8350 2    50   ~ 0
 FMC_D5
-Text Label 8900 8450 0    50   ~ 0
+Text Label 9200 8450 2    50   ~ 0
 FMC_D6
-Text Label 8900 8550 0    50   ~ 0
+Text Label 9200 8550 2    50   ~ 0
 FMC_D7
 Text Label 8900 8650 0    50   ~ 0
 FMC_D8
@@ -1043,12 +1011,12 @@ Text Label 13000 6850 0    50   ~ 0
 FMC_D15
 Text Label 13000 6750 0    50   ~ 0
 FMC_D14
-Text Label 8900 8150 0    50   ~ 0
+Text Label 9200 8150 2    50   ~ 0
 FMC_D3
 Text Label 8900 8050 0    50   ~ 0
 FMC_D2
 Wire Wire Line
-	8850 8150 9250 8150
+	9250 8150 8850 8150
 Wire Wire Line
 	8850 8050 9250 8050
 Wire Wire Line
@@ -1158,41 +1126,41 @@ Wire Wire Line
 	12950 6050 13600 6050
 Text Label 13200 6050 0    50   ~ 0
 CLK80MHz
-Text GLabel 9250 6350 0    50   Input ~ 0
-adDD9
-Text GLabel 9250 6250 0    50   Input ~ 0
-adDD8
-Text GLabel 9250 6150 0    50   Input ~ 0
-adDD7
-Text GLabel 9250 6050 0    50   Input ~ 0
-adDD6
-Text GLabel 9250 5950 0    50   Input ~ 0
-adDD5
-Text GLabel 9250 5850 0    50   Input ~ 0
-adDD4
-Text GLabel 9250 5750 0    50   Input ~ 0
-adDD3
-Text GLabel 9250 5650 0    50   Input ~ 0
-adDD2
-Text GLabel 9250 5550 0    50   Input ~ 0
-adDD1
-Text GLabel 9250 5450 0    50   Input ~ 0
-adDD0
 Text GLabel 9250 7350 0    50   Input ~ 0
-adDA7
+adDD9
 Text GLabel 9250 7250 0    50   Input ~ 0
-adDA6
+adDD8
 Text GLabel 9250 7150 0    50   Input ~ 0
-adDA5
+adDD7
 Text GLabel 9250 7050 0    50   Input ~ 0
-adDA4
+adDD6
 Text GLabel 9250 6950 0    50   Input ~ 0
-adDA3
+adDD5
 Text GLabel 9250 6850 0    50   Input ~ 0
-adDA2
+adDD4
 Text GLabel 9250 6750 0    50   Input ~ 0
-adDA1
+adDD3
 Text GLabel 9250 6650 0    50   Input ~ 0
+adDD2
+Text GLabel 9250 6350 0    50   Input ~ 0
+adDD1
+Text GLabel 9250 6250 0    50   Input ~ 0
+adDD0
+Text GLabel 9250 6150 0    50   Input ~ 0
+adDA7
+Text GLabel 9250 6050 0    50   Input ~ 0
+adDA6
+Text GLabel 9250 5950 0    50   Input ~ 0
+adDA5
+Text GLabel 9250 5850 0    50   Input ~ 0
+adDA4
+Text GLabel 9250 5750 0    50   Input ~ 0
+adDA3
+Text GLabel 9250 5650 0    50   Input ~ 0
+adDA2
+Text GLabel 9250 5550 0    50   Input ~ 0
+adDA1
+Text GLabel 9250 5450 0    50   Input ~ 0
 adDA0
 $Comp
 L FSM1LPTR:FSM1LPTR U?
@@ -1227,27 +1195,23 @@ FGPIO6
 Wire Wire Line
 	12950 6450 13350 6450
 Wire Wire Line
-	12950 6550 13350 6550
-Wire Wire Line
 	12950 6950 13350 6950
 Wire Wire Line
 	12950 7050 13350 7050
 Text Label 13100 6450 0    50   ~ 0
 FGPIO1
 Text Label 13100 6550 0    50   ~ 0
-FGPIO3
+FGPIO7
 Text Label 13100 6950 0    50   ~ 0
 FGPIO5
 Text Label 13100 7050 0    50   ~ 0
-FGPIO7
+FGPIO3
 Wire Wire Line
 	13350 4850 12950 4850
 Wire Wire Line
 	13350 4950 12950 4950
 Wire Wire Line
 	13350 7150 12950 7150
-Wire Wire Line
-	13350 7250 12950 7250
 Text Label 13000 4850 0    50   ~ 0
 FGPIO8
 Text Label 13000 4950 0    50   ~ 0
@@ -1255,7 +1219,7 @@ FGPIO10
 Text Label 13000 7150 0    50   ~ 0
 FGPIO12
 Text Label 13000 7250 0    50   ~ 0
-FGPIO14
+FGPIO15
 Wire Wire Line
 	9250 9850 8850 9850
 Wire Wire Line
@@ -1271,8 +1235,7 @@ FGPIO11
 Text Label 9100 7950 2    50   ~ 0
 FGPIO13
 Text Label 9050 7650 2    50   ~ 0
-FGPIO15
-NoConn ~ 12950 7350
+FGPIO14
 NoConn ~ 9250 4650
 Wire Wire Line
 	9000 2800 8500 2800
@@ -1353,14 +1316,14 @@ Wire Wire Line
 Connection ~ 11450 10550
 $Comp
 L power-rescue:lx9_XC6SLX9-TQ144-pcb_edu-cache U10
-U 0 0 5CE650EB
+U 1 1 5CE650EB
 P 11150 7150
 F 0 "U10" H 11050 9500 60  0000 C CNN
 F 1 "lx9_XC6SLX9-TQ144" H 12300 3950 60  0000 C CNN
 F 2 "Package_QFP:LQFP-144_20x20mm_P0.5mm" H 11150 7150 50  0001 C CNN
 F 3 "https://www.xilinx.com/support/documentation/data_sheets/ds162.pdf" H 11150 7150 50  0001 C CNN
 F 4 "122-1745-ND" H 11150 7150 50  0001 C CNN "digiker"
-	0    11150 7150
+	1    11150 7150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1381,8 +1344,6 @@ F 4 "S6106-ND" H 3950 14500 50  0001 C CNN "digikey"
 	1    3950 14500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4250 15000 3750 15000
 Text Label 3600 14200 2    50   ~ 0
 FGPIO1
 Wire Wire Line
@@ -1407,32 +1368,16 @@ $EndComp
 $Comp
 L power:GND #PWR060
 U 1 1 5F8F6CEA
-P 3750 15050
-F 0 "#PWR060" H 3750 14800 50  0001 C CNN
-F 1 "GND" V 3755 14922 50  0000 R CNN
-F 2 "" H 3750 15050 50  0001 C CNN
-F 3 "" H 3750 15050 50  0001 C CNN
-	1    3750 15050
+P 3650 15050
+F 0 "#PWR060" H 3650 14800 50  0001 C CNN
+F 1 "GND" V 3655 14922 50  0000 R CNN
+F 2 "" H 3650 15050 50  0001 C CNN
+F 3 "" H 3650 15050 50  0001 C CNN
+	1    3650 15050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3750 15050 3750 15000
-Connection ~ 3750 15000
-Wire Wire Line
 	3600 14900 3750 14900
-$Comp
-L power:+5V #PWR063
-U 1 1 5F97EB1C
-P 4350 14900
-F 0 "#PWR063" H 4350 14750 50  0001 C CNN
-F 1 "+5V" V 4365 15028 50  0000 L CNN
-F 2 "" H 4350 14900 50  0001 C CNN
-F 3 "" H 4350 14900 50  0001 C CNN
-	1    4350 14900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4350 14900 4250 14900
 Text GLabel 9150 6450 0    50   Input ~ 0
 GCK1
 Text GLabel 9150 6550 0    50   Input ~ 0
@@ -2119,4 +2064,123 @@ Wire Wire Line
 	3900 2200 3900 2500
 Wire Wire Line
 	3900 2850 3900 2800
+$Comp
+L BAT2032:R R?
+U 1 1 5D014E10
+P 13750 6550
+AR Path="/5D3DE78E/5D014E10" Ref="R?"  Part="1" 
+AR Path="/5CF5B080/5D014E10" Ref="R9"  Part="1" 
+F 0 "R9" V 13650 6550 50  0000 C CNN
+F 1 "1.5k" V 13750 6550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 13680 6550 50  0001 C CNN
+F 3 "~" H 13750 6550 50  0001 C CNN
+	1    13750 6550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0146
+U 1 1 5D0A4D77
+P 14100 6550
+F 0 "#PWR0146" H 14100 6300 50  0001 C CNN
+F 1 "GND" H 14105 6377 50  0000 C CNN
+F 2 "" H 14100 6550 50  0001 C CNN
+F 3 "" H 14100 6550 50  0001 C CNN
+	1    14100 6550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	14100 6550 13900 6550
+Wire Wire Line
+	12950 6550 13600 6550
+$Comp
+L BAT2032:R R?
+U 1 1 5D1342FF
+P 13750 7250
+AR Path="/5D3DE78E/5D1342FF" Ref="R?"  Part="1" 
+AR Path="/5CF5B080/5D1342FF" Ref="R10"  Part="1" 
+F 0 "R10" V 13650 7250 50  0000 C CNN
+F 1 "1.5k" V 13750 7250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 13680 7250 50  0001 C CNN
+F 3 "~" H 13750 7250 50  0001 C CNN
+	1    13750 7250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0147
+U 1 1 5D134305
+P 14100 7250
+F 0 "#PWR0147" H 14100 7000 50  0001 C CNN
+F 1 "GND" H 14105 7077 50  0000 C CNN
+F 2 "" H 14100 7250 50  0001 C CNN
+F 3 "" H 14100 7250 50  0001 C CNN
+	1    14100 7250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	14100 7250 13900 7250
+Wire Wire Line
+	12950 7250 13600 7250
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D22AF37
+P 4400 14900
+AR Path="/5CD17BDC/5D22AF37" Ref="#PWR?"  Part="1" 
+AR Path="/5CF5B080/5D22AF37" Ref="#PWR0148"  Part="1" 
+F 0 "#PWR0148" H 4400 14750 50  0001 C CNN
+F 1 "+3V3" V 4400 15100 50  0000 C CNN
+F 2 "" H 4400 14900 50  0001 C CNN
+F 3 "" H 4400 14900 50  0001 C CNN
+	1    4400 14900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 14900 4250 14900
+Wire Wire Line
+	3650 15050 3650 15000
+Wire Wire Line
+	3650 15000 3750 15000
+Text GLabel 4350 15000 2    50   Input ~ 0
+VCC_5V
+Wire Wire Line
+	4350 15000 4250 15000
+Text Notes 4750 14800 0    50   ~ 0
+pin de progrmacion\n
+Text Notes 2600 14800 0    50   ~ 0
+pin de progrmacion\n
+Wire Wire Line
+	13450 7350 12950 7350
+Text Label 13050 7350 0    50   ~ 0
+MEN_WE
+Wire Wire Line
+	12950 5050 13450 5050
+Text Label 13050 5050 0    50   ~ 0
+MEN_D1
+Text Label 13350 5750 2    50   ~ 0
+MEN_D4
+Text Label 13350 5850 2    50   ~ 0
+MEN_D3
+Text Label 13050 5150 0    50   ~ 0
+MEN_D2
+Wire Wire Line
+	13450 5750 12950 5750
+Wire Wire Line
+	13450 5850 12950 5850
+Wire Wire Line
+	12950 5150 13450 5150
+Text Label 13350 8650 2    50   ~ 0
+MEN_A3
+Text Label 13350 8750 2    50   ~ 0
+MEN_A2
+Text Label 13350 8850 2    50   ~ 0
+MEN_A1
+Text Label 13350 8950 2    50   ~ 0
+NEM_A0
+Wire Wire Line
+	12950 8650 13450 8650
+Wire Wire Line
+	12950 8750 13450 8750
+Wire Wire Line
+	12950 8850 13450 8850
+Wire Wire Line
+	12950 8950 13450 8950
 $EndSCHEMATC
