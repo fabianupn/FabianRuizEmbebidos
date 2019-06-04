@@ -1,4 +1,4 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 5
 LIBS:power-cache
 EELAYER 29 0
 EELAYER END
@@ -1186,11 +1186,7 @@ Wire Wire Line
 	13350 6350 12950 6350
 Text Label 13000 5950 0    50   ~ 0
 FGPIO0
-Text Label 13000 6150 0    50   ~ 0
-FGPIO2
-Text Label 13000 6250 0    50   ~ 0
-FGPIO4
-Text Label 13000 6350 0    50   ~ 0
+Text Label 8900 9850 0    50   ~ 0
 FGPIO6
 Wire Wire Line
 	12950 6450 13350 6450
@@ -1198,14 +1194,10 @@ Wire Wire Line
 	12950 6950 13350 6950
 Wire Wire Line
 	12950 7050 13350 7050
-Text Label 13100 6450 0    50   ~ 0
+Text Label 13000 6150 0    50   ~ 0
 FGPIO1
 Text Label 13100 6550 0    50   ~ 0
 FGPIO7
-Text Label 13100 6950 0    50   ~ 0
-FGPIO5
-Text Label 13100 7050 0    50   ~ 0
-FGPIO3
 Wire Wire Line
 	13350 4850 12950 4850
 Wire Wire Line
@@ -1214,10 +1206,6 @@ Wire Wire Line
 	13350 7150 12950 7150
 Text Label 13000 4850 0    50   ~ 0
 FGPIO8
-Text Label 13000 4950 0    50   ~ 0
-FGPIO10
-Text Label 13000 7150 0    50   ~ 0
-FGPIO12
 Text Label 13000 7250 0    50   ~ 0
 FGPIO15
 Wire Wire Line
@@ -1228,14 +1216,10 @@ Wire Wire Line
 	9250 7950 8850 7950
 Wire Wire Line
 	9250 7650 8850 7650
-Text Label 9200 9850 2    50   ~ 0
+Text Label 13250 4950 2    50   ~ 0
 FGPIO9
-Text Label 9200 9750 2    50   ~ 0
+Text Label 13250 6450 2    50   ~ 0
 FGPIO11
-Text Label 9100 7950 2    50   ~ 0
-FGPIO13
-Text Label 9050 7650 2    50   ~ 0
-FGPIO14
 NoConn ~ 9250 4650
 Wire Wire Line
 	9000 2800 8500 2800
@@ -2183,4 +2167,20 @@ Wire Wire Line
 	12950 8850 13450 8850
 Wire Wire Line
 	12950 8950 13450 8950
+Text Label 9200 7650 2    50   ~ 0
+FGPIO13
+Text Label 9200 9750 2    50   ~ 0
+FGPIO14
+Text Label 8900 7950 0    50   ~ 0
+FGPIO5
+Text Label 13050 7150 0    50   ~ 0
+FGPIO4
+Text Label 13000 7050 0    50   ~ 0
+FGPIO12
+Text Label 13000 6950 0    50   ~ 0
+FGPIO3
+Text Label 13000 6350 0    50   ~ 0
+FGPIO2
+Text Label 13000 6250 0    50   ~ 0
+FGPIO10
 $EndSCHEMATC

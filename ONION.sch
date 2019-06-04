@@ -1,4 +1,4 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 5
 LIBS:power-cache
 EELAYER 29 0
 EELAYER END
@@ -334,7 +334,7 @@ Text GLabel 6200 3250 2    50   Input ~ 0
 USART_RX
 NoConn ~ 5700 2550
 $Comp
-L Connector_Generic:Conn_02x06_Counter_Clockwise J?
+L Connector_Generic:Conn_02x06_Odd_Even J?
 U 1 1 5E0A8FB7
 P 2150 2300
 AR Path="/5CF5B080/5E0A8FB7" Ref="J?"  Part="1" 
@@ -378,9 +378,9 @@ Wire Wire Line
 	1450 2200 1950 2200
 Wire Wire Line
 	1450 2300 1950 2300
-Text Label 1600 2200 0    50   ~ 0
-I2C_SCL
 Text Label 1600 2300 0    50   ~ 0
+I2C_SCL
+Text Label 1600 2200 0    50   ~ 0
 I2C_SDA
 Wire Wire Line
 	1450 2400 1950 2400

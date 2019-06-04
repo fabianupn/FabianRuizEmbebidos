@@ -1,4 +1,4 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 5
 LIBS:power-cache
 EELAYER 29 0
 EELAYER END
@@ -676,47 +676,23 @@ Wire Notes Line
 Wire Notes Line
 	7700 13150 1200 13150
 Wire Wire Line
-	12950 5150 13450 5150
-Wire Wire Line
-	12950 5250 13450 5250
+	12950 5650 13450 5650
 Wire Wire Line
 	12950 5350 13450 5350
 Wire Wire Line
-	13450 5650 12950 5650
-Wire Wire Line
-	13450 5750 12950 5750
-Wire Wire Line
-	13450 5850 12950 5850
-Text Label 13050 5150 0    50   ~ 0
-MEN_D2
-Text Label 13050 5250 0    50   ~ 0
-MEN_D3
-Text Label 13050 5350 0    50   ~ 0
-MEN_D4
-Text Label 13350 5650 2    50   ~ 0
+	12950 5250 13450 5250
+Text Label 13050 5650 0    50   ~ 0
 MEN_D5
-Text Label 13350 5750 2    50   ~ 0
+Text Label 13050 5350 0    50   ~ 0
 MEN_D6
-Text Label 13350 5850 2    50   ~ 0
+Text Label 13050 5250 0    50   ~ 0
 MEN_D7
-Text Label 13050 5050 0    50   ~ 0
-MEN_D1
 Text Label 13350 10050 2    50   ~ 0
 MEN_D0
 Wire Wire Line
-	12950 5050 13450 5050
-Wire Wire Line
 	13450 10050 12950 10050
 Wire Wire Line
-	13450 8550 12950 8550
-Wire Wire Line
-	13450 8650 12950 8650
-Wire Wire Line
-	13450 8750 12950 8750
-Wire Wire Line
-	13450 8850 12950 8850
-Wire Wire Line
-	13450 8950 12950 8950
+	12950 8550 13450 8550
 Wire Wire Line
 	13450 9050 12950 9050
 Wire Wire Line
@@ -737,17 +713,9 @@ Wire Wire Line
 	13450 9850 12950 9850
 Wire Wire Line
 	13450 9950 12950 9950
-Text Label 13050 8550 0    50   ~ 0
-NEM_A0
-Text Label 13050 8650 0    50   ~ 0
-MEN_A1
-Text Label 13050 8750 0    50   ~ 0
-MEN_A2
-Text Label 13050 8850 0    50   ~ 0
-MEN_A3
 Text Label 13050 9050 0    50   ~ 0
 MEN_A5
-Text Label 13050 8950 0    50   ~ 0
+Text Label 13350 8550 2    50   ~ 0
 MEN_A4
 Text Label 13050 9150 0    50   ~ 0
 MEN_A6
@@ -992,13 +960,13 @@ Wire Wire Line
 Wire Wire Line
 	12950 5550 13350 5550
 Wire Wire Line
-	8850 8250 9250 8250
+	9250 8250 8850 8250
 Wire Wire Line
-	8850 8350 9250 8350
+	9250 8350 8850 8350
 Wire Wire Line
-	8850 8450 9250 8450
+	9250 8450 8850 8450
 Wire Wire Line
-	8850 8550 9250 8550
+	9250 8550 8850 8550
 Wire Wire Line
 	8850 8650 9250 8650
 Wire Wire Line
@@ -1019,13 +987,13 @@ Text Label 13000 5450 0    50   ~ 0
 FMC_D0
 Text Label 13000 5550 0    50   ~ 0
 FMC_D1
-Text Label 8900 8250 0    50   ~ 0
+Text Label 9200 8250 2    50   ~ 0
 FMC_D4
-Text Label 8900 8350 0    50   ~ 0
+Text Label 9200 8350 2    50   ~ 0
 FMC_D5
-Text Label 8900 8450 0    50   ~ 0
+Text Label 9200 8450 2    50   ~ 0
 FMC_D6
-Text Label 8900 8550 0    50   ~ 0
+Text Label 9200 8550 2    50   ~ 0
 FMC_D7
 Text Label 8900 8650 0    50   ~ 0
 FMC_D8
@@ -1043,12 +1011,12 @@ Text Label 13000 6850 0    50   ~ 0
 FMC_D15
 Text Label 13000 6750 0    50   ~ 0
 FMC_D14
-Text Label 8900 8150 0    50   ~ 0
+Text Label 9200 8150 2    50   ~ 0
 FMC_D3
 Text Label 8900 8050 0    50   ~ 0
 FMC_D2
 Wire Wire Line
-	8850 8150 9250 8150
+	9250 8150 8850 8150
 Wire Wire Line
 	8850 8050 9250 8050
 Wire Wire Line
@@ -1218,11 +1186,7 @@ Wire Wire Line
 	13350 6350 12950 6350
 Text Label 13000 5950 0    50   ~ 0
 FGPIO0
-Text Label 13000 6150 0    50   ~ 0
-FGPIO2
-Text Label 13000 6250 0    50   ~ 0
-FGPIO4
-Text Label 13000 6350 0    50   ~ 0
+Text Label 8900 9850 0    50   ~ 0
 FGPIO6
 Wire Wire Line
 	12950 6450 13350 6450
@@ -1230,14 +1194,10 @@ Wire Wire Line
 	12950 6950 13350 6950
 Wire Wire Line
 	12950 7050 13350 7050
-Text Label 13100 6450 0    50   ~ 0
+Text Label 13000 6150 0    50   ~ 0
 FGPIO1
 Text Label 13100 6550 0    50   ~ 0
 FGPIO7
-Text Label 13100 6950 0    50   ~ 0
-FGPIO5
-Text Label 13100 7050 0    50   ~ 0
-FGPIO3
 Wire Wire Line
 	13350 4850 12950 4850
 Wire Wire Line
@@ -1246,10 +1206,6 @@ Wire Wire Line
 	13350 7150 12950 7150
 Text Label 13000 4850 0    50   ~ 0
 FGPIO8
-Text Label 13000 4950 0    50   ~ 0
-FGPIO10
-Text Label 13000 7150 0    50   ~ 0
-FGPIO12
 Text Label 13000 7250 0    50   ~ 0
 FGPIO15
 Wire Wire Line
@@ -1260,15 +1216,10 @@ Wire Wire Line
 	9250 7950 8850 7950
 Wire Wire Line
 	9250 7650 8850 7650
-Text Label 9200 9850 2    50   ~ 0
+Text Label 13250 4950 2    50   ~ 0
 FGPIO9
-Text Label 9200 9750 2    50   ~ 0
+Text Label 13250 6450 2    50   ~ 0
 FGPIO11
-Text Label 9100 7950 2    50   ~ 0
-FGPIO13
-Text Label 9050 7650 2    50   ~ 0
-FGPIO14
-NoConn ~ 12950 7350
 NoConn ~ 9250 4650
 Wire Wire Line
 	9000 2800 8500 2800
@@ -2180,4 +2131,56 @@ Text Notes 4750 14800 0    50   ~ 0
 pin de progrmacion\n
 Text Notes 2600 14800 0    50   ~ 0
 pin de progrmacion\n
+Wire Wire Line
+	13450 7350 12950 7350
+Text Label 13050 7350 0    50   ~ 0
+MEN_WE
+Wire Wire Line
+	12950 5050 13450 5050
+Text Label 13050 5050 0    50   ~ 0
+MEN_D1
+Text Label 13350 5750 2    50   ~ 0
+MEN_D4
+Text Label 13350 5850 2    50   ~ 0
+MEN_D3
+Text Label 13050 5150 0    50   ~ 0
+MEN_D2
+Wire Wire Line
+	13450 5750 12950 5750
+Wire Wire Line
+	13450 5850 12950 5850
+Wire Wire Line
+	12950 5150 13450 5150
+Text Label 13350 8650 2    50   ~ 0
+MEN_A3
+Text Label 13350 8750 2    50   ~ 0
+MEN_A2
+Text Label 13350 8850 2    50   ~ 0
+MEN_A1
+Text Label 13350 8950 2    50   ~ 0
+NEM_A0
+Wire Wire Line
+	12950 8650 13450 8650
+Wire Wire Line
+	12950 8750 13450 8750
+Wire Wire Line
+	12950 8850 13450 8850
+Wire Wire Line
+	12950 8950 13450 8950
+Text Label 9200 7650 2    50   ~ 0
+FGPIO13
+Text Label 9200 9750 2    50   ~ 0
+FGPIO14
+Text Label 8900 7950 0    50   ~ 0
+FGPIO5
+Text Label 13050 7150 0    50   ~ 0
+FGPIO4
+Text Label 13000 7050 0    50   ~ 0
+FGPIO12
+Text Label 13000 6950 0    50   ~ 0
+FGPIO3
+Text Label 13000 6350 0    50   ~ 0
+FGPIO2
+Text Label 13000 6250 0    50   ~ 0
+FGPIO10
 $EndSCHEMATC

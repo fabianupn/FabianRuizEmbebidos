@@ -1,4 +1,4 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 5
 LIBS:power-cache
 EELAYER 29 0
 EELAYER END
@@ -882,8 +882,6 @@ Wire Wire Line
 	16350 6200 17000 6200
 Wire Wire Line
 	16350 6300 17000 6300
-Text Label 16550 6300 0    50   ~ 0
-I2C_SDA
 Text Label 16550 6200 0    50   ~ 0
 I2C_SCL
 $Comp
@@ -1132,15 +1130,7 @@ INT_M
 Wire Wire Line
 	16350 3800 16900 3800
 Wire Wire Line
-	16350 3900 16900 3900
-Wire Wire Line
 	16350 4000 16900 4000
-Wire Wire Line
-	16350 3700 16900 3700
-Text Label 16500 3700 0    50   ~ 0
-XCVR_EN
-Text Label 16500 3800 0    50   ~ 0
-SPI1_RSSI
 Wire Wire Line
 	16350 7500 16900 7500
 Text Label 16550 7500 0    50   ~ 0
@@ -1163,15 +1153,15 @@ Text Label 20450 12300 2    50   ~ 0
 DEN_A_G
 Text Label 20450 12400 2    50   ~ 0
 INT2_A_G
-Text Label 20450 12500 2    50   ~ 0
+Text Label 19150 12400 2    50   ~ 0
 INT1_A_G
 Wire Wire Line
 	19900 12600 20550 12600
 Wire Wire Line
 	19900 12700 20550 12700
-Text Label 20450 12600 2    50   ~ 0
+Text Label 20400 12700 2    50   ~ 0
 SDO_A_G
-Text Label 20450 12700 2    50   ~ 0
+Text Label 20400 12600 2    50   ~ 0
 CS_A_G
 Wire Wire Line
 	19400 12700 18800 12700
@@ -1181,13 +1171,13 @@ Wire Wire Line
 	19400 12500 18800 12500
 Wire Wire Line
 	19400 12400 18800 12400
-Text Label 19100 12700 2    50   ~ 0
+Text Label 19150 12600 2    50   ~ 0
 CS_M
-Text Label 19100 12600 2    50   ~ 0
+Text Label 19150 12700 2    50   ~ 0
 SDO_M
-Text Label 19100 12500 2    50   ~ 0
+Text Label 20400 12500 2    50   ~ 0
 DRDY_M
-Text Label 19100 12400 2    50   ~ 0
+Text Label 19100 12500 2    50   ~ 0
 INT_M
 Wire Wire Line
 	19400 12300 19150 12300
@@ -1486,11 +1476,7 @@ Wire Wire Line
 	7050 3850 7050 4050
 Text Notes 16900 7550 0    50   ~ 0
 REVISAR ESTAS DOS CONEC
-Text GLabel 16900 3700 2    50   Input ~ 0
-!VAA_ENABLE
 Text GLabel 16900 3800 2    50   Input ~ 0
-rf_RSSI
-Text GLabel 16900 3900 2    50   Input ~ 0
 rf_RXHP
 Text GLabel 16900 4000 2    50   Input ~ 0
 rf_RXTX
@@ -1600,133 +1586,59 @@ NoConn ~ 16350 4500
 NoConn ~ 16350 4800
 NoConn ~ 16350 4900
 Wire Wire Line
-	16350 6400 17000 6400
-Text Label 16500 6400 0    50   ~ 0
-GPIO_00
-Wire Wire Line
-	16350 6500 17000 6500
-Text Label 16500 6500 0    50   ~ 0
-GPIO_01
-Wire Wire Line
-	16350 6600 17000 6600
-Text Label 16500 6600 0    50   ~ 0
-GPIO_02
-Wire Wire Line
-	16350 6700 17000 6700
-Text Label 16500 6700 0    50   ~ 0
-GPIO_03
-Wire Wire Line
-	16350 6800 17000 6800
-Text Label 16500 6800 0    50   ~ 0
-GPIO_04
-Wire Wire Line
-	16350 6900 17000 6900
-Text Label 16500 6900 0    50   ~ 0
-GPIO_05
-Wire Wire Line
 	18900 4400 19550 4400
-Text Label 19050 4400 0    50   ~ 0
-GPIO_00
 Wire Wire Line
 	18900 4500 19550 4500
-Text Label 19050 4500 0    50   ~ 0
-GPIO_01
-Wire Wire Line
-	18900 4600 19550 4600
-Text Label 19050 4600 0    50   ~ 0
+Text Label 19100 4500 0    50   ~ 0
 GPIO_02
-Wire Wire Line
-	18900 4700 19550 4700
-Text Label 19050 4700 0    50   ~ 0
-GPIO_03
-Wire Wire Line
-	18900 4800 19550 4800
-Text Label 19050 4800 0    50   ~ 0
+Text Label 19100 4600 0    50   ~ 0
 GPIO_04
 Wire Wire Line
-	18900 4900 19550 4900
-Text Label 19050 4900 0    50   ~ 0
-GPIO_05
-Wire Wire Line
-	16350 7100 17000 7100
-Text Label 16500 7100 0    50   ~ 0
+	18900 4700 19550 4700
+Text Label 19100 4700 0    50   ~ 0
 GPIO_06
 Wire Wire Line
-	16350 7200 17000 7200
-Text Label 16500 7200 0    50   ~ 0
-GPIO_07
-Wire Wire Line
-	16350 7300 17000 7300
-Text Label 16500 7300 0    50   ~ 0
+	18900 4800 19550 4800
+Text Label 19100 4800 0    50   ~ 0
 GPIO_08
 Wire Wire Line
-	16350 7400 17000 7400
-Text Label 16500 7400 0    50   ~ 0
-GPIO_09
-Wire Wire Line
-	6800 7750 7450 7750
-Text Label 6950 7750 0    50   ~ 0
+	18900 4900 19550 4900
+Text Label 19100 4900 0    50   ~ 0
 GPIO_10
 Wire Wire Line
+	16350 7400 17000 7400
+Wire Wire Line
+	16350 7300 17000 7300
+Wire Wire Line
+	16350 7200 17000 7200
+Wire Wire Line
+	6800 7750 7450 7750
+Wire Wire Line
 	6800 7850 7450 7850
-Text Label 6950 7850 0    50   ~ 0
+Text Label 7350 8150 2    50   ~ 0
 GPIO_11
 Wire Wire Line
 	6800 7950 7450 7950
-Text Label 6950 7950 0    50   ~ 0
+Text Label 7350 8050 2    50   ~ 0
 GPIO_12
 Wire Wire Line
 	6800 8050 7450 8050
-Text Label 6950 8050 0    50   ~ 0
+Text Label 7350 7950 2    50   ~ 0
 GPIO_13
 Wire Wire Line
 	6800 8150 7450 8150
-Text Label 6950 8150 0    50   ~ 0
+Text Label 7350 7850 2    50   ~ 0
 GPIO_14
 Wire Wire Line
 	6800 8250 7450 8250
-Text Label 6950 8250 0    50   ~ 0
+Text Label 7350 7750 2    50   ~ 0
 GPIO_15
-Wire Wire Line
-	20050 4600 20700 4600
-Text Label 20200 4600 0    50   ~ 0
-GPIO_10
-Wire Wire Line
-	20050 4700 20700 4700
-Text Label 20200 4700 0    50   ~ 0
-GPIO_11
-Wire Wire Line
-	20050 4800 20700 4800
-Text Label 20200 4800 0    50   ~ 0
-GPIO_12
-Wire Wire Line
-	20050 4900 20700 4900
-Text Label 20200 4900 0    50   ~ 0
-GPIO_13
-Wire Wire Line
-	20050 5000 20700 5000
-Text Label 20200 5000 0    50   ~ 0
-GPIO_14
-Wire Wire Line
-	20050 5100 20700 5100
-Text Label 20200 5100 0    50   ~ 0
-GPIO_15
-Wire Wire Line
-	20050 4400 20700 4400
-Text Label 20200 4400 0    50   ~ 0
-GPIO_08
-Wire Wire Line
-	20050 4500 20700 4500
-Text Label 20200 4500 0    50   ~ 0
-GPIO_09
 Wire Wire Line
 	18900 5000 19550 5000
-Text Label 19050 5000 0    50   ~ 0
-GPIO_06
 Wire Wire Line
 	18900 5100 19550 5100
-Text Label 19050 5100 0    50   ~ 0
-GPIO_07
+Text Label 19100 5100 0    50   ~ 0
+GPIO_14
 NoConn ~ 16350 5900
 NoConn ~ 16350 6000
 NoConn ~ 16350 6100
@@ -1743,20 +1655,12 @@ NoConn ~ 16350 9000
 NoConn ~ 16350 9900
 NoConn ~ 16350 10000
 NoConn ~ 16350 10100
-NoConn ~ 7450 9250
-NoConn ~ 7450 9150
 NoConn ~ 7450 9050
+NoConn ~ 7450 9450
+NoConn ~ 7450 9350
 NoConn ~ 7450 6950
 NoConn ~ 7450 6250
 NoConn ~ 7450 6150
-Wire Wire Line
-	7450 9350 7050 9350
-Wire Wire Line
-	7450 9450 7050 9450
-Text Label 7150 9350 0    50   ~ 0
-LED1
-Text Label 7150 9450 0    50   ~ 0
-LED2
 NoConn ~ 7450 5650
 NoConn ~ 7450 5750
 NoConn ~ 7450 5850
@@ -2118,4 +2022,100 @@ Wire Wire Line
 Connection ~ 19350 12800
 Wire Wire Line
 	19350 12800 19400 12800
+Wire Wire Line
+	7450 9150 7050 9150
+Text Label 7150 9150 0    50   ~ 0
+LED1
+Wire Wire Line
+	7450 9250 7050 9250
+Text GLabel 16900 3900 2    50   Input ~ 0
+rf_RSSI
+Text GLabel 16900 3700 2    50   Input ~ 0
+!VAA_ENABLE
+Text Label 16500 3900 0    50   ~ 0
+SPI1_RSSI
+Text Label 16500 3700 0    50   ~ 0
+XCVR_EN
+Wire Wire Line
+	16350 3700 16900 3700
+Wire Wire Line
+	16350 3900 16900 3900
+Text Label 7150 9250 0    50   ~ 0
+LED2
+Text Label 19100 4400 0    50   ~ 0
+GPIO_00
+Text Label 19100 5000 0    50   ~ 0
+GPIO_12
+Text Label 20200 4500 0    50   ~ 0
+GPIO_03
+Wire Wire Line
+	20050 4500 20700 4500
+Text Label 20200 4400 0    50   ~ 0
+GPIO_01
+Wire Wire Line
+	20050 4400 20700 4400
+Text Label 20200 5100 0    50   ~ 0
+GPIO_15
+Wire Wire Line
+	20050 5100 20700 5100
+Text Label 20200 5000 0    50   ~ 0
+GPIO_13
+Wire Wire Line
+	20050 5000 20700 5000
+Text Label 20200 4900 0    50   ~ 0
+GPIO_11
+Wire Wire Line
+	20050 4900 20700 4900
+Text Label 20200 4800 0    50   ~ 0
+GPIO_09
+Wire Wire Line
+	20050 4800 20700 4800
+Text Label 20200 4700 0    50   ~ 0
+GPIO_07
+Wire Wire Line
+	20050 4700 20700 4700
+Text Label 20200 4600 0    50   ~ 0
+GPIO_05
+Wire Wire Line
+	20050 4600 20700 4600
+Wire Wire Line
+	18900 4600 19550 4600
+Text Label 7050 8250 0    50   ~ 0
+GPIO_06
+Text Label 16700 7100 2    50   ~ 0
+GPIO_10
+Text Label 16500 7200 0    50   ~ 0
+GPIO_09
+Text Label 16500 7300 0    50   ~ 0
+GPIO_08
+Text Label 16500 7400 0    50   ~ 0
+GPIO_07
+Text Label 16550 6300 0    50   ~ 0
+I2C_SDA
+Wire Wire Line
+	16350 6600 17000 6600
+Text Label 16500 6600 0    50   ~ 0
+GPIO_02
+Wire Wire Line
+	16350 6700 17000 6700
+Text Label 16500 6700 0    50   ~ 0
+GPIO_03
+Wire Wire Line
+	16350 6400 17000 6400
+Text Label 16500 6400 0    50   ~ 0
+GPIO_04
+Wire Wire Line
+	16350 6500 17000 6500
+Text Label 16500 6500 0    50   ~ 0
+GPIO_05
+Text Label 16500 6900 0    50   ~ 0
+GPIO_01
+Wire Wire Line
+	16350 6900 17000 6900
+Text Label 16500 6800 0    50   ~ 0
+GPIO_00
+Wire Wire Line
+	16350 6800 17000 6800
+Wire Wire Line
+	16350 7100 17000 7100
 $EndSCHEMATC
