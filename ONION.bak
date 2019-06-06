@@ -378,9 +378,9 @@ Wire Wire Line
 	1450 2200 1950 2200
 Wire Wire Line
 	1450 2300 1950 2300
-Text Label 1600 2200 0    50   ~ 0
-I2C_SCL
 Text Label 1600 2300 0    50   ~ 0
+I2C_SCL
+Text Label 1600 2200 0    50   ~ 0
 I2C_SDA
 Wire Wire Line
 	1450 2400 1950 2400

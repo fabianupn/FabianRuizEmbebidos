@@ -187,7 +187,7 @@ Wire Wire Line
 	10850 2800 10850 1400
 Wire Wire Line
 	10750 2800 10750 1400
-Text GLabel 9100 1950 0    50   Input ~ 0
+Text GLabel 8650 1900 0    50   Input ~ 0
 vcc_STM32
 $Comp
 L Device:Battery_Cell BT1
@@ -404,13 +404,9 @@ F 3 "" H 10000 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10000 1950 10000 2300
-Wire Wire Line
 	10650 2800 10650 2300
 Wire Wire Line
-	10650 2300 10000 2300
-Wire Wire Line
-	8900 2300 8900 2500
+	10650 2300 10050 2300
 $Comp
 L power:GND #PWR033
 U 1 1 5D06DBDA
@@ -618,7 +614,6 @@ Wire Wire Line
 Connection ~ 18350 8050
 Wire Wire Line
 	18350 8050 17650 8050
-Connection ~ 10000 2300
 Wire Wire Line
 	6100 4700 6350 4700
 $Comp
@@ -2011,10 +2006,6 @@ NoConn ~ 7450 6750
 NoConn ~ 7450 6850
 Wire Wire Line
 	6350 5350 7250 5350
-Wire Wire Line
-	9100 1950 10000 1950
-Wire Wire Line
-	8900 2300 10000 2300
 Text GLabel 19350 12950 3    50   Input ~ 0
 VCC_5V
 Wire Wire Line
@@ -2118,4 +2109,31 @@ Wire Wire Line
 	16350 6800 17000 6800
 Wire Wire Line
 	16350 7100 17000 7100
+Wire Wire Line
+	8650 1900 8900 1900
+Wire Wire Line
+	8900 2200 10050 2200
+Wire Wire Line
+	10050 2200 10050 2300
+Connection ~ 10050 2300
+Wire Wire Line
+	10050 2300 10000 2300
+Wire Wire Line
+	8900 1900 8900 2200
+$Comp
+L Connector_01x18:Conn_01x02_Male J9
+U 1 1 5D073F54
+P 8700 2300
+F 0 "J9" H 8808 2481 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 8808 2390 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8700 2300 50  0001 C CNN
+F 3 "~" H 8700 2300 50  0001 C CNN
+	1    8700 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 2300 8900 2200
+Connection ~ 8900 2200
+Wire Wire Line
+	8900 2500 8900 2400
 $EndSCHEMATC
