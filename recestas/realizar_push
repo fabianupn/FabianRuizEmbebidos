@@ -1,0 +1,14 @@
+como guardar en github
+
+
+cd embebbido_unal/
+git add *
+git status
+git commit -m "xxxxxxxxxxxxxxxxx"
+git push
+
+
+
+
+
+

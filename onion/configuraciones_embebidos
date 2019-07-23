@@ -1,0 +1,47 @@
+openocd  para el micro 
+
+
+.cfg
+
+definir la cadena
+definir la interfaz 
+
+el profe envia arcgivo de ejemplo de programacion el¿n la Rasberry 
+
+para la spartan xc3sprog 
+
+
+Orden de montado en la plataforma.
+
+primero soldar medir continuidad en los capacitores
+luego los reguladores
+
+primero conectar la onion
+(cargar un progarama facil)
+luego micro y FPGA
+
+instalar el openocd
+instalar xc3sprog
+
+probar kernel de linux
+
+make menuconfig
+seleccionar los paquetes
+
+opkg install 
+intalar dependencias
+
+compilar la aplicacion si no tiene el programa
+
+se pueden colocar reglas. 
+
+Para chibiOs para el micro SMT32. (ya estan todos los drivers)
+
+
+
+ 
+
+  
+
+
+

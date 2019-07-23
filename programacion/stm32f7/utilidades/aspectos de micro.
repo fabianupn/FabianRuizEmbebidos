@@ -1,0 +1,7 @@
+Aspectos generales de la programacion del microcontrolador STM32F22xx
+
+los ppines en los cuales se va a realizar la programacion del blink son los leds
+ PE3  y   PE4
+
+
+ 
