@@ -1,0 +1,113 @@
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Actualización Firmware Onion
+
+Desde su primer uso resulta mas sencillo actualizar el firmware es lo mas optimo mediante los pasos,
+https://docs.onion.io/omega2-docs/first-time-setup.html
+
+o hagalo por medio de la consola de la siguiente forma
+https://docs.onion.io/omega2-docs/updating-the-omega-using-console.html
+
+
+Si realizo lo anterior no es necesario realizar lo siguiente, se dejan enlaces solo para información acerca de actualización por medio de comandos
+
+Onion Omega2 Firmware Build System
+https://github.com/OnionIoT/source 
+
+Updating the Omega
+https://docs.onion.io/omega2-docs/updating-the-omega.html
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Receta cross-compilling y openocd onion omega
+Cross-Compiling for the Omega
+https://docs.onion.io/omega2-docs/cross-compiling.html
+
+sudo apt-get install -y git wget subversion build-essential libncurses5-dev zlib1g-dev gawk flex quilt git-core unzip libssl-dev python-dev python-pip libxml-parser-perl
+git clone https://github.com/OnionIoT/source.git
+cd source
+make menuconfig
+make
+make -j8
+make menuconfig
+exit
+cd source
+make
+exit
+
+cd source/
+ls
+make menuconfig
+ls
+scripts/feeds install openocd
+ls
+nano feeds.conf
+vi feeds.conf
+nano feeds.conf
+gedit feeds.conf
+nano feeds.conf
+scripts/feeds update -a
+cd ..
+cd
+ls
+cd source/
+ls
+ls -lah
+cd ..
+ls
+ls -a
+gedit .bash_history 
+cd source/
+ls
+scripts/feeds update -a
+scripts/feeds install openocd
+make menuconfig 
+make -j8 V=s
+make -j1 V=s
+ls
+cd tmp/dl/
+ls
+cd ../..
+cd feeds/packages/utils/openocd/
+ls
+gedit Makefile 
+cd ../../../..
+ls
+make -j8
+make -j1 V=s
+cd feeds/packages/utils/openocd/
+ls
+gedit Makefile 
+cd ../../../..
+make -j1 V=s
+find -iname openocd
+find -iname *openocd*
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Setting Up Cross-Compile Environment for Omega
+https://github.com/OnionIoT/OpenWRT-Packages/wiki/Setting-Up-the-Cross-Compile-Environment
+
+Step 3: Update Feeds
+
+Feeds are repositories of packages that can be added to the OpenWRT system. Feeds are configured in the feeds.conf.default file. Additional feeds can be added by editing this file. For example, to add the Onion packages, append the following line to the file:
+
+src-git onion 
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+OpenWRT-Packages
+
+https://github.com/OnionIoT/OpenWRT-Packages.git
+Save the feeds.conf.default file, and update the feeds:
+$ scripts/feeds update -a
+This will fetch all the repositories configured in the feeds.conf.default file.
+
+
+
+
+
+

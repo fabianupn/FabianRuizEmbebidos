@@ -1,0 +1,247 @@
+guardar archivo makefile del xc3sprog que se descarga de ..... en la carpeta /source/package/feeds/package
+
+
+
+devolverse a soruce y ejecutar 
+$make manuconfig
+
+alli ir atulities y adicionar xc3sprog y dar
+$make
+generara error para visualizarlo dar
+$ make V=s
+botara errores de librerias estas hay que eliminarlas el llamamiento
+los cuales estan en 
+
+$cd /source/build_dir/target-mipsel_24kc_musl/xc3sprog-2019-06-27
+
+abrir
+
+gedit CMakeLists.txt
+
+
+Aqui empieza la fiesta
+
+
+//////////borrar primero/////////////
+
+option(USE_FTD2XX "Use FTDI libFTD2XX instead of free libftdi" ON)
+
+find_package(libftdi)
+include_directories(${LIBFTDI_INCLUDE_DIR})
+
+if(USE_FTD2XX)
+  find_package(libFTD2XX)
+endif(USE_FTD2XX)
+
+if(LIBFTD2XX_FOUND)
+  include_directories(${LIBFTD2XX_INCLUDE_DIR})
+  add_definitions( -DUSE_FTD2XX )
+else(LIBFTD2XX_FOUND)
+  set(LIBFTD2XX_LIBRARIES "")
+endif(LIBFTD2XX_FOUND)
+//////////////////////////////
+
+
+EN 
+////////////////////////////////
+
+add_library(xc3sproglib  STATIC sysfs.cpp ioftdi.cpp iofx2.cpp 
+                        devicedb.cpp jtag.cpp jedecfile.cpp bitfile.cpp 
+                        iomatrixcreator.cpp iomatrixvoice.cpp iowiringpi.cpp
+			iobase.cpp  progalgxc95x.cpp utilities.cpp
+			progalgxcf.cpp progalgxcfp.cpp progalgxc3s.cpp
+			progalgavr.cpp progalgxc2c.cpp  mapfile_xc2c.cpp
+			ioxpc.cpp progalgspiflash.cpp bitrev.cpp
+                        cabledb.cpp pdioverjtag.cpp xmega_pdi_nvm.cpp
+                        ${CONDITIONAL_FILES} devices.h cables.h)
+
+
+cambiarlo por 
+
+add_library(xc3sproglib  STATIC sysfs.cpp iofx2.cpp 
+                        devicedb.cpp jtag.cpp jedecfile.cpp bitfile.cpp 
+			iobase.cpp  progalgxc95x.cpp utilities.cpp
+			progalgxcf.cpp progalgxcfp.cpp progalgxc3s.cpp
+			progalgavr.cpp progalgxc2c.cpp  mapfile_xc2c.cpp
+			ioxpc.cpp progalgspiflash.cpp bitrev.cpp
+                        cabledb.cpp pdioverjtag.cpp xmega_pdi_nvm.cpp
+                        ${CONDITIONAL_FILES} devices.h cables.h)
+
+
+
+/////////////////////////////////////////////////////
+
+set(LIBS ${LIBS} wiringPiDev wiringPi)
+
+remplazar por 
+set(LIBS ${LIBS})
+
+///////////////////////////////7
+target_link_libraries(detectchain xc3sproglib ${LIBFTDI_LIBRARIES} ${LIBFTD2XX_LIBRARIES} ${CONDITIONAL_LIBS} ${LIBS} )
+
+
+target_link_libraries(xc3sprog xc3sproglib ${LIBFTDI_LIBRARIES}  ${LIBFTD2XX_LIBRARIES} ${CONDITIONAL_LIBS}  ${LIBS} )
+
+target_link_libraries(readdna xc3sproglib ${LIBFTDI_LIBRARIES}  ${LIBFTD2XX_LIBRARIES} ${CONDITIONAL_LIBS}  ${LIBS} )
+
+
+remplazar por 
+add_executable(xc2c_warp xc2c_warp.cpp)
+target_link_libraries(xc2c_warp xc3sproglib ${CONDITIONAL_LIBS})
+
+add_executable(detectchain detectchain.cpp cables.h devices.h)
+target_link_libraries(detectchain xc3sproglib ${CONDITIONAL_LIBS} ${LIBS} )
+
+add_executable(xc3sprog xc3sprog.cpp javr.cpp srecfile.cpp progalgavr.cpp 
+			devices.h)
+target_link_libraries(xc3sprog xc3sproglib ${CONDITIONAL_LIBS}  ${LIBS} )
+
+add_executable(readdna readdna.cpp devices.h)
+target_link_libraries(readdna xc3sproglib ${CONDITIONAL_LIBS}  ${LIBS} )
+
+
+////////////////////////////////////
+
+guardar ir a /source  y hacer make V=s
+
+En /source/build_dir/target-mipsel_24kc_musl/xc3sprog-2019-06-27 
+abrir 
+utilities.cpp
+
+eliminar todas las lineas que contengan ioftdi.h
+
+#include "ioftdi.h"
+
+
+  else if(cable->cabletype == CABLE_FTDI)  
+  {
+      io->reset(new IOFtdi(use_ftd2xx));
+      io->get()->setVerbose(verbose);
+      res = io->get()->Init(cable, serial, use_freq);
+  }
+
+    case CABLE_FTDI: return "ftdi"; break;
+
+
+
+
+eliminar 
+
+  else if(cable->cabletype == CABLE_MATRIX_CREATOR)
+  {
+      io->reset(new IOMatrixCreator());
+      io->get()->setVerbose(verbose);
+      res = io->get()->Init(cable, serial, use_freq);
+  }
+  else if(cable->cabletype == CABLE_MATRIX_VOICE)
+  {
+      io->reset(new IOMatrixVoice());
+      io->get()->setVerbose(verbose);
+      res = io->get()->Init(cable, serial, use_freq);
+  }
+
+
+
+
+guardar y salir a hacer make en source
+
+///////////////////////////////////////////
+
+gedit readdna.cpp 
+
+eliminar #include "ioftdi.h"
+
+/////////////////////////////
+
+gedit  detectchain.cpp 
+
+
+eliminar 
+
+#include "ioftdi.h"
+
+
+
+/////////////
+
+en gedit  sysfs.cpp 
+
+cambiar 
+
+
+const int TDIPin = 22;
+const int TMSPin = 4;
+const int TCKPin = 17;
+const int TDOPin = 27;
+
+cambiar por 
+
+const int TDIPin = 2;
+const int TMSPin = 11;
+const int TCKPin = 3;
+const int TDOPin = 17;
+
+
+/////////////
+
+
+gedit xc3sprog.cpp 
+
+
+eliminar 
+
+#include "ioftdi.h"
+
+
+////////////////
+
+HACER MAKE V=s 
+
+
+Y YA DEBERIA GENERAR EL ./xc3sprog_2019-06-27-1_mipsel_24kc.ipk
+
+//////////////////////
+
+find -iname *.ipk | grep xc3sprog
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

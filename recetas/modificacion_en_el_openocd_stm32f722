@@ -1,0 +1,52 @@
+
+
+cambios para el stm32f722
+
+
+
+
+ir a 
+
+/source/build_dir/target-mipsel_24kc_musl/openocd-0.10.0
+$ find . -iname stm32f2x.c 
+./src/flash/nor/stm32f2x.c
+$ gedit ./src/flash/nor/stm32f2x.c
+
+alli modificar el archivo anterior
+como dice en https://github.com/gnu-mcu-eclipse/openocd/issues/10
+
+
+añadir en el primer case lo siguiente:
+
+   case 0x452:	/* F72x/73x */
+      max_flash_size_in_kb = 512;
+      max_sector_size_in_kb = 128;
+      flash_size_reg = 0x1FF0F442;
+      stm32x_info->has_extra_options = true;
+      stm32x_info->has_boot_addr = true;
+      break;
+
+
+En el segundo case agregar lo siguiente
+
+   case 0x452:
+      device_str = "STM32F7[2|3]x";
+         switch (rev_id) {
+            case 0x1000:
+               rev_str = "A";
+               break;
+         }
+         break;
+
+
+
+hacer make 
+
+
+Ir a la onion 
+rm openocd_v0.10.0-1_mipsel_24kc.ipk 
+opkg --help
+opkg remove openocd
+opkg install openocd_v0.10.0-1_mipsel_24kc.ipk 
+
+
