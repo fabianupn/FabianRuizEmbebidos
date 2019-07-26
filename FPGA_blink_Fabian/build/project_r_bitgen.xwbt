@@ -1,0 +1,7 @@
+INFILE=/home/leoperez/Desktop/SW_Embebidos/FPGA_blink_Fabian/build/project_r.ncd
+OUTFILE=/home/leoperez/Desktop/SW_Embebidos/FPGA_blink_Fabian/build/project_r.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=/home/leoperez/Desktop/SW_Embebidos/FPGA_blink_Fabian/build
+LICENSE=WebPack
+USER_INFO=210656542_0_0_533

@@ -1,0 +1,519 @@
+EESchema Schematic File Version 5
+LIBS:power-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR052
+U 1 1 5D428107
+P 5000 4800
+F 0 "#PWR052" H 5000 4550 50  0001 C CNN
+F 1 "GND" H 5005 4627 50  0000 C CNN
+F 2 "" H 5000 4800 50  0001 C CNN
+F 3 "" H 5000 4800 50  0001 C CNN
+	1    5000 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 4450 5000 4800
+Text GLabel 3850 4200 0    50   Input ~ 0
+D+
+Text GLabel 3850 4000 0    50   Input ~ 0
+D-
+Wire Wire Line
+	3950 4050 3950 4000
+Wire Wire Line
+	3950 4000 3850 4000
+Wire Wire Line
+	3950 4150 3950 4200
+Wire Wire Line
+	3950 4200 3850 4200
+Wire Wire Line
+	3900 1500 3900 1550
+Wire Wire Line
+	3900 1850 3900 2000
+$Comp
+L Device:C C?
+U 1 1 5D451473
+P 4350 1700
+AR Path="/5CD05F2F/5D451473" Ref="C?"  Part="0" 
+AR Path="/5D3DE78E/5D451473" Ref="C45"  Part="1" 
+F 0 "C45" H 4465 1746 50  0000 L CNN
+F 1 "0.1uF" H 4465 1655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4388 1550 50  0001 C CNN
+F 3 "" H 4350 1700 50  0001 C CNN
+	1    4350 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 1500 4350 1550
+Wire Wire Line
+	4350 1850 4350 2000
+Wire Wire Line
+	4900 2050 4900 1500
+Wire Wire Line
+	4900 1500 4350 1500
+Connection ~ 4350 1500
+Wire Wire Line
+	4350 1500 3900 1500
+Wire Wire Line
+	3900 1450 3900 1500
+Connection ~ 3900 1500
+Wire Wire Line
+	4350 2000 4100 2000
+$Comp
+L power:GND #PWR051
+U 1 1 5D454107
+P 4100 2050
+F 0 "#PWR051" H 4100 1800 50  0001 C CNN
+F 1 "GND" H 4105 1877 50  0000 C CNN
+F 2 "" H 4100 2050 50  0001 C CNN
+F 3 "" H 4100 2050 50  0001 C CNN
+	1    4100 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2050 4100 2000
+Connection ~ 4100 2000
+Wire Wire Line
+	4100 2000 3900 2000
+$Comp
+L Device:C C?
+U 1 1 5D44FAD3
+P 3900 1700
+AR Path="/5CD05F2F/5D44FAD3" Ref="C?"  Part="0" 
+AR Path="/5D3DE78E/5D44FAD3" Ref="C44"  Part="1" 
+F 0 "C44" H 4015 1746 50  0000 L CNN
+F 1 "1uF" H 4015 1655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3938 1550 50  0001 C CNN
+F 3 "" H 3900 1700 50  0001 C CNN
+	1    3900 1700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5100 2050
+NoConn ~ 5700 3550
+NoConn ~ 5700 3650
+NoConn ~ 5700 3750
+NoConn ~ 5700 3850
+$Comp
+L MCU_Module:Omega2+ U7
+U 1 1 5D3DE9E1
+P 5000 3250
+F 0 "U7" H 4750 2100 50  0000 C CNN
+F 1 "Omega2+" H 5300 2100 50  0000 C CNN
+F 2 "Module:Onion_Omega2+" H 5000 1750 50  0001 C CNN
+F 3 "https://docs.onion.io/omega2-docs/omega2p.html" H 1800 2100 50  0001 C CNN
+	1    5000 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4050 4300 4050
+Wire Wire Line
+	3950 4150 4300 4150
+Wire Wire Line
+	5700 2950 6200 2950
+Wire Wire Line
+	5700 3050 6200 3050
+Text Label 5750 2950 0    50   ~ 0
+RX_PIN
+Text Label 5750 3050 0    50   ~ 0
+TX_PIN
+Wire Wire Line
+	5700 3250 6200 3250
+Wire Wire Line
+	5700 3350 6200 3350
+Text Label 5750 3350 0    50   ~ 0
+USART_TX
+Text Label 5800 3250 0    50   ~ 0
+USART_RX
+Wire Wire Line
+	4300 2350 3800 2350
+Wire Wire Line
+	4300 3550 3850 3550
+Wire Wire Line
+	4300 3650 3850 3650
+Wire Wire Line
+	4300 2450 3800 2450
+Wire Wire Line
+	4300 2550 3800 2550
+Wire Wire Line
+	4300 2650 3800 2650
+Text Label 3900 2350 0    50   ~ 0
+TMS
+Text Label 3950 3550 0    50   ~ 0
+TCK
+Text Label 3950 3650 0    50   ~ 0
+TDI
+Text Label 3900 2450 0    50   ~ 0
+TDO
+Text Label 3900 2550 0    50   ~ 0
+TRST
+Text Label 3900 2650 0    50   ~ 0
+NRST
+Wire Wire Line
+	5700 4050 6200 4050
+Wire Wire Line
+	5700 4150 6200 4150
+Text Label 5850 4050 0    50   ~ 0
+I2C_SCL
+Text Label 5850 4150 0    50   ~ 0
+I2C_SDA
+Wire Wire Line
+	5700 2750 6200 2750
+Text Label 5750 2750 0    50   ~ 0
+RST_BTN
+$Comp
+L BAT2032:R R12
+U 1 1 5CD91C3B
+P 3850 3050
+F 0 "R12" V 3800 3250 50  0000 C CNN
+F 1 "100" V 3850 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3780 3050 50  0001 C CNN
+F 3 "~" H 3850 3050 50  0001 C CNN
+	1    3850 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L BAT2032:R R13
+U 1 1 5CD95E75
+P 3850 3150
+F 0 "R13" V 3800 3350 50  0000 C CNN
+F 1 "100" V 3850 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3780 3150 50  0001 C CNN
+F 3 "~" H 3850 3150 50  0001 C CNN
+	1    3850 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L BAT2032:R R14
+U 1 1 5CD970C9
+P 3850 3250
+F 0 "R14" V 3800 3450 50  0000 C CNN
+F 1 "100" V 3850 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3780 3250 50  0001 C CNN
+F 3 "~" H 3850 3250 50  0001 C CNN
+	1    3850 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L BAT2032:R R15
+U 1 1 5CD983F0
+P 3850 3350
+F 0 "R15" V 3800 3550 50  0000 C CNN
+F 1 "100" V 3850 3350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3780 3350 50  0001 C CNN
+F 3 "~" H 3850 3350 50  0001 C CNN
+	1    3850 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 3050 4000 3050
+Wire Wire Line
+	4300 3150 4000 3150
+Wire Wire Line
+	4300 3250 4000 3250
+Wire Wire Line
+	4300 3350 4000 3350
+Wire Wire Line
+	3700 3050 3300 3050
+Wire Wire Line
+	3700 3150 3300 3150
+Wire Wire Line
+	3700 3250 3300 3250
+Wire Wire Line
+	3700 3350 3300 3350
+Text Label 3400 3050 0    50   ~ 0
+MISO
+Text Label 3400 3150 0    50   ~ 0
+MOSI
+Text Label 3350 3250 0    50   ~ 0
+SPI_CLK
+Text Label 3350 3350 0    50   ~ 0
+SPI_CS
+$Comp
+L power:GND #PWR053
+U 1 1 5CD47976
+P 6650 2700
+F 0 "#PWR053" H 6650 2450 50  0001 C CNN
+F 1 "GND" V 6655 2572 50  0000 R CNN
+F 2 "" H 6650 2700 50  0001 C CNN
+F 3 "" H 6650 2700 50  0001 C CNN
+	1    6650 2700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4300 3850
+Text Label 7450 1500 0    50   ~ 0
+RST_BTN
+Connection ~ 7300 1500
+Wire Wire Line
+	7700 1500 7300 1500
+Connection ~ 6650 1500
+Wire Wire Line
+	7300 1500 6650 1500
+Wire Wire Line
+	6650 1600 6600 1600
+Connection ~ 6650 1600
+Wire Wire Line
+	6650 1500 6650 1600
+Wire Wire Line
+	6300 1500 6650 1500
+Wire Wire Line
+	6700 1600 6650 1600
+Wire Wire Line
+	7300 2050 7300 1800
+$Comp
+L power:GND #PWR054
+U 1 1 5CD5D462
+P 7300 2050
+F 0 "#PWR054" H 7300 1800 50  0001 C CNN
+F 1 "GND" V 7305 1922 50  0000 R CNN
+F 2 "" H 7300 2050 50  0001 C CNN
+F 3 "" H 7300 2050 50  0001 C CNN
+	1    7300 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CD5AB36
+P 7300 1650
+AR Path="/5CD05F2F/5CD5AB36" Ref="C?"  Part="0" 
+AR Path="/5D3DE78E/5CD5AB36" Ref="C46"  Part="1" 
+F 0 "C46" H 7415 1696 50  0000 L CNN
+F 1 "0.1uF" H 7415 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7338 1500 50  0001 C CNN
+F 3 "" H 7300 1650 50  0001 C CNN
+	1    7300 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L BAT2032:R R16
+U 1 1 5CD54029
+P 6150 1500
+F 0 "R16" V 6100 1700 50  0000 C CNN
+F 1 "10k" V 6150 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6080 1500 50  0001 C CNN
+F 3 "~" H 6150 1500 50  0001 C CNN
+	1    6150 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 2700 6650 2450
+Wire Wire Line
+	6650 2450 6550 2450
+Connection ~ 6650 2450
+Wire Wire Line
+	6750 2450 6650 2450
+$Comp
+L FSM1LPTR:FSM1LPTR U8
+U 1 1 5D472323
+P 6700 2000
+F 0 "U8" H 6725 2307 60  0000 C CNN
+F 1 "FSM1LPTR" H 6725 2201 60  0000 C CNN
+F 2 "library:FSM1LPTR" H 6700 2150 60  0001 C CNN
+F 3 "" H 6300 2000 60  0000 C CNN
+F 4 "450-1756-1-ND" H 6700 2000 50  0001 C CNN "digikey"
+	1    6700 2000
+	0    1    1    0   
+$EndComp
+Text GLabel 4100 2750 0    50   Input ~ 0
+BOOT0
+Text GLabel 6200 3350 2    50   Output ~ 0
+USART_TX
+Text GLabel 6200 3250 2    50   Input ~ 0
+USART_RX
+NoConn ~ 5700 2550
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J?
+U 1 1 5E0A8FB7
+P 2150 2300
+AR Path="/5CF5B080/5E0A8FB7" Ref="J?"  Part="1" 
+AR Path="/5D3DE78E/5E0A8FB7" Ref="J5"  Part="1" 
+F 0 "J5" H 2200 2717 50  0000 C CNN
+F 1 "Conn_02x06" H 2200 2626 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 2150 2300 50  0001 C CNN
+F 3 "~" H 2150 2300 50  0001 C CNN
+	1    2150 2300
+	1    0    0    -1  
+$EndComp
+Text GLabel 3550 1300 0    50   Input ~ 0
+vcc_STM32
+Text GLabel 5700 1300 0    50   Input ~ 0
+vcc_STM32
+Wire Wire Line
+	3550 1300 3600 1300
+Wire Wire Line
+	5700 1300 5800 1300
+Wire Wire Line
+	5800 1300 5800 1500
+Wire Wire Line
+	5800 1500 6000 1500
+Wire Wire Line
+	2850 2200 2450 2200
+Wire Wire Line
+	2850 2300 2450 2300
+Wire Wire Line
+	2850 2400 2450 2400
+Wire Wire Line
+	2850 2500 2450 2500
+Text Label 2550 2200 0    50   ~ 0
+MISO
+Text Label 2550 2300 0    50   ~ 0
+MOSI
+Text Label 2500 2400 0    50   ~ 0
+SPI_CLK
+Text Label 2500 2500 0    50   ~ 0
+SPI_CS
+Wire Wire Line
+	1450 2200 1950 2200
+Wire Wire Line
+	1450 2300 1950 2300
+Text Label 1600 2300 0    50   ~ 0
+I2C_SCL
+Text Label 1600 2200 0    50   ~ 0
+I2C_SDA
+Wire Wire Line
+	1450 2400 1950 2400
+Wire Wire Line
+	1450 2500 1950 2500
+Text Label 1500 2400 0    50   ~ 0
+RX_PIN
+Text Label 1500 2500 0    50   ~ 0
+TX_PIN
+Text GLabel 1850 1900 0    50   Input ~ 0
+vcc_STM32
+Wire Wire Line
+	1850 1900 1950 1900
+Wire Wire Line
+	1950 1900 1950 2100
+$Comp
+L power:GND #PWR049
+U 1 1 5E11F7EF
+P 2500 2100
+F 0 "#PWR049" H 2500 1850 50  0001 C CNN
+F 1 "GND" V 2505 1972 50  0000 R CNN
+F 2 "" H 2500 2100 50  0001 C CNN
+F 3 "" H 2500 2100 50  0001 C CNN
+	1    2500 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR050
+U 1 1 5E1233E4
+P 2500 2600
+F 0 "#PWR050" H 2500 2350 50  0001 C CNN
+F 1 "GND" V 2505 2472 50  0000 R CNN
+F 2 "" H 2500 2600 50  0001 C CNN
+F 3 "" H 2500 2600 50  0001 C CNN
+	1    2500 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2450 2100 2500 2100
+Wire Wire Line
+	2450 2600 2500 2600
+$Comp
+L power:+5VD #PWR?
+U 1 1 5E133FCC
+P 1900 2600
+AR Path="/5CD17BDC/5E133FCC" Ref="#PWR?"  Part="1" 
+AR Path="/5D3DE78E/5E133FCC" Ref="#PWR048"  Part="1" 
+F 0 "#PWR048" H 1900 2450 50  0001 C CNN
+F 1 "+5VD" H 1900 2750 50  0000 C CNN
+F 2 "" H 1900 2600 50  0001 C CNN
+F 3 "" H 1900 2600 50  0001 C CNN
+	1    1900 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1950 2600 1900 2600
+Wire Wire Line
+	4300 2950 3850 2950
+Wire Wire Line
+	4300 2850 4300 2950
+Text Label 3950 2950 0    50   ~ 0
+LED
+Wire Wire Line
+	8100 2700 8100 3000
+$Comp
+L BAT2032:LED D?
+U 1 1 5E14B66F
+P 8100 3150
+AR Path="/5CD17BDC/5E14B66F" Ref="D?"  Part="1" 
+AR Path="/5D3DE78E/5E14B66F" Ref="D8"  Part="1" 
+F 0 "D8" V 8139 3033 50  0000 R CNN
+F 1 "LED" V 8048 3033 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8100 3150 50  0001 C CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS-22-99-0151/LTST-C190KRKT.pdf" H 8100 3150 50  0001 C CNN
+F 4 "160-1436-1-ND     rojo" V 8100 3150 50  0001 C CNN "digikey"
+	1    8100 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L BAT2032:R R?
+U 1 1 5E14B676
+P 8100 3550
+AR Path="/5CD17BDC/5E14B676" Ref="R?"  Part="1" 
+AR Path="/5D3DE78E/5E14B676" Ref="R17"  Part="1" 
+F 0 "R17" H 8170 3596 50  0000 L CNN
+F 1 "750" H 8170 3505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8030 3550 50  0001 C CNN
+F 3 "~" H 8100 3550 50  0001 C CNN
+	1    8100 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E14B67C
+P 8100 3850
+AR Path="/5CD17BDC/5E14B67C" Ref="#PWR?"  Part="1" 
+AR Path="/5D3DE78E/5E14B67C" Ref="#PWR055"  Part="1" 
+F 0 "#PWR055" H 8100 3600 50  0001 C CNN
+F 1 "GND" H 8105 3677 50  0000 C CNN
+F 2 "" H 8100 3850 50  0001 C CNN
+F 3 "" H 8100 3850 50  0001 C CNN
+	1    8100 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3300 8100 3400
+Wire Wire Line
+	8100 3700 8100 3850
+Text Label 8100 2700 0    50   ~ 0
+LED
+Text Notes 8150 3750 0    50   ~ 0
+RED
+NoConn ~ 4300 3750
+Text GLabel 3800 2350 0    50   Output ~ 0
+JTMS
+Text GLabel 3850 3650 0    50   Output ~ 0
+JTDO
+Text GLabel 3800 2550 0    50   Output ~ 0
+JTRST
+Text GLabel 3800 2650 0    50   Output ~ 0
+JNRST
+Wire Wire Line
+	4100 2750 4300 2750
+Text GLabel 3850 3550 0    50   Output ~ 0
+JTCK
+Text GLabel 3800 2450 0    50   Input ~ 0
+JTDO_OMEGA
+Text GLabel 6200 4050 2    50   Input ~ 0
+I2C_SCL
+Text GLabel 6200 4150 2    50   Input ~ 0
+I2C_SDA
+Wire Wire Line
+	3600 1450 3900 1450
+Wire Wire Line
+	3600 1300 3600 1450
+$EndSCHEMATC
